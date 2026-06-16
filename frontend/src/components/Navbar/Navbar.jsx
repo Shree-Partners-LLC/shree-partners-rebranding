@@ -76,9 +76,9 @@ function Navbar() {
                             <li><Link to="/industries/pharma">Pharma & Life Sciences</Link></li>
                         </ul>
                         </li>
-                        <li className="mini-dropdown-menu"><Link to="/industries/banking-finance"><b>Banking & Finance</b></Link></li>
-                        <li className="mini-dropdown-menu"><Link to="/industries/insurance"><b>Insurance</b></Link></li>
-                        <li className="mini-dropdown-menu"><Link to="/industries/professional-services"><b>Professional Services</b></Link></li>
+                        <li><Link to="/industries/banking-finance"><b>Banking & Finance</b></Link></li>
+                        <li><Link to="/industries/insurance"><b>Insurance</b></Link></li>
+                        <li><Link to="/industries/professional-services"><b>Professional Services</b></Link></li>
                     </ul>
                 )}
             </li>
@@ -86,9 +86,9 @@ function Navbar() {
                 <button className="dropdown-btn"onClick={() => toggleDropdown("about")}>About Us</button>
                 {activeDropdown === "about" && (
                     <ul className="dropdown-menu">
-                        <li className="mini-dropdown-menu"><Link to="/about/mission-vision"><b>Mission and Vision</b></Link></li>
-                        <li className="mini-dropdown-menu"><Link to="/about/alliances"><b>Alliances</b></Link></li>
-                        <li className="mini-dropdown-menu"><Link to="/about/leadership"><b>Leadership</b></Link></li>
+                        <li><Link to="/about/mission-vision"><b>Mission and Vision</b></Link></li>
+                        <li><Link to="/about/alliances"><b>Alliances</b></Link></li>
+                        <li><Link to="/about/leadership"><b>Leadership</b></Link></li>
                     </ul>
                 )}
             </li>
@@ -96,8 +96,8 @@ function Navbar() {
                 <button className="dropdown-btn"onClick={() => toggleDropdown("insights")}>Insights</button>
                 {activeDropdown === "insights" && (
                     <ul className="dropdown-menu">
-                        <li className="mini-dropdown-menu"><Link to="/insights/ ochures"><b>Brochures</b></Link></li>
-                        <li className="mini-dropdown-menu"><Link to="/insights/blogs"><b>Blogs</b></Link></li>
+                        <li><Link to="/insights/ ochures"><b>Brochures</b></Link></li>
+                        <li><Link to="/insights/blogs"><b>Blogs</b></Link></li>
                     </ul>
                 )}
             </li>
@@ -105,7 +105,7 @@ function Navbar() {
                 <button className="dropdown-btn" onClick={() => toggleDropdown("careers")}>Careers</button>
                 {activeDropdown === "careers" && (
                     <ul className="dropdown-menu">
-                        <li className="mini-dropdown-menu"><Link to="/careers/life-at-shree"><b>Life at Shree Partners</b></Link></li>
+                        <li ><Link to="/careers/life-at-shree"><b>Life at Shree Partners</b></Link></li>
                     </ul>
                 )}
             </li>

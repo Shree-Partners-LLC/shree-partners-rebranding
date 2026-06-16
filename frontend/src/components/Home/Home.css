@@ -1,10 +1,11 @@
 :root {
-  --indigo: #1C2340;
-  --gold: #E89B2E;
-  --bg: #F5F6F3;
+  --indigo: #111827;
+  --gold: #eca34f;
+  --bg: #F3F4F6;
   --white: #FFFFFF;
-  --text: #3C4358;
-  --line: #D7DAE3;
+  --text: #1F2937;
+  --line: #D1D5DB;
+  --font: 'Albert Sans', sans-serif;
 }
 
 /*home*/

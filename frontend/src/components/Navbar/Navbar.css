@@ -1,6 +1,6 @@
 :root {
   --indigo: #111827;
-  --gold: #D97706;
+  --gold: #eca34f;
   --bg: #F3F4F6;
   --white: #FFFFFF;
   --text: #1F2937;
@@ -91,6 +91,11 @@ header {
   box-shadow: 0 20px 40px rgba(0,0,0,.15);
   animation: drop .3s ease;
 }
+.dropdown-menu,
+.mini-dropdown-menu {
+  list-style: none;
+  padding-left: 0;
+}
 @keyframes drop {from {opacity: 0;}to {opacity: 1;}}
 .dropdown-menu a {
   display: block;
@@ -131,54 +136,73 @@ header {
   font-weight: 700;
   color: var(--indigo);
 }
+
 @media (max-width: 900px) {
+
   .nav {
-    min-height: 75px;
-    height: auto;
+    height: 75px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* yahi important hai */
   }
+
   .menu-btn {
     display: block;
   }
+
   .nav-links {
+    position: absolute;
+    top: 75px;
+    left: 0;
     width: 100%;
+    
     background: var(--white);
+    display: none;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0 20px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease,padding 0.4s ease;
-  }
-  .nav-links.open {
-    display: flex;
-    max-height: 1000px;
-    padding: 10px 20px 20px;
+
+    padding: 20px;
     border-top: 1px solid var(--line);
     border-bottom: 1px solid var(--line);
+    z-index: 1000;
   }
+
+  .nav-links.open {
+    display: flex;
+  }
+
   .dropdown,
-  .dropdown-menu {
+  .dropdown-btn {
     width: 100%;
   }
+
+  .dropdown-btn {
+    text-align: left;
+    padding: 10px 0;
+    border: none;
+    background: transparent;
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
   .dropdown-menu {
     position: static;
     transform: none;
-    margin-top: 10px;
+    width: 100%;
     max-height: 250px;
+    overflow-y: auto;
+    margin-top: 8px;
+    padding: 10px;
     box-shadow: none;
     border: 1px solid var(--line);
+    border-radius: 10px;
   }
+
   .btn {
     width: 100%;
     text-align: center;
-  }
-  .logo {
-    margin: 0;
-    padding: 0;
-    height: 150px;
   }
 }

@@ -49,7 +49,7 @@ function Footer() {
           <div className="footer-policy">
             <a href="/privacy_policy">Privacy Policy</a>
             <a href="/cookie_policy">Cookie Policy</a>
-            <a href="/site_map">Sitemap</a>
+            <a href="/sitemap">Sitemap</a>
           </div>
           <p className="countries"><strong>Our Presence:</strong>US | India | UK | Australia | Germany | Singapore</p>
         </div>
