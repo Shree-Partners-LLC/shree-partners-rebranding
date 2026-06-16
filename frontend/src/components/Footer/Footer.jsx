@@ -1,5 +1,4 @@
 import "./Footer.css";
-import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer className="footer">
@@ -12,30 +11,30 @@ function Footer() {
         <div className="footer-grid">
           <div className="footer-column">
             <h3>About</h3>
-            <Link to="/about/mission-vision">Mission and Vision</Link>
-            <Link to="/about/alliances">Alliances</Link>
-            <Link to="/about/leadership">Leadership</Link>
-            <Link to="/contact">Contact Us</Link>
+            <a href="/about/mission-vision">Mission and Vision</a>
+            <a href="/about/alliances">Alliances</a>
+            <a href="/about/leadership">Leadership</a>
+            <a href="/contact">Contact Us</a>
           </div>
           <div className="footer-column">
             <h3>Services</h3>
-            <Link to="/services/application-services">Application Services and Automation</Link>
-            <Link to="/services/ai-ml">Digital, AI and ML Solutions</Link>
-            <Link to="/services/data-management">Data Management and Analytics</Link>
-            <Link to="/services/enterprise-operations">Enterprise Operations Transformation</Link>
+            <a href="/services/application-services">Application Services and Automation</a>
+            <a href="/services/ai-ml">Digital, AI and ML Solutions</a>
+            <a href="/services/data-management">Data Management and Analytics</a>
+            <a href="/services/enterprise-operations">Enterprise Operations Transformation</a>
           </div>
           <div className="footer-column">
             <h3>Industries</h3>
-            <Link to="/industries/travel-hospitality">Travel & Hospitality</Link>
-            <Link to="/industries/healthcare">Healthcare</Link>
-            <Link to="/industries/banking-finance">Banking & Finance</Link>
-            <Link to="/industries/insurance">Insurance</Link>
-            <Link to="/industries/professional-services">Professional Services</Link>
+            <a href="/industries/travel-hospitality">Travel & Hospitality</a>
+            <a href="/industries/healthcare">Healthcare</a>
+            <a href="/industries/banking-finance">Banking & Finance</a>
+            <a href="/industries/insurance">Insurance</a>
+            <a href="/industries/professional-services">Professional Services</a>
           </div>
           <div className="footer-column">
             <h3>Insights</h3>
-            <Link to="/insights/brochures">Brochures</Link>
-            <Link to="/insights/blogs">Blogs</Link>
+            <a href="/insights/brochures">Brochures</a>
+            <a href="/insights/blogs">Blogs</a>
             <h3 className="social-title">Connect with Us</h3>
             <div className="social-icons">
               <a href="https://www.facebook.com/ShreePartners"><i className="fa-brands fa-facebook-f"></i></a>

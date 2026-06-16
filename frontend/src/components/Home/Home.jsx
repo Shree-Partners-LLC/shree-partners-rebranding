@@ -1,6 +1,5 @@
 import "./Home.css";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import insurance from "../../assets/insurance.avif";
 import travel from "../../assets/travel.webp";
 import healthcare from "../../assets/healthcare.jpg";
@@ -141,7 +140,7 @@ function Home() {
             <div className="content">
               <h1>{item.title}</h1>
               <br></br>
-              <Link to={item.link} className="find-btn">FIND OUT MORE →</Link>
+              <a href={item.link} className="find-btn">FIND OUT MORE →</a>
               <br></br>
               <br></br>
               <br></br>
@@ -163,51 +162,51 @@ function Home() {
         <div className="services-grid">
           <div className="service-card ">
             <h3>
-              <Link to="/services/application-services">Application Services and Automation</Link>
+              <a href="/services/application-services">Application Services and Automation</a>
             </h3>
             <ul>
-              <li><Link to="/services/test-automation">Test Automation</Link></li>
-              <li><Link to="/services/full-stack-development">Full Stack Development</Link></li>
-              <li><Link to="/services/mobility">Mobility</Link></li>
-              <li><Link to="/services/digital-marketing">Digital Marketing and Collaboration</Link></li>
-              <li><Link to="/services/intranet">Intranet Solutions</Link></li>
-              <li><Link to="/services/product-engineering">Product Engineering</Link></li>
+              <li><a href="/services/test-automation">Test Automation</a></li>
+              <li><a href="/services/full-stack-development">Full Stack Development</a></li>
+              <li><a href="/services/mobility">Mobility</a></li>
+              <li><a href="/services/digital-marketing">Digital Marketing and Collaboration</a></li>
+              <li><a href="/services/intranet">Intranet Solutions</a></li>
+              <li><a href="/services/product-engineering">Product Engineering</a></li>
             </ul>
           </div>
           <div className="service-card">
             <h3>
-              <Link to="/services/ai-ml">Digital, AI and Machine Learning</Link>
+              <a href="/services/ai-ml">Digital, AI and Machine Learning</a>
             </h3>
             <ul>
-              <li><Link to="/services/nlp">Domain-specific NLP Engines</Link></li>
-              <li><Link to="/services/rpa">Intelligent RPA</Link></li>
-              <li><Link to="/services/deep-learning">Development, Machine Learning and Deep Learning</Link></li>
-              <li><Link to="/services/ivr-ai">Real-time AI on Cloud – IVR</Link></li>
-              <li><Link to="/services/ai-consulting">Digital and AI Consulting</Link></li>
-              <li><Link to="/services/iot">Internet of Things (IoT) Solutions</Link></li>
+              <li><a href="/services/nlp">Domain-specific NLP Engines</a></li>
+              <li><a href="/services/rpa">Intelligent RPA</a></li>
+              <li><a href="/services/deep-learning">Development, Machine Learning and Deep Learning</a></li>
+              <li><a href="/services/ivr-ai">Real-time AI on Cloud – IVR</a></li>
+              <li><a href="/services/ai-consulting">Digital and AI Consulting</a></li>
+              <li><a href="/services/iot">Internet of Things (IoT) Solutions</a></li>
             </ul>
           </div>
           <div className="service-card">
             <h3>
-              <Link to="/services/data-management">Data Management and Analytics</Link>
+              <a href="/services/data-management">Data Management and Analytics</a>
             </h3>
             <ul>
-              <li><Link to="/services/big-data">Big Data Solutions</Link></li>
-              <li><Link to="/services/data-lakes">Data Lakes Design, Strategy and Implementation</Link></li>
-              <li><Link to="/services/data-science">Data Science, Predictive and Prescriptive Analytics</Link></li>
-              <li><Link to="/services/business-intelligence">Business Intelligence and Analytics</Link></li>
+              <li><a href="/services/big-data">Big Data Solutions</a></li>
+              <li><a href="/services/data-lakes">Data Lakes Design, Strategy and Implementation</a></li>
+              <li><a href="/services/data-science">Data Science, Predictive and Prescriptive Analytics</a></li>
+              <li><a href="/services/business-intelligence">Business Intelligence and Analytics</a></li>
             </ul>
           </div>
           <div className="service-card">
           <h3>  
-            <Link to="/services/enterprise-operations">Enterprise Operations Transformation</Link>
+            <a href="/services/enterprise-operations">Enterprise Operations Transformation</a>
           </h3>
           <ul>
-            <li><Link to="/services/network-operations">Network Operations Center</Link></li>
-            <li><Link to="/services/data-center">Data Center Operations</Link></li>
-            <li><Link to="/services/cybersecurity">Cyber Security and Threat Management</Link></li>
-            <li><Link to="/services/cloud">Cloud Management</Link></li>
-            <li><Link to="/services/devops">DevOps Consulting and Implementation</Link></li>
+            <li><a href="/services/network-operations">Network Operations Center</a></li>
+            <li><a href="/services/data-center">Data Center Operations</a></li>
+            <li><a href="/services/cybersecurity">Cyber Security and Threat Management</a></li>
+            <li><a href="/services/cloud">Cloud Management</a></li>
+            <li><a href="/services/devops">DevOps Consulting and Implementation</a></li>
           </ul>
         </div>
       </div>
@@ -222,7 +221,7 @@ function Home() {
             <div className="success-content">
               <h3>{story.title}</h3>
               <p>{story.description}</p>
-              <Link to={story.link}>READ MORE &gt;</Link>
+              <a href={story.link}>READ MORE &gt;</a>
             </div>
           </div>
         ))}

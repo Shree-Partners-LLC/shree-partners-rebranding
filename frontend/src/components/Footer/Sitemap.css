@@ -68,7 +68,6 @@
   border-radius: 10px;
   transition: all 0.3s ease;
 }
-
 .sitemap-list a:hover {
   color: var(--gold);
   background: rgba(28, 35, 64, 0.08);
