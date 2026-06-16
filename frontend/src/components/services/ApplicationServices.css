@@ -1,0 +1,284 @@
+.app-services {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  background: #0b1435;
+}
+
+/* LEFT SIDE */
+.left-panel {
+  width: 35%;
+  background: #0b1435;
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+/* Diagonal Cut */
+.left-panel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+ 
+  right: -180px;
+  width: 350px;
+  height: 100%;
+  background: #0b1435;
+  transform: skewX(-30deg);
+}
+
+.content {
+  padding-left: 80px;
+  padding-right: 30px;
+  max-width: 700px;
+  z-index: 5;
+}
+
+.content h1 {
+  font-size: clamp(3rem, 4vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.content span {
+  color: #f0a62a;
+}
+
+.content p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #d8dcec;
+  max-width: 550px;
+}
+
+/* RIGHT IMAGE */
+.right-panel {
+  flex: 1;
+  position: relative;
+    background-size: 100%;
+  background-position: left center;
+}
+
+/* Glass Overlay */
+.right-panel::before {
+  content: "";
+  position: absolute;
+  right: -80px;
+  top: 0;
+  width: 140px;
+  height: 100%;
+  background: rgba(240, 166, 42, 0.08);
+  transform: skewX(-30deg);
+}
+/* DETAILS SECTION */
+
+.app-details {
+  background: #ffffff;
+  padding: 100px 8%;
+}
+
+.app-details-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.app-text {
+  flex: 1;
+}
+
+.app-text h2 {
+  font-size: 2.5rem;
+  color: #0b1435;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.app-text p {
+  color: #555;
+  line-height: 1.9;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.app-image {
+  flex: 1;
+}
+
+.app-image img {
+  width: 100%;
+  border-radius: 16px;
+  display: block;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* BUTTON */
+
+.contact-btn {
+  background: #f0a62a;
+  color: #fff;
+  border: none;
+  padding: 15px 35px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: #0b1435;
+  color: #f0a62a;
+}
+.service-offerings {
+  background: #f8f2e8;
+  padding: 90px 6%;
+}
+
+.service-offerings h2 {
+  text-align: center;
+  color: #0b1435;
+  font-size: 3rem;
+  margin-bottom: 60px;
+}
+.offerings-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.offering-card {
+  background: #fff;
+  border: 2px solid #f0a62a;
+  border-radius: 16px;
+  min-height: 260px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  transition: all 0.35s ease;
+}
+
+.offering-card:hover {
+  background: #f0a62a;
+  transform: translateY(-8px);
+}
+
+.offering-card:hover h3 {
+  color: #fff;
+}
+
+.offering-card:hover svg {
+  color: #fff;
+}
+.offering-icon {
+  font-size: 80px;
+  color: #0b1435;
+  margin-bottom: 25px;
+  transition: 0.35s;
+}
+.offering-card h3 {
+  color: #0b1435;
+  font-size: 2rem;
+  text-align: center;
+  transition: 0.35s;
+}
+/* SUCCESS STORY */
+
+.success-story {
+  background: #ffffff;
+  padding: 100px 8%;
+}
+
+.story-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.story-header span {
+  color: #f0a62a;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.story-header h2 {
+  font-size: 3rem;
+  color: #0b1435;
+  margin: 15px 0;
+}
+
+.story-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.story-card {
+  border: 2px solid #e5e5e5;
+  padding: 35px;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.story-card h3 {
+  color: #0b1435;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.story-card ul {
+  padding-left: 20px;
+}
+
+.story-card li {
+  margin-bottom: 18px;
+  color: #555;
+  line-height: 1.8;
+}
+
+.story-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.story-buttons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.brochure-btn {
+  background: transparent;
+  border: 2px solid #f0a62a;
+  color: #f0a62a;
+  padding: 15px 35px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.brochure-btn:hover {
+  background: #f0a62a;
+  color: #fff;
+}
+
