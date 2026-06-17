@@ -11,9 +11,10 @@ function Footer() {
         <div className="footer-grid">
           <div className="footer-column">
             <h3>About</h3>
-            <a href="/about/mission-vision">Mission and Vision</a>
-            <a href="/about/alliances">Alliances</a>
-            <a href="/about/leadership">Leadership</a>
+            <a href="/about-us">About Us</a>
+            <a href="/mission-vision">Mission and Vision</a>
+            <a href="/alliances">Alliances</a>
+            <a href="/leadership">Leadership</a>
             <a href="/contact">Contact Us</a>
           </div>
           <div className="footer-column">

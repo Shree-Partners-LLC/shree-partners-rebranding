@@ -42,25 +42,25 @@ function Home() {
       title: "Global Claims Management",
       description:"Leading global claims management company ensures business continuity with a Network Operations Center.",
       image: claims,
-      link: "/success/global-claims",
+      link: "/success1.pdf",
     },
     {
       title: "Travel Management",
       description:"See how we developed a DevOps consulting solution to enable faster support for travel apps 24/7, reducing costly escalations by up to 85%.",
       image: travel,
-      link: "/success/travel-management",
+      link: "/success2.pdf",
     },
     {
       title: "Predictive Analytics",
       description:"Leading travel management company significantly boosts revenue with actionable insights from predictive analytics.",
       image: predictive,
-      link: "/success/predictive-analytics",
+      link: "/success3.pdf",
     },
     {
       title: "Big Data Solution on AWS",
       description:"Shree Partners collaborated with one of the world's largest travel management consortiums to process large amounts of data using big data technologies on AWS cloud.",
       image: aws,
-      link: "/success/big-data-aws",
+      link: "/success4.pdf",
     }
   ];
   const reviews = [
@@ -221,7 +221,7 @@ function Home() {
             <div className="success-content">
               <h3>{story.title}</h3>
               <p>{story.description}</p>
-              <a href={story.link}>READ MORE &gt;</a>
+              <a href={story.link}download>READ MORE &gt;</a>
             </div>
           </div>
         ))}
