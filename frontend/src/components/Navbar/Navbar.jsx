@@ -93,7 +93,7 @@ function Navbar() {
                     <button className="dropdown-btn"onClick={() => toggleDropdown("insights")}>Insights</button>
                     {activeDropdown === "insights" && (
                         <ul className="dropdown-menu">
-                            <li><a href="/insights/ ochures"><b>Brochures</b></a></li>
+                            <li><a href="/insights/brochures"><b>Brochures</b></a></li>
                             <li><a href="/insights/blogs"><b>Blogs</b></a></li>
                         </ul>
                     )}
