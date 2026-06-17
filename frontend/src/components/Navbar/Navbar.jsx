@@ -15,7 +15,7 @@ function Navbar() {
                     <button className="dropdown-btn" onClick={() => toggleDropdown("services")}>Services</button>
                     {activeDropdown === "services" && (
                         <ul className="dropdown-menu">
-                            <li><a href="/services/application-services"><b>Application Services and Automation</b></a>
+                            <li><a href="/services/ApplicationServices"><b>Application Services and Automation</b></a>
                             <ul className="mini-dropdown-menu">
                                 <li><a href="/services/test-automation">Test Automation </a></li>
                                 <li><a href="/services/full-stack-development">Full Stack Development</a></li>
@@ -25,7 +25,7 @@ function Navbar() {
                                 <li><a href="/services/product-engineering">Product Engineering</a></li>
                             </ul>
                             </li>
-                            <li><a href="/services/ai-ml"><b>Digital, AI and Machine Learning</b></a>
+                            <li><a href="/services/Aiml"><b>Digital, AI and Machine Learning</b></a>
                             <ul className="mini-dropdown-menu">
                                 <li><a href="/services/nlp">Domain-specific NLP Engines</a></li>
                                 <li><a href="/services/rpa">Intelligent RPA</a></li>
@@ -35,7 +35,7 @@ function Navbar() {
                                 <li><a href="/services/iot">Internet of Things (IoT) Solutions</a></li>
                             </ul>
                             </li>
-                            <li><a href="/services/data-management"><b>Data Management and Analytics</b></a>
+                            <li><a href="/services/DataManagement"><b>Data Management and Analytics</b></a>
                             <ul className="mini-dropdown-menu">
                                 <li><a href="/services/big-data">Big Data Solutions</a></li>
                                 <li><a href="/services/data-lakes">Data Lakes Design, Strategy and Implementation</a></li>
@@ -43,7 +43,7 @@ function Navbar() {
                                 <li><a href="/services/business-intelligence">Business Intelligence and Analytics</a></li>
                             </ul>
                             </li>
-                            <li><a href="/services/enterprise-operations"><b>Enterprise Operations Transformation</b></a>
+                            <li><a href="/services/Enterprise"><b>Enterprise Operations Transformation</b></a>
                             <ul className="mini-dropdown-menu">
                                 <li><a href="/services/network-operations">Network Operations Center</a></li>
                                 <li><a href="/services/data-center">Data Center Operations</a></li>
