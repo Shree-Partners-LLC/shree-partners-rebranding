@@ -80,12 +80,13 @@ function Navbar() {
                     )}
                 </li>
                 <li className="dropdown">
-                    <button className="dropdown-btn"onClick={() => toggleDropdown("about")}>About Us</button>
+                    <button className="dropdown-btn"onClick={() => toggleDropdown("about")}>About</button>
                     {activeDropdown === "about" && (
                         <ul className="dropdown-menu">
-                            <li><a href="/about/mission-vision"><b>Mission and Vision</b></a></li>
-                            <li><a href="/about/alliances"><b>Alliances</b></a></li>
-                            <li><a href="/about/leadership"><b>Leadership</b></a></li>
+                            <li><a href="/about-us"><b>About Us</b></a></li>
+                            <li><a href="/mission-vision"><b>Mission and Vision</b></a></li>
+                            <li><a href="/alliances"><b>Alliances</b></a></li>
+                            <li><a href="/leadership"><b>Leadership</b></a></li>
                         </ul>
                     )}
                 </li>
