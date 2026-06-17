@@ -102,7 +102,7 @@ function Navbar() {
                     <button className="dropdown-btn" onClick={() => toggleDropdown("careers")}>Careers</button>
                     {activeDropdown === "careers" && (
                         <ul className="dropdown-menu">
-                            <li ><a href="/careers/life-at-shree"><b>Life at Shree Partners</b></a></li>
+                            <li ><a href="/life_at_shree_partners"><b>Life at Shree Partners</b></a></li>
                         </ul>
                     )}
                 </li>

@@ -34,7 +34,6 @@ function Footer() {
           <div className="footer-column">
             <h3>Insights</h3>
             <a href="/insights/brochures">Brochures</a>
-            <a href="/insights/blogs">Blogs</a>
             <h3 className="social-title">Connect with Us</h3>
             <div className="social-icons">
               <a href="https://www.facebook.com/ShreePartners"><i className="fa-brands fa-facebook-f"></i></a>

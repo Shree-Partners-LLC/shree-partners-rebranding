@@ -1,0 +1,151 @@
+:root {
+  --indigo: #111827;
+  --gold: #eca34f;
+  --bg: #F3F4F6;
+  --white: #FFFFFF;
+  --text: #1F2937;
+  --line: #D1D5DB;
+  --font: 'Albert Sans', sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.life-shree {
+  width: 100%;
+  background: var(--bg);
+  font-family: var(--font);
+}
+.life-hero {
+  height: 420px;
+  position: relative;
+  overflow: hidden;
+}
+.life-image,
+.life-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.life-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(17, 24, 39, 0.85),
+    rgba(17, 24, 39, 0.35)
+  );
+}
+.life-title {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  z-index: 2;
+  color: var(--white);
+}
+.life-title h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.life-title h1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  margin-top: 15px;
+  border-radius: 20px;
+  background: var(--gold);
+}
+.life-shree-about,
+.life-shree-learning,
+.life-shree-fun {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 55px;
+  padding: 70px 8%;
+}
+.life-shree-img {
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+}
+.life-shree-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+.life-shree-img:hover img {
+  transform: scale(1.05);
+}
+.life-shree-text h2 {
+  color: var(--indigo);
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+.life-shree-text p,
+.life-shree-text li {
+  color: var(--text);
+  font-size: 1.1rem;
+  line-height: 1.9;
+}
+.life-shree-text ul {
+  padding-left: 25px;
+  margin-top: 25px;
+}
+.life-shree-text li {
+  margin-bottom: 15px;
+}
+.life-shree-about {
+  background: var(--white);
+}
+.life-shree-learning {
+  background: #eaf5f7;
+}
+.life-shree-fun {
+  background: var(--indigo);
+}
+.life-shree-fun h2,
+.life-shree-fun p,
+.life-shree-fun li {
+  color: var(--white);
+}
+@media (max-width: 900px) {
+  .life-hero {
+    height: 320px;
+  }
+  .life-title {
+    left: 30px;
+  }
+  .life-title h1 {
+    font-size: 2.7rem;
+  }
+  .life-shree-about,
+  .life-shree-learning,
+  .life-shree-fun {
+    grid-template-columns: 1fr;
+    padding: 50px 25px;
+    gap: 35px;
+  }
+  .life-shree-text h2 {
+    font-size: 2rem;
+  }
+  .life-shree-text p,
+  .life-shree-text li {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+}
+@media (max-width: 500px) {
+  .life-hero {
+    height: 250px;
+  }
+  .life-title h1 {
+    font-size: 2rem;
+  }
+}
