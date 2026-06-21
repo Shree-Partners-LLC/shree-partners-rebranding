@@ -81,26 +81,26 @@ export default function DataManagement() {
         <h2>Service Offerings</h2>
 
         <div className="offerings-grid">
-          <a href="/test-automation" className="offering-card">
+          <a href="/network-operations" className="offering-card">
             <FaNetworkWired className="offering-icon" />
             <h3>Network Operations Center</h3>
           </a>
 
-          <a href="/full-stack-development" className="offering-card">
+          <a href="/data-center-operations" className="offering-card">
             <FaServer className="offering-icon" />
             <h3>Data Center Operations</h3>
           </a>
 
-          <a href="/mobility" className="offering-card">
+          <a href="/cybersecurity" className="offering-card">
             <FaShieldAlt className="offering-icon" />
             <h3>Cybersecurity and Threat Management</h3>
           </a>
 
-          <a href="/digital-marketing" className="offering-card">
+          <a href="/cloud-management" className="offering-card">
             <FaCloud className="offering-icon" />
             <h3>Cloud Management</h3>
           </a>
-          <a href="/intranet-solutions" className="offering-card">
+          <a href="/devops" className="offering-card">
             <FaCodeBranch className="offering-icon" />
             <h3>DevOps Consulting and Implementation</h3>
           </a>

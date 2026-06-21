@@ -1,23 +1,37 @@
-import "./TestAutomation.css";
+import "./new.css";
 import { FaCheckCircle } from "react-icons/fa";
 import serviceImg from "../assets/application-services.jpg";
 import automationDiagram from "../assets/Test-Automation-diagram.png";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 function TestAutomation() {
   return (
     <>
-       <Navbar />
-      {/* HERO SECTION */}
-
+      <Navbar />
       <section className="test-hero">
         <div className="hero-content">
-          <h4>APPLICATION SERVICES AND AUTOMATION</h4>
-          <h1>Test Automation</h1>
-        </div>
-        
-      </section>
+          <div className="hero-inner">
+            <h4>APPLICATION SERVICES AND AUTOMATION</h4>
 
-      {/* TESTING FOR SUCCESS */}
+            <h1>Test Automation</h1>
+
+           
+          </div>
+        </div>
+
+        <div
+          className="hero-image"
+          style={{
+            backgroundImage: `
+        linear-gradient(
+          rgba(11,20,53,0.55),
+          rgba(11,20,53,0.55)
+        ),
+        url(${serviceImg})
+      `,
+          }}
+        ></div>
+      </section>
 
       <section className="test-intro">
         <div className="container">
@@ -46,19 +60,15 @@ function TestAutomation() {
         </div>
       </section>
 
-      {/* OVERVIEW */}
-
       <section className="test-overview">
         <div className="container">
-
           <h2>Test Automation Overview</h2>
 
           <div className="overview-grid">
-
             <div>
               <p>
-                At Shree Partners, our frameworks handle three key components
-                of test automation: assessment, implementation and
+                At Shree Partners, our frameworks handle three key components of
+                test automation: assessment, implementation and
                 post-implementation.
               </p>
 
@@ -78,113 +88,103 @@ function TestAutomation() {
               <li>Post-implementation support with upgrades</li>
               <li>On-demand upgrades to different environments</li>
             </ul>
-
           </div>
-
         </div>
       </section>
-      {/* IMAGE BANNER */}
 
+      <section className="benefits-section">
+        <h2 className="benefits-title">Key Benefits</h2>
 
-{/* KEY BENEFITS */}
-<section className="benefits-section">
-  <h2 className="benefits-title">Key Benefits</h2>
+        <div className="benefits-grid">
+          <div className="benefit-item">
+            <div className="benefit-icon">✓</div>
+            <h3>Data-driven testing</h3>
+            <p>
+              Handles disparate data sets and multiple variables in complex
+              workflows
+            </p>
+          </div>
 
-  <div className="benefits-grid">
+          <div className="benefit-item">
+            <div className="benefit-icon">✓</div>
+            <h3>Consistency and accuracy</h3>
+            <p>Across subsets through comprehensive testing</p>
+          </div>
 
-    <div className="benefit-item">
-      <div className="benefit-icon">✓</div>
-      <h3>Data-driven testing</h3>
-      <p>Handles disparate data sets and multiple variables in complex workflows</p>
-    </div>
+          <div className="benefit-item">
+            <div className="benefit-icon">✓</div>
+            <h3>Load and performance testing</h3>
+            <p>In concurrent user sessions</p>
+          </div>
 
-    <div className="benefit-item">
-      <div className="benefit-icon">✓</div>
-      <h3>Consistency and accuracy</h3>
-      <p>Across subsets through comprehensive testing</p>
-    </div>
+          <div className="benefit-item">
+            <div className="benefit-icon">✓</div>
+            <h3>Parallel testing</h3>
+            <p>To support agile methodologies</p>
+          </div>
 
-    <div className="benefit-item">
-      <div className="benefit-icon">✓</div>
-      <h3>Load and performance testing</h3>
-      <p>In concurrent user sessions</p>
-    </div>
+          <div className="benefit-item">
+            <div className="benefit-icon">✓</div>
+            <h3>Faster regression testing</h3>
+            <p>To roll out upgrades</p>
+          </div>
 
-    <div className="benefit-item">
-      <div className="benefit-icon">✓</div>
-      <h3>Parallel testing</h3>
-      <p>To support agile methodologies</p>
-    </div>
+          <div className="benefit-item">
+            <div className="benefit-icon">✓</div>
+            <h3>Reduced testing time</h3>
+            <p>60% compared to manual testing</p>
+          </div>
+        </div>
+      </section>
 
-    <div className="benefit-item">
-      <div className="benefit-icon">✓</div>
-      <h3>Faster regression testing</h3>
-      <p>To roll out upgrades</p>
-    </div>
+     
+      <section className="diagram-section">
+        <div className="container">
+          <h2>Automation Testing Framework</h2>
 
-    <div className="benefit-item">
-      <div className="benefit-icon">✓</div>
-      <h3>Reduced testing time</h3>
-      <p>60% compared to manual testing</p>
-    </div>
+          <img
+            src={automationDiagram}
+            alt="Automation Testing Diagram"
+            className="diagram-image"
+          />
+        </div>
+      </section>
+      <section className="tools-section">
+        <div className="container">
+          <h2 className="tools-heading">Testing Tools Exposure</h2>
 
-  </div>
-</section>
+          <div className="tools-grid">
+            <div>
+              <p>Apache JMeter</p>
+              <p>Eclipse</p>
+              <p>JAWS for Windows</p>
+              <p>JU Unit</p>
+              <p>QTP</p>
+              <p>Visual Studio</p>
+            </div>
 
-{/* AUTOMATION TESTING SERVICES DIAGRAM */}
-<section className="diagram-section">
-  <div className="wrap">
-    <h2>Automation Testing Framework</h2>
+            <div>
+              <p>Apache Log4J</p>
+              <p>GitHub</p>
+              <p>Jenkins</p>
+              <p>Maven</p>
+              <p>SE</p>
+              <p>Test NG</p>
+            </div>
 
-    <img
-      src={automationDiagram}
-      alt="Automation Testing Diagram"
-      className="diagram-image"
-    />
-  </div>
-</section>
-<section className="tools-section">
-  <div className="wrap">
-    <h2 className="tools-heading">
-      Testing Tools Exposure
-    </h2>
-
-    <div className="tools-grid">
-
-      <div>
-        <p>Apache JMeter</p>
-        <p>Eclipse</p>
-        <p>JAWS for Windows</p>
-        <p>JU Unit</p>
-        <p>QTP</p>
-        <p>Visual Studio</p>
-      </div>
-
-      <div>
-        <p>Apache Log4J</p>
-        <p>GitHub</p>
-        <p>Jenkins</p>
-        <p>Maven</p>
-        <p>SE</p>
-        <p>Test NG</p>
-      </div>
-
-      <div>
-        <p>Bugzilla</p>
-        <p>HP Application Lifecycle Management</p>
-        <p>JIRA</p>
-        <p>Microsoft Visual Studio</p>
-        <p>Soap UI</p>
-        <p>TFS</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-      {/* BENEFITS */}
-
-      
-    </>
+            <div>
+              <p>Bugzilla</p>
+              <p>HP Application Lifecycle Management</p>
+              <p>JIRA</p>
+              <p>Microsoft Visual Studio</p>
+              <p>Soap UI</p>
+              <p>TFS</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Footer />
+         </>
   );
 }
 

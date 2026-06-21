@@ -93,7 +93,7 @@ export default function ApplicationServices() {
             <h3>Mobility</h3>
           </a>
 
-          <a href="/digital-marketing" className="offering-card">
+          <a href="/digital-marketing-collaboration" className="offering-card">
             <FaBullseye className="offering-icon" />
             <h3>Digital Marketing and Collaboration</h3>
           </a>
