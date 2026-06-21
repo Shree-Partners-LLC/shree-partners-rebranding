@@ -1,0 +1,150 @@
+.airline {
+  width: 100%;
+  background: #f2f2f2;
+}
+.airline-hero {
+  position: relative;
+}
+.airline-hero img {
+  width: 100%;
+  display: block;
+}
+.airline-overlay {
+  position: absolute;
+  top: 40%;
+  left: 60px;
+  color: white;
+}
+.airline-overlay h1 {
+  font-size: 58px;
+  font-weight: 300;
+}
+.airline-intro {
+  padding: 60px;
+}
+.airline-intro h2 {
+  text-align: center;
+  color: #0077b6;
+  font-size: 42px;
+  margin-bottom: 50px;
+}
+.airline-intro-content {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.airline-text {
+  flex: 1;
+}
+.airline-text p {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #444;
+}
+.airline-image {
+  flex: 1;
+}
+.airline-image img {
+  width: 100%;
+}
+.airline-box-section {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 30px;
+  padding: 0 60px 60px;
+}
+.airline-box {
+  background: white;
+  padding: 40px;
+}
+.airline-box h3 {
+  color: #0077b6;
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+.airline-box ul li,
+.airline-box p {
+  font-size: 20px;
+  line-height: 1.8;
+}
+.service-offerings {
+  background: #9c9c9c;
+  padding: 60px;
+}
+.service-offerings h2 {
+  text-align: center;
+  color: white;
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+.service-wrapper {
+  display: flex;
+  gap: 40px;
+}
+.service-image {
+  flex: 1;
+}
+.service-image img {
+  width: 100%;
+}
+.service-list {
+  flex: 2;
+  background: white;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.service-list ul li {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.business-value {
+  padding: 60px;
+  text-align: center;
+}
+.business-value h2 {
+  color: #0077b6;
+  font-size: 48px;
+}
+.business-value p {
+  margin: 20px 0 50px;
+  font-size: 22px;
+}
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+}
+.value-card {
+  background: white;
+  border: 1px solid #333;
+  padding: 35px;
+  text-align: left;
+}
+.value-icon {
+  font-size: 55px;
+  color: #0077b6;
+  margin-bottom: 20px;
+}
+.value-card h3 {
+  color: #0077b6;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.value-card ul li {
+  font-size: 20px;
+  line-height: 1.8;
+}
+@media(max-width:992px){
+  .airline-intro-content,
+  .service-wrapper{
+    flex-direction: column;
+  }
+  .airline-box-section,
+  .value-grid{
+    grid-template-columns: 1fr;
+  }
+  .service-list{
+    flex-direction: column;
+  }
+}

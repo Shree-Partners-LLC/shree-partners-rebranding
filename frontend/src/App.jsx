@@ -16,6 +16,22 @@ import AboutUs from "./components/About/About_Us";
 import MissionAndVision from "./components/About/Mission_and_Vision";
 import Alliances from "./components/About/Alliances";
 import Leadership from "./components/About/Leadership";
+// Healthcare
+import Healthcare from "./components/Industries/Healthcare/Healthcare";
+import Payer from "./components/Industries/Healthcare/Payer";
+import Provider from "./components/Industries/Healthcare/Provider";
+import PharmaAndLifeSciences from "./components/Industries/Healthcare/PharmaAndLifeSciences";
+
+// Travel & Hospitality
+import TravelAndHospitality from "./components/Industries/TravelAndHospitality/TravelAndHospitality";
+import Airline from "./components/Industries/TravelAndHospitality/Airline";
+import TravelManagement from "./components/Industries/TravelAndHospitality/TravelManagementCompanies";
+import Hospitality from "./components/Industries/TravelAndHospitality/Hospitality";
+
+// Other Industries
+import BankingAndFinance from "./components/Industries/BankingAndFinance";
+import Insurance from "./components/Industries/Insurance";
+import ProfessionalServices from "./components/Industries/ProfessionalServices";
 function App() {
   return (
     <>
@@ -33,6 +49,22 @@ function App() {
         <Route path="/mission-vision" element={<MissionAndVision />} />
         <Route path="/alliances" element={<Alliances />} />
         <Route path="/leadership" element={<Leadership />} />
+        {/* Industries Main Pages */}
+<Route path="/industries/banking-finance" element={<BankingAndFinance />} />
+<Route path="/industries/insurance" element={<Insurance />} />
+<Route path="/industries/professional-services" element={<ProfessionalServices />} />
+
+{/* Travel & Hospitality */}
+<Route path="/industries/travel-hospitality" element={<TravelAndHospitality />} />
+<Route path="/industries/airline" element={<Airline />} />
+<Route path="/industries/travel-management" element={<TravelManagement />} />
+<Route path="/industries/hospitality" element={<Hospitality />} />
+
+{/* Healthcare */}
+<Route path="/industries/healthcare" element={<Healthcare />} />
+<Route path="/industries/payer" element={<Payer />} />
+<Route path="/industries/provider" element={<Provider />} />
+<Route path="/industries/pharma" element={<PharmaAndLifeSciences />} />
         <Route path="/privacy_policy" element={<Privacy_Policy />} />
         <Route path="/cookie_policy" element={<Cookie_Policy />} />
         <Route path="/sitemap" element={<Sitemap />} />

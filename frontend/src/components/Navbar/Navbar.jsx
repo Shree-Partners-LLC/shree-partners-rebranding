@@ -79,6 +79,7 @@ function Navbar() {
                         </ul>
                     )}
                 </li>
+                
                 <li className="dropdown">
                     <button className="dropdown-btn"onClick={() => toggleDropdown("about")}>About</button>
                     {activeDropdown === "about" && (

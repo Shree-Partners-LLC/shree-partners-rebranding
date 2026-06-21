@@ -1,0 +1,170 @@
+:root {
+  --indigo: #111827;
+  --gold: #eca34f;
+  --bg: #F3F4F6;
+  --white: #FFFFFF;
+  --text: #1F2937;
+  --line: #D1D5DB;
+  --font: 'Albert Sans', sans-serif;
+}
+.healthcare{
+  font-family:var(--font);
+  color:var(--text);
+}
+.healthcare-hero{
+  position:relative;
+  height:70vh;
+}
+.healthcare-hero img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.healthcare-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(17,24,39,.65);
+  color:var(--white);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:0 8%;
+}
+.healthcare-overlay h1{
+  font-size:4rem;
+  margin-bottom:1rem;
+}
+.healthcare-overlay p{
+  font-size:1.2rem;
+  line-height:1.7;
+}
+.healthcare-intro,
+.segments,
+.offerings,
+.business-value{
+  padding:80px 8%;
+}
+.segments h2,
+.offerings h2,
+.business-value h2{
+  text-align:center;
+  color:var(--indigo);
+  margin-bottom:1rem;
+  font-size:2.4rem;
+}
+.segments>p,
+.business-value>p{
+  text-align:center;
+  margin-bottom:3rem;
+}
+.healthcare-content,
+.business-wrapper{
+  display:flex;
+  align-items:center;
+  gap:50px;
+}
+.healthcare-text,
+.healthcare-image,
+.business-card,
+.business-image{
+  flex:1;
+}
+.healthcare-text p{
+  margin-bottom:1rem;
+  line-height:1.8;
+}
+.healthcare-image img,
+.business-image img{
+  width:100%;
+  border-radius:16px;
+}
+.contact-btn{
+  display:inline-block;
+  margin-top:1rem;
+  padding:12px 28px;
+  background:var(--gold);
+  color:var(--white);
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:600;
+  transition:.3s;
+}
+.contact-btn:hover{
+  transform:translateY(-3px);
+}
+.segment-grid,
+.offer-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:25px;
+}
+.segment-card,
+.offer-card{
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:2rem;
+  text-decoration:none;
+  color:var(--text);
+  transition:.3s;
+}
+.segment-card:hover,
+.offer-card:hover{
+  transform:translateY(-6px);
+  border-color:var(--gold);
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+.segment-icon{
+  font-size:2.2rem;
+  color:var(--gold);
+  margin-bottom:1rem;
+}
+.segment-card h3,
+.offer-card h3{
+  color:var(--indigo);
+  margin-bottom:1rem;
+}
+.segment-card ul,
+.offer-card ul,
+.business-card ul{
+  padding-left:18px;
+}
+.segment-card li,
+.offer-card li,
+.business-card li{
+  margin-bottom:.7rem;
+  line-height:1.6;
+}
+.segment-card span{
+  color:var(--gold);
+  font-weight:600;
+}
+.business-card{
+  background:var(--bg);
+  padding:2rem;
+  border-radius:16px;
+}
+.business-icon{
+  font-size:2.5rem;
+  color:var(--gold);
+  margin-bottom:1rem;
+}
+@media(max-width:768px){
+  .healthcare-content,
+  .business-wrapper{
+    flex-direction:column;
+  }
+  .healthcare-overlay{
+    text-align:center;
+    align-items:center;
+  }
+  .healthcare-overlay h1{
+    font-size:2.5rem;
+  }
+  .healthcare-intro,
+  .segments,
+  .offerings,
+  .business-value{
+    padding:60px 5%;
+  }
+}
