@@ -1,0 +1,151 @@
+.tmc {
+  background: #f2f2f2;
+}
+.tmc-hero {
+  position: relative;
+}
+.tmc-hero img {
+  width: 100%;
+  display: block;
+}
+.tmc-overlay {
+  position: absolute;
+  top: 40%;
+  left: 80px;
+  color: #fff;
+}
+.tmc-overlay h1 {
+  font-size: 52px;
+  font-weight: 300;
+}
+.tmc-intro {
+  padding: 60px;
+}
+.tmc-intro h2,
+.tmc-business h2,
+.tmc-success h2 {
+  text-align: center;
+  color: #0077b6;
+  font-size: 42px;
+  margin-bottom: 40px;
+}
+.tmc-intro-content {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.tmc-text,
+.tmc-image {
+  flex: 1;
+}
+.tmc-text p {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #444;
+}
+.tmc-image img {
+  width: 100%;
+}
+.tmc-box-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 0 40px 60px;
+}
+.tmc-box {
+  background: #fff;
+  padding: 40px;
+}
+.tmc-box h3 {
+  color: #0077b6;
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+.tmc-box li {
+  margin-bottom: 14px;
+  line-height: 1.6;
+  font-size: 18px;
+}
+.tmc-business {
+  padding: 60px;
+}
+.tmc-business p {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+.tmc-business-content {
+  display: flex;
+  gap: 40px;
+}
+.tmc-business-card {
+  flex: 1;
+  border: 1px solid #333;
+  background: white;
+  padding: 35px;
+}
+.tmc-business-card li {
+  margin-bottom: 18px;
+  font-size: 20px;
+}
+.tmc-business-image {
+  flex: 1;
+}
+.tmc-business-image img {
+  width: 100%;
+}
+.tmc-success {
+  padding: 60px;
+}
+.tmc-success h3 {
+  text-align: center;
+  color: #0077b6;
+  font-size: 38px;
+  margin-top: 10px;
+}
+.tmc-success p {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+.tmc-success-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.tmc-success-card {
+  background: white;
+  border: 1px solid #333;
+  padding: 30px;
+}
+.tmc-success-card h4 {
+  color: #0077b6;
+  font-size: 34px;
+  margin: 20px 0;
+}
+.tmc-success-card li {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.tmc-success-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tmc-icon {
+  font-size: 55px;
+  color: #0077b6;
+}
+@media (max-width: 992px) {
+  .tmc-intro-content,
+  .tmc-business-content {
+    flex-direction: column;
+  }
+  .tmc-box-section,
+  .tmc-success-grid {
+    grid-template-columns: 1fr;
+  }
+  .tmc-overlay h1 {
+    font-size: 34px;
+  }
+}

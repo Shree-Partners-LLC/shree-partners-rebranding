@@ -1,0 +1,102 @@
+.provider {
+  width: 100%;
+}
+.provider-hero {
+  position: relative;
+}
+.provider-hero img {
+  width: 100%;
+  display: block;
+}
+.provider-overlay {
+  position: absolute;
+  top: 40%;
+  left: 70px;
+  color: white;
+}
+.provider-overlay h1 {
+  font-size: 56px;
+  font-weight: 400;
+}
+.provider-intro {
+  background: #f5f5f5;
+  padding: 60px 80px;
+}
+.provider-intro h2 {
+  text-align: center;
+  color: #0078b8;
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.provider-intro-content {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.provider-text {
+  flex: 1;
+}
+.provider-text p {
+  font-size: 21px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 25px;
+}
+.provider-text h3 {
+  font-size: 28px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 25px;
+}
+.provider-image {
+  flex: 1;
+}
+.provider-image img {
+  width: 100%;
+}
+.provider-services {
+  background: #8f8f8f;
+  padding: 60px 70px;
+}
+.provider-services h2 {
+  text-align: center;
+  color: white;
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+.provider-services > p {
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+.provider-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+}
+.provider-card {
+  background: white;
+  padding: 40px;
+  min-height: 650px;
+}
+.provider-card h3 {
+  color: #0078b8;
+  font-size: 42px;
+  margin-bottom: 25px;
+}
+.provider-card p {
+  font-size: 21px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  color: #444;
+}
+.provider-card ul {
+  padding-left: 25px;
+}
+.provider-card li {
+  font-size: 20px;
+  line-height: 2;
+  color: #444;
+}

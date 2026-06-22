@@ -1,0 +1,81 @@
+:root {
+  --indigo: #111827;
+  --gold: #eca34f;
+  --bg: #F3F4F6;
+  --white: #FFFFFF;
+  --text: #1F2937;
+  --line: #D1D5DB;
+  --font: 'Albert Sans', sans-serif;
+}
+.cookie {
+  background: var(--bg);
+  min-height: 100vh;
+  padding: 90px 7%;
+}
+.cookie-container {
+  max-width: 1200px;
+  margin: auto;
+  background: var(--white);
+  padding: 60px;
+  border-radius: 25px;
+  box-shadow: 0 20px 50px rgba(28,35,64,.12);
+}
+.cookie-title {
+  color: var(--indigo);
+  font-size: 3rem;
+  margin-bottom: 35px;
+}
+.cookie-title::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 4px;
+  background: var(--gold);
+  margin-top: 15px;
+  border-radius: 10px;
+}
+.cookie h2 {
+  color: var(--indigo);
+  font-size: 1.8rem;
+  margin: 35px 0 20px;
+}
+.cookie p {
+  color: var(--text);
+  font-size: 1.1rem;
+  line-height: 1.9;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+.browser-list {
+  margin-left: 30px;
+}
+.browser-list li {
+  color: var(--text);
+  margin-bottom: 12px;
+}
+.browser-list a {
+  color: var(--gold);
+  font-weight: 600;
+  text-decoration: none;
+}
+.browser-list a:hover {
+  color: var(--indigo);
+}
+@media (max-width:768px) {
+  .cookie {
+    padding: 60px 20px;
+  }
+  .cookie-container {
+    padding: 35px 25px;
+  }
+  .cookie-title {
+    font-size: 2.2rem;
+  }
+  .cookie h2 {
+    font-size: 1.4rem;
+  }
+  .cookie p,
+  .browser-list li {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,162 @@
+:root {
+  --indigo: #111827;
+  --gold: #eca34f;
+  --bg: #f3f4f6;
+  --white: #ffffff;
+  --text: #1f2937;
+  --line: #d1d5db;
+  --font: "Albert Sans", sans-serif;
+}
+.leadership {
+  background: var(--bg);
+  font-family: var(--font);
+}
+.leadership-hero {
+  height: 420px;
+  position: relative;
+  overflow: hidden;
+}
+.leadership-hero-image,
+.leadership-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.leadership-title {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.leadership-title h1 {
+  color: var(--white);
+  font-size: 4rem;
+  font-weight: 300;
+}
+.leadership-title h1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: var(--gold);
+  margin-top: 15px;
+}
+.leadership-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(17, 24, 39, 0.85),
+    rgba(17, 24, 39, 0.35)
+  );
+}
+.leadership-intro {
+  max-width: 1600px;
+  margin: auto;
+  padding: 50px 3%;
+  text-align: center;
+}
+.leadership-intro p {
+  color: var(--text);
+  font-size: 1.25rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+.leadership-intro h2 {
+  color: var(--indigo);
+  font-size: 3rem;
+  font-weight: 300;
+}
+.leaders-container {
+  max-width: 1800px;
+  margin: auto;
+  padding: 0 2% 70px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.leader-card {
+  position: relative;
+  background: var(--white);
+  border: 1px solid var(--line);
+  padding: 25px;
+  display: flex;
+  gap: 30px;
+  min-height: 520px;
+}
+.leader-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.leader-content {
+  flex: 1;
+}
+.leader-content h3 {
+  color: var(--indigo);
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.leader-content h4 {
+  color: var(--text);
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+}
+.leader-content p {
+  color: var(--text);
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+.linkedin-icon {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 38px;
+  height: 38px;
+  border: 2px solid #666;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+@media (max-width: 1200px) {
+  .leaders-container {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .leadership-title h1 {
+    font-size: 2.8rem;
+  }
+  .leadership-intro h2 {
+    font-size: 2rem;
+  }
+  .leader-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: auto;
+  }
+  .leader-content h3 {
+    font-size: 2.2rem;
+  }
+  .leader-content h4 {
+    font-size: 1.3rem;
+  }
+  .leader-image img {
+    width: 150px;
+    height: 150px;
+  }
+  .linkedin-icon {
+    position: static;
+    margin-top: 20px;
+  }
+}
