@@ -1,10 +1,10 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 
 import "./ApplicationServices.css";
-import serviceImg from "../assets/images4.jpeg";
-import detailsImg from "../assets/images6.webp";
-import storyImg from "../assets/images5.jpeg";
+import serviceImg from "../../assets/images4.jpeg";
+import detailsImg from "../../assets/images6.webp";
+import storyImg from "../../assets/images5.jpeg";
 import {
   FaNetworkWired,
   FaServer,

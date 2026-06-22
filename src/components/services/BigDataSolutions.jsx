@@ -1,10 +1,10 @@
 import "./new.css";
 import { FaCheckCircle } from "react-icons/fa";
-import serviceImg from "../assets/images.jpeg";
-import BigDataDiagram from "../assets/Big-Data-Challenges.png";
-import Footer from "../components/Footer";
-import DataPyramidDiagram from "../assets/Data-Value-Pyramid.png";
-import Navbar from "../components/Navbar";
+import serviceImg from "../../assets/images.jpeg";
+import BigDataDiagram from "../../assets/Big-Data-Challenges.png";
+import Footer from "../Footer";
+import DataPyramidDiagram from "../../assets/Data-Value-Pyramid.png";
+import Navbar from "../Navbar";
 function BigDataSolutions() {
   return (
     <>

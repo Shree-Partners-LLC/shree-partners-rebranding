@@ -1,9 +1,9 @@
 import "./new.css";
 import { FaCheckCircle } from "react-icons/fa";
-import serviceImg from "../assets/ai.jpg";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-function RealTimeAI() {
+import serviceImg from "../../assets/ai.jpg";
+import Footer from "../Footer";
+import Navbar from "../Navbar";
+function Development() {
   return (
     <>
       <Navbar />
@@ -12,7 +12,7 @@ function RealTimeAI() {
           <div className="hero-inner">
             <h4>Digital, AI and Machine Learning</h4>
 
-            <h1>Real-time AI on Cloud – IVR</h1>
+            <h1>Development, Machine Learning and Deep Learning</h1>
           </div>
         </div>
 
@@ -46,7 +46,7 @@ function RealTimeAI() {
           </p>
 
           <p>
-            At Shree Partners, we leverage the power of technology –
+            At <b>Shree Partners</b>, we leverage the power of technology –
             custom-built models and open source frameworks that process data and
             run sophisticated algorithms – to deliver tailored solutions that
             meet your business needs. Using deep learning algorithms, we
@@ -56,8 +56,6 @@ function RealTimeAI() {
             solutions to help you optimize business processes across the value
             chain, resulting in greater profitability and productivity.
           </p>
-
-       
         </div>
       </section>
 
@@ -70,8 +68,7 @@ function RealTimeAI() {
           <div className="benefit-item">
             <div className="benefit-icon">✓</div>
             <h3>Enable better decision-making</h3>
-        
-      
+
           </div>
 
           <div className="benefit-item">
@@ -83,22 +80,21 @@ function RealTimeAI() {
           <div className="benefit-item">
             <div className="benefit-icon">✓</div>
             <h3>Reduce or eliminate manual processes with automation</h3>
-            
           </div>
 
           <div className="benefit-item">
             <div className="benefit-icon">✓</div>
             <h3>Detect anomalies and changes in real time</h3>
-           
+            
           </div>
 
-
+        
         </div>
       </section>
-            <Footer/>
+        <Footer/>
+
     </>
   );
-
 }
 
-export default RealTimeAI;
+export default Development;

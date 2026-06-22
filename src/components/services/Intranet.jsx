@@ -1,9 +1,9 @@
 import "./new.css";
 import { FaCheckCircle } from "react-icons/fa";
-import serviceImg from "../assets/application-services.jpg";
-import intranetDiagram from "../assets/intanet-solutions-diagram.png";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import serviceImg from "../../assets/application-services.jpg";
+import intranetDiagram from "../../assets/intanet-solutions-diagram.png";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 function Intranet() {
   return (
     <>

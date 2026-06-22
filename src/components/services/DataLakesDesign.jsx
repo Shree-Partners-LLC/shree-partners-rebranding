@@ -1,11 +1,11 @@
 import "./new.css";
 import { FaCheckCircle } from "react-icons/fa";
-import serviceImg from "../assets/images.jpeg";
-import datalakeDiagram from "../assets/Enterprise-Data-Lake-Technology.png";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import serviceImg from "../../assets/images.jpeg";
+import datalakeDiagram from "../../assets/Enterprise-Data-Lake-Technology.png";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 
-import datalakeImg from "../assets/StreamingData.jpg";
+import datalakeImg from "../../assets/StreamingData.jpg";
 function DataLakesDesign() {
   return (
     <>

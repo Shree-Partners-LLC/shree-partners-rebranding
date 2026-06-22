@@ -1,11 +1,11 @@
 import "./mobility.css";
 import { FaCheckCircle } from "react-icons/fa";
-import serviceImg from "../assets/application-services.jpg";
-import DigitalDiagram from "../assets/DigiMarketing_capabilities.png";
-import digitalImg from "../assets/mobility.jpeg";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import digital_cms_Diagram from "../assets/CMS_diagram.png";
+import serviceImg from "../../assets/application-services.jpg";
+import DigitalDiagram from "../../assets/DigiMarketing_capabilities.png";
+import digitalImg from "../../assets/mobility.jpeg";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
+import digital_cms_Diagram from "../../assets/CMS_diagram.png";
 function DigitalMarketing() {
   return (
     <>

@@ -1,8 +1,8 @@
 import "./new.css";
 import { FaCheckCircle } from "react-icons/fa";
-import serviceImg from "../assets/application-services.jpg";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import serviceImg from "../../assets/application-services.jpg";
+import Footer from "../Footer";
+import Navbar from "../Navbar";
 function ProductEngineering() {
   return (
     <>

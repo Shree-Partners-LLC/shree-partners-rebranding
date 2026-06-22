@@ -1,9 +1,9 @@
 import "./mobility.css";
 import { FaCheckCircle } from "react-icons/fa";
-import serviceImg from "../assets/images.jpeg";
-import datavalueDiagram from "../assets/Data-Valuediagram.png";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import serviceImg from "../../assets/images.jpeg";
+import datavalueDiagram from "../../assets/Data-Valuediagram.png";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 function TestAutomation() {
   return (
     <>

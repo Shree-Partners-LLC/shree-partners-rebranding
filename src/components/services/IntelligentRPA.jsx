@@ -1,10 +1,10 @@
 import "./new.css";
 import { FaCheckCircle } from "react-icons/fa";
-import serviceImg from "../assets/ai.jpg";
-import rpaDiagram from "../assets/Robotic-Process-Automation-Capabilites.png";
-import Navbar from "../components/Navbar";
-import roboticDiagram from "../assets/Robotic-Process-Automation_Ecosystem.png";
-import Footer from "../components/Footer";
+import serviceImg from "../../assets/ai.jpg";
+import rpaDiagram from "../../assets/Robotic-Process-Automation-Capabilites.png";
+import Navbar from "../Navbar";
+import roboticDiagram from "../../assets/Robotic-Process-Automation_Ecosystem.png";
+import Footer from "../Footer";
 function IntelligentRPA() {
   return (
     <>

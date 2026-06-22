@@ -1,9 +1,9 @@
 import "./mobility.css";
 import { FaCheckCircle } from "react-icons/fa";
-import serviceImg from "../assets/images4.jpeg";
-import networkDiagram from "../assets/Network-Operation-services.jpg";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import serviceImg from "../../assets/images4.jpeg";
+import networkDiagram from "../../assets/Network-Operation-services.jpg";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 function CloudManagement() {
   return (
     <>

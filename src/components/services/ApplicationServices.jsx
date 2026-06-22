@@ -1,10 +1,10 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 
 import "./ApplicationServices.css";
-import serviceImg from "../assets/application-services.jpg";
-import detailsImg from "../assets/app-details.jpg";
-import storyImg from "../assets/automation-story.jpeg";
+import serviceImg from "../../assets/application-services.jpg";
+import detailsImg from "../../assets/app-details.jpg";
+import storyImg from "../../assets/automation-story.jpeg";
 import {
   FaCogs,
   FaLayerGroup,

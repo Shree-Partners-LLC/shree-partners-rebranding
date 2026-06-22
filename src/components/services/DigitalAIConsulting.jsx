@@ -1,9 +1,9 @@
 import "./new.css";
 import { FaCheckCircle } from "react-icons/fa";
-import serviceImg from "../assets/ai.jpg";
-import automationDiagram from "../assets/Test-Automation-diagram.png";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import serviceImg from "../../assets/ai.jpg";
+import automationDiagram from "../../assets/Test-Automation-diagram.png";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 function DigitalAIConsulting() {
   return (
     <>

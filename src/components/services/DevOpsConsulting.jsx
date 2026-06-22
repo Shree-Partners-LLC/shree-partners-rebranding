@@ -1,10 +1,10 @@
 import "./mobility.css";
 import { FaCheckCircle } from "react-icons/fa";
-import serviceImg from "../assets/images4.jpeg";
-import DevOpsDiagram from "../assets/DevOps.png";
-import Footer from "../components/Footer";
-import KPIsImg from "../assets/MetricsKPIs.jpg";
-import Navbar from "../components/Navbar";
+import serviceImg from "../../assets/images4.jpeg";
+import DevOpsDiagram from "../../assets/DevOps.png";
+import Footer from "../Footer";
+import KPIsImg from "../../assets/MetricsKPIs.jpg";
+import Navbar from "../Navbar";
 function DevOpsConsulting() {
   return (
     <>

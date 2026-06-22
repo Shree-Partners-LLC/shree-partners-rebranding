@@ -1,9 +1,9 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 
 import "./ApplicationServices.css";
-import serviceImg from "../assets/ai.jpg";
-import detailsImg from "../assets/conversational-ai.jpg";
+import serviceImg from "../../assets/ai.jpg";
+import detailsImg from "../../assets/conversational-ai.jpg";
 
 import {
   FaRobot,

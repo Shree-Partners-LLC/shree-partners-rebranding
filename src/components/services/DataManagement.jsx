@@ -1,10 +1,10 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 
 import "./ApplicationServices.css";
-import serviceImg from "../assets/images.jpeg";
-import detailsImg from "../assets/images2.jpeg";
-import storyImg from "../assets/images3.jpeg";
+import serviceImg from "../../assets/images.jpeg";
+import detailsImg from "../../assets/images2.jpeg";
+import storyImg from "../../assets/images3.jpeg";
 import {
   FaDatabase,
   FaWater,

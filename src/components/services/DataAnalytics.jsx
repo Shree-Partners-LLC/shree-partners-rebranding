@@ -1,8 +1,8 @@
 import "./TestAutomation.css";
 import { FaCheckCircle } from "react-icons/fa";
-import serviceImg from "../assets/application-services.jpg";
-import automationDiagram from "../assets/Test-Automation-diagram.png";
-import Navbar from "../components/Navbar";
+import serviceImg from "../../assets/application-services.jpg";
+import automationDiagram from "../../assets/Test-Automation-diagram.png";
+import Navbar from "../Navbar";
 function TestAutomation() {
   return (
     <>

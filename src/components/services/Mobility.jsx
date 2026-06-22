@@ -1,9 +1,9 @@
 import "./mobility.css";
 import { FaCheckCircle } from "react-icons/fa";
-import serviceImg from "../assets/application-services.jpg";
-import Footer from "../components/Footer";
-import mobilityImg from "../assets/mobility.jpeg";
-import Navbar from "../components/Navbar";
+import serviceImg from "../../assets/application-services.jpg";
+import Footer from "../Footer";
+import mobilityImg from "../../assets/mobility.jpeg";
+import Navbar from "../Navbar";
 function Mobility() {
   return (
     <>
