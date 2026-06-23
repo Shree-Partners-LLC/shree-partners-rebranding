@@ -15,41 +15,41 @@ function Navbar() {
                     <button className="dropdown-btn" onClick={() => toggleDropdown("services")}>Services</button>
                     {activeDropdown === "services" && (
                         <ul className="dropdown-menu">
-                            <li><a href="/services/ApplicationServices"><b>Application Services and Automation</b></a>
+                            <li><a href="/application-services"><b>Application Services and Automation</b></a>
                             <ul className="mini-dropdown-menu">
-                                <li><a href="/services/test-automation">Test Automation </a></li>
-                                <li><a href="/services/full-stack-development">Full Stack Development</a></li>
-                                <li><a href="/services/mobility">Mobility</a></li>
-                                <li><a href="/services/digital-marketing">Digital Marketing and Collaboration</a></li>
-                                <li><a href="/services/intranet">Intranet Solutions</a></li>
-                                <li><a href="/services/product-engineering">Product Engineering</a></li>
+                                <li><a href="/test-automation">Test Automation </a></li>
+                                <li><a href="/full-stack-development">Full Stack Development</a></li>
+                                <li><a href="/mobility">Mobility</a></li>
+                                <li><a href="/digital-marketing-collaboration">Digital Marketing and Collaboration</a></li>
+                                <li><a href="/intranet-solutions">Intranet Solutions</a></li>
+                                <li><a href="/product-engineering">Product Engineering</a></li>
                             </ul>
                             </li>
-                            <li><a href="/services/Aiml"><b>Digital, AI and Machine Learning</b></a>
+                            <li><a href="ai-ml"><b>Digital, AI and Machine Learning</b></a>
                             <ul className="mini-dropdown-menu">
-                                <li><a href="/services/nlp">Domain-specific NLP Engines</a></li>
-                                <li><a href="/services/rpa">Intelligent RPA</a></li>
-                                <li><a href="/services/deep-learning">Development, Machine Learning and Deep Learning</a></li>
-                                <li><a href="/services/ivr-ai">Real-time AI on Cloud – IVR</a></li>
-                                <li><a href="/services/ai-consulting">Digital and AI Consulting</a></li>
-                                <li><a href="/services/iot">Internet of Things (IoT) Solutions</a></li>
+                                <li><a href="/domain-specific-nlp">Domain-specific NLP Engines</a></li>
+                                <li><a href="/intelligent-rpa">Intelligent RPA</a></li>
+                                <li><a href="/machine-learning-deep-learning">Development, Machine Learning and Deep Learning</a></li>
+                                <li><a href="/real-time-ai-cloud-ivr">Real-time AI on Cloud – IVR</a></li>
+                                <li><a href="/digital-ai-consulting">Digital and AI Consulting</a></li>
+                                <li><a href="/iot-solutions">Internet of Things (IoT) Solutions</a></li>
                             </ul>
                             </li>
-                            <li><a href="/services/DataManagement"><b>Data Management and Analytics</b></a>
+                            <li><a href="/data-management"><b>Data Management and Analytics</b></a>
                             <ul className="mini-dropdown-menu">
-                                <li><a href="/services/big-data">Big Data Solutions</a></li>
-                                <li><a href="/services/data-lakes">Data Lakes Design, Strategy and Implementation</a></li>
-                                <li><a href="/services/data-science">Data Science, Predictive and Prescriptive Analytics</a></li>
-                                <li><a href="/services/business-intelligence">Business Intelligence and Analytics</a></li>
+                                <li><a href="/big-data-solutions">Big Data Solutions</a></li>
+                                <li><a href="/data-lakes">Data Lakes Design, Strategy and Implementation</a></li>
+                                <li><a href="/data-science">Data Science, Predictive and Prescriptive Analytics</a></li>
+                                <li><a href="/business-intelligence">Business Intelligence and Analytics</a></li>
                             </ul>
                             </li>
-                            <li><a href="/services/Enterprise"><b>Enterprise Operations Transformation</b></a>
+                            <li><a href="/enterprise"><b>Enterprise Operations Transformation</b></a>
                             <ul className="mini-dropdown-menu">
-                                <li><a href="/services/network-operations">Network Operations Center</a></li>
-                                <li><a href="/services/data-center">Data Center Operations</a></li>
-                                <li><a href="/services/cybersecurity">Cybersecurity and Threat Management</a></li>
-                                <li><a href="/services/cloud">Cloud Management</a></li>
-                                <li><a href="/services/devops">DevOps Consulting and Implementation</a></li>
+                                <li><a href="/network-operations">Network Operations Center</a></li>
+                                <li><a href="/data-center-operations">Data Center Operations</a></li>
+                                <li><a href="/cybersecurity">Cybersecurity and Threat Management</a></li>
+                                <li><a href="/cloud-management">Cloud Management</a></li>
+                                <li><a href="/devops">DevOps Consulting and Implementation</a></li>
                             </ul>
                             </li>
                         </ul>

@@ -1,10 +1,8 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 import "./ApplicationServices.css";
-import serviceImg from "../assets/application-services.jpg";
-import detailsImg from "../assets/app-details.jpg";
-import storyImg from "../assets/automation-story.jpeg";
+import serviceImg from "../../assets/application-services.jpg";
+import detailsImg from "../../assets/app-details.jpg";
+import storyImg from "../../assets/automation-story.jpeg";
 import {
   FaCogs,
   FaLayerGroup,
@@ -16,7 +14,7 @@ import {
 export default function ApplicationServices() {
   return (
     <>
-      <Navbar />
+     
       <section className="app-services">
         <div className="left-panel">
           <div className="content">
@@ -93,7 +91,7 @@ export default function ApplicationServices() {
             <h3>Mobility</h3>
           </a>
 
-          <a href="/digital-marketing" className="offering-card">
+          <a href="/digital-marketing-collaboration" className="offering-card">
             <FaBullseye className="offering-icon" />
             <h3>Digital Marketing and Collaboration</h3>
           </a>
@@ -158,14 +156,10 @@ export default function ApplicationServices() {
           </div>
         </div>
 
-        <div className="story-buttons">
-          <button className="contact-btn">Contact Us</button>
-
-          <button className="brochure-btn">Download Brochure</button>
-        </div>
+      
       </section>
 
-      <Footer />
+      
     </>
   );
 }

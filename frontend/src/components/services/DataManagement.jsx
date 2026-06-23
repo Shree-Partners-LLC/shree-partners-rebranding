@@ -1,10 +1,8 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 import "./ApplicationServices.css";
-import serviceImg from "../assets/images.jpeg";
-import detailsImg from "../assets/images2.jpeg";
-import storyImg from "../assets/images3.jpeg";
+import serviceImg from "../../assets/images.jpeg";
+import detailsImg from "../../assets/images2.jpeg";
+import storyImg from "../../assets/images3.jpeg";
 import {
   FaDatabase,
   FaWater,
@@ -14,7 +12,7 @@ import {
 export default function DataManagement() {
   return (
     <>
-      <Navbar />
+     
       <section className="app-services">
         <div className="left-panel">
           <div className="content">
@@ -81,22 +79,22 @@ export default function DataManagement() {
         <h2>Service Offerings</h2>
 
         <div className="offerings-grid">
-          <a href="/test-automation" className="offering-card">
+          <a href="//big-data-solutions" className="offering-card">
             <FaDatabase className="offering-icon" />
             <h3>Big Data Solutions</h3>
           </a>
 
-          <a href="/full-stack-development" className="offering-card">
+          <a href="/data-lakes" className="offering-card">
             <FaWater className="offering-icon" />
             <h3>Data Lakes Design, Strategy and Implementation</h3>
           </a>
 
-          <a href="/mobility" className="offering-card">
+          <a href="/data-science" className="offering-card">
             <FaChartLine className="offering-icon" />
             <h3>Data Science, Predictive and Prescriptive Analytics</h3>
           </a>
 
-          <a href="/digital-marketing" className="offering-card">
+          <a href="/business-intelligence" className="offering-card">
             <FaChartBar className="offering-icon" />
             <h3>Business Intelligence and Analytics</h3>
           </a>
@@ -155,14 +153,9 @@ export default function DataManagement() {
           </div>
         </div>
 
-        <div className="story-buttons">
-          <button className="contact-btn">Contact Us</button>
-
-          <button className="brochure-btn">Download Brochure</button>
-        </div>
       </section>
 
-      <Footer />
+      
     </>
   );
 }

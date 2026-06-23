@@ -19,10 +19,10 @@ function Footer() {
           </div>
           <div className="footer-column">
             <h3>Services</h3>
-            <a href="/services/application-services">Application Services and Automation</a>
-            <a href="/services/ai-ml">Digital, AI and ML Solutions</a>
-            <a href="/services/data-management">Data Management and Analytics</a>
-            <a href="/services/enterprise-operations">Enterprise Operations Transformation</a>
+            <a href="/application-services">Application Services and Automation</a>
+            <a href="/ai-ml">Digital, AI and ML Solutions</a>
+            <a href="/data-management">Data Management and Analytics</a>
+            <a href="/enterprise">Enterprise Operations Transformation</a>
           </div>
           <div className="footer-column">
             <h3>Industries</h3>

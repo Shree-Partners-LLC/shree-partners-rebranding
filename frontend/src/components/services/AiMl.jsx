@@ -1,9 +1,7 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 import "./ApplicationServices.css";
-import serviceImg from "../assets/ai.jpg";
-import detailsImg from "../assets/conversational-ai.jpg";
+import serviceImg from "../../assets/ai.jpg";
+import detailsImg from "../../assets/conversational-ai.jpg";
 
 import {
   FaRobot,
@@ -16,7 +14,7 @@ import {
 export default function TestAutomation() {
   return (
     <>
-      <Navbar />
+      
       <section className="app-services">
         <div className="left-panel">
           <div className="content">
@@ -67,7 +65,7 @@ export default function TestAutomation() {
               customized solutions that accelerate your growth and innovation.
             </p>
 
-            <button className="contact-btn">Contact Us</button>
+           
           </div>
 
           <div className="app-image">
@@ -79,32 +77,32 @@ export default function TestAutomation() {
         <h2>Service Offerings</h2>
 
         <div className="offerings-grid">
-          <a href="/Domain-specific" className="offering-card">
+          <a href="/domain-specific-nlp" className="offering-card">
             <FaRobot  className="offering-icon" />
             <h3>Domain-specific NLP Engines</h3>
           </a>
 
-          <a href="/Intelligent_RPA" className="offering-card">
+          <a href="/intelligent-rpa" className="offering-card">
             <FaProjectDiagram className="offering-icon" />
             <h3>Intelligent RPA</h3>
           </a>
 
-          <a href="/Development" className="offering-card">
+          <a href="/machine-learning-deep-learning" className="offering-card">
             <FaBrain className="offering-icon" />
             <h3>Development, Machine Learning and Deep Learning</h3>
           </a>
 
-          <a href="/IVR<" className="offering-card">
+          <a href="/real-time-ai-cloud-ivr<" className="offering-card">
             <FaCloud className="offering-icon" />
             <h3>Real-time AI on Cloud – IVR</h3>
           </a>
 
-          <a href="/ AI-Consulting" className="offering-card">
+          <a href="/digital-ai-consulting" className="offering-card">
             <FaLightbulb className="offering-icon" />
             <h3>Digital and AI Consulting</h3>
           </a>
 
-          <a href="/IoT" className="offering-card">
+          <a href="/iot-solutions" className="offering-card">
             <FaMicrochip className="offering-icon" />
             <h3>Internet of Things (IoT) Solutions</h3>
           </a>
@@ -112,7 +110,7 @@ export default function TestAutomation() {
       </section>
       
 
-      <Footer />
+      
     </>
   );
 }
