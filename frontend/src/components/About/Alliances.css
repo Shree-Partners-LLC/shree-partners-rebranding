@@ -22,26 +22,6 @@
   height: 100%;
   object-fit: cover;
 }
-.alliances-title {
-  position: absolute;
-  top: 50%;
-  left: 8%;
-  transform: translateY(-50%);
-  z-index: 2;
-}
-.alliances-title h1 {
-  color: var(--white);
-  font-size: 4rem;
-  font-weight: 300;
-}
-.alliances-title h1::after {
-  content: "";
-  width: 100px;
-  height: 4px;
-  background: var(--gold);
-  display: block;
-  margin-top: 15px;
-}
 .alliances-hero::after {
   content: "";
   position: absolute;
@@ -52,23 +32,44 @@
     rgba(17, 24, 39, 0.35)
   );
 }
+.alliances-title {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.alliances-title h1 {
+  color: var(--white);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.alliances-title h1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: var(--gold);
+  margin-top: 15px;
+}
 .alliances-intro {
-  max-width: 1700px;
-  margin: auto;
-  padding: 50px 3%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 40px;
 }
 .alliances-intro p {
-  font-size: 1.2rem;
-  line-height: 1.8;
   color: var(--text);
+  font-size: 1.2rem;
+  line-height: 1.9;
 }
 .alliances-intro strong {
   color: var(--indigo);
 }
 .alliances-content {
-  max-width: 1700px;
-  margin: auto;
-  padding: 0 3% 70px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px 80px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 35px;
@@ -76,12 +77,18 @@
 .alliances-card {
   background: var(--white);
   padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+.alliances-card:hover {
+  transform: translateY(-5px);
 }
 .alliances-card h2 {
   color: var(--indigo);
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: 300;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 .partner-item {
   display: flex;
@@ -95,7 +102,7 @@
 }
 .partner-item p {
   color: var(--text);
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   line-height: 1.8;
 }
 .partner-divider {
@@ -111,9 +118,14 @@
   flex-wrap: wrap;
 }
 .certifications img {
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
   object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.certifications img:hover {
+  transform: scale(1.03);
 }
 @media (max-width: 1200px) {
   .alliances-content {
@@ -122,19 +134,44 @@
 }
 @media (max-width: 768px) {
   .alliances-title h1 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
+  }
+  .alliances-intro,
+  .alliances-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .alliances-card {
+    padding: 25px;
   }
   .alliances-card h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .partner-item {
     flex-direction: column;
   }
   .partner-item img {
-    width: 150px;
+    width: 140px;
+    margin: 0 auto;
+  }
+  .partner-item p {
+    font-size: 1rem;
   }
   .certifications img {
-    width: 500px;
-    height: 500px;
+    max-width: 300px;
+  }
+}
+@media (max-width: 480px) {
+  .alliances-title {
+    left: 5%;
+  }
+  .alliances-title h1 {
+    font-size: 2rem;
+  }
+  .alliances-intro p {
+    font-size: 1rem;
+  }
+  .certifications img {
+    max-width: 250px;
   }
 }

@@ -1,11 +1,11 @@
 :root {
   --indigo: #111827;
   --gold: #eca34f;
-  --bg: #F3F4F6;
-  --white: #FFFFFF;
-  --text: #1F2937;
-  --line: #D1D5DB;
-  --font: 'Albert Sans', sans-serif;
+  --bg: #f3f4f6;
+  --white: #ffffff;
+  --text: #1f2937;
+  --line: #d1d5db;
+  --font: "Albert Sans", sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -42,10 +42,10 @@
   left: 8%;
   transform: translateY(-50%);
   z-index: 2;
-  color: var(--white);
 }
 .life-title h1 {
-  font-size: 4rem;
+  color: var(--white);
+  font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 300;
   letter-spacing: 1px;
 }
@@ -64,29 +64,37 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 55px;
-  padding: 70px 8%;
+  gap: 60px;
+  padding: 80px 8%;
 }
 .life-shree-img {
   overflow: hidden;
-  border-radius: 20px;
-  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
 .life-shree-img img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
-  transition: 0.4s ease;
+  transition: transform 0.4s ease;
 }
 .life-shree-img:hover img {
   transform: scale(1.05);
 }
 .life-shree-text h2 {
   color: var(--indigo);
-  font-size: 3rem;
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 300;
   margin-bottom: 25px;
+}
+.life-shree-text h2::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: var(--gold);
+  margin-top: 12px;
 }
 .life-shree-text p,
 .life-shree-text li {
@@ -105,7 +113,7 @@
   background: var(--white);
 }
 .life-shree-learning {
-  background: #eaf5f7;
+  background: rgba(236, 163, 79, 0.08);
 }
 .life-shree-fun {
   background: var(--indigo);
@@ -115,6 +123,9 @@
 .life-shree-fun li {
   color: var(--white);
 }
+.life-shree-fun h2::after {
+  background: var(--gold);
+}
 @media (max-width: 900px) {
   .life-hero {
     height: 320px;
@@ -123,14 +134,14 @@
     left: 30px;
   }
   .life-title h1 {
-    font-size: 2.7rem;
+    font-size: 2.8rem;
   }
   .life-shree-about,
   .life-shree-learning,
   .life-shree-fun {
     grid-template-columns: 1fr;
-    padding: 50px 25px;
-    gap: 35px;
+    padding: 60px 25px;
+    gap: 40px;
   }
   .life-shree-text h2 {
     font-size: 2rem;
@@ -138,14 +149,25 @@
   .life-shree-text p,
   .life-shree-text li {
     font-size: 1rem;
-    line-height: 1.7;
+    line-height: 1.8;
   }
 }
 @media (max-width: 500px) {
   .life-hero {
-    height: 250px;
+    height: 260px;
+  }
+  .life-title {
+    left: 20px;
   }
   .life-title h1 {
     font-size: 2rem;
+  }
+  .life-shree-about,
+  .life-shree-learning,
+  .life-shree-fun {
+    padding: 45px 20px;
+  }
+  .life-shree-text h2 {
+    font-size: 1.7rem;
   }
 }

@@ -41,8 +41,9 @@
 }
 .about-title h1 {
   color: var(--white);
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 300;
+  letter-spacing: 1px;
 }
 .about-title h1::after {
   content: "";
@@ -54,28 +55,40 @@
 }
 .about-intro {
   max-width: 1400px;
-  margin: auto;
+  margin: 0 auto;
   padding: 60px 40px;
   text-align: center;
 }
 .about-intro p {
   color: var(--text);
-  font-size: 2rem;
-  line-height: 1.6;
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  line-height: 1.8;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 .about-company {
   max-width: 1400px;
-  margin: auto;
-  padding: 0 40px 80px;
+  margin: 0 auto 80px;
+  padding: 60px 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
-  background-color: var(--indigo);
+  background: var(--indigo);
+  border-radius: 16px;
 }
 .about-company-image img {
   width: 100%;
   border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+.about-company-image:hover img {
+  transform: scale(1.03);
+}
+.about-company-content h3 {
+  color: var(--white);
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 .about-company-content p {
   color: var(--white);
@@ -83,14 +96,9 @@
   line-height: 1.9;
   margin-bottom: 25px;
 }
-.about-company-content h3 {
-  color: var(--white);
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
 .global-section {
   background: var(--white);
-  color: var(--white);
+  color: var(--text);
   padding: 70px 40px;
 }
 .global-content p {
@@ -99,15 +107,16 @@
 }
 .global-map {
   max-width: 1400px;
-  margin: auto;
+  margin: 0 auto;
 }
 .global-map img {
   width: 100%;
-  height:100%;
+  height: 100%;
+  object-fit: cover;
 }
 .iso-section {
   padding: 80px 40px;
-  background-color: var(--indigo);
+  background: var(--indigo);
 }
 .iso-section h2 {
   text-align: center;
@@ -118,7 +127,7 @@
 }
 .iso-container {
   max-width: 1400px;
-  margin: auto;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 40px;
@@ -126,10 +135,11 @@
 .iso-card {
   background: var(--white);
   padding: 40px;
-  border-radius: 12px;
+  border-radius: 16px;
   display: flex;
   gap: 30px;
   align-items: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 .iso-logo img {
   width: 160px;
@@ -144,11 +154,15 @@
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+.iso-image:hover img {
+  transform: scale(1.03);
 }
 .success-section {
   padding: 80px 40px;
   text-align: center;
-  background:var(--white)
+  background: var(--white);
 }
 .success-section h2 {
   color: var(--indigo);
@@ -159,17 +173,20 @@
 .success-image {
   width: 100%;
   max-width: 1400px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
 }
 @media (max-width: 992px) {
   .about-company,
   .iso-container {
     grid-template-columns: 1fr;
   }
-  .about-intro p {
-    font-size: 1.4rem;
-  }
   .about-title h1 {
     font-size: 2.8rem;
+  }
+  .about-intro p {
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 768px) {
@@ -181,11 +198,35 @@
     text-align: center;
     margin-bottom: 20px;
   }
-  .about-intro p {
-    font-size: 1.2rem;
-  }
   .success-section h2,
   .iso-section h2 {
     font-size: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .about-title {
+    left: 5%;
+  }
+  .about-intro,
+  .global-section,
+  .iso-section,
+  .success-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about-company {
+    padding: 25px;
+  }
+  .iso-card {
+    padding: 25px;
+  }
+  .about-company-content h3 {
+    font-size: 1.6rem;
+  }
+  .about-intro p {
+    font-size: 1.1rem;
+  }
+  .about-title h1 {
+    font-size: 2.2rem;
   }
 }
