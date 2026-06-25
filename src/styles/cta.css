@@ -1,69 +1,35 @@
 .cta{
-
-background:linear-gradient(170deg,#1C2340,#141A30);
-
-padding:65px;
-
-border-radius:20px;
-
-display:grid;
-
-grid-template-columns:1.2fr .8fr;
-
-gap:50px;
-
-align-items:center;
-
-color:white;
-
+    background:linear-gradient(170deg,#1C2340,#141A30);
+    padding:65px;
+    border-radius:20px;
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:50px;
+    align-items:center;
+    color:white;
 }
-
 .cta h2{
-
-font-size:40px;
-
-margin-bottom:18px;
-
-color:white;
-
+    font-size:40px;
+    margin-bottom:18px;
+    color:white;
 }
-
 .cta p{
-
-color:#C0C7DA;
-
-font-size:17px;
-
+    color:#C0C7DA;
+    font-size:17px;
 }
-
 .cta-box{
-
-text-align:right;
-
+    text-align:right;
 }
-
 .mail{
-
-display:block;
-
-margin-top:18px;
-
-color:#BBC1D6;
-
+    display:block;
+    margin-top:18px;
+    color:#BBC1D6;
 }
-
 @media(max-width:900px){
-
-.cta{
-
-grid-template-columns:1fr;
-
-}
-
-.cta-box{
-
-text-align:left;
-
-}
-
+    .cta{
+        grid-template-columns:1fr;
+    }
+    .cta-box{
+        text-align:left;
+    }
 }

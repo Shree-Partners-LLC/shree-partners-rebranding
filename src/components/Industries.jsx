@@ -11,7 +11,6 @@ function Industries() {
             Deep roots in complex, regulated industries.
           </h2>
         </div>
-
         <div className="ind-row">
           <Link to="/travel-hospitality" className="chip">
             Travel & Hospitality
@@ -34,5 +33,4 @@ function Industries() {
     </section>
   );
 }
-
 export default Industries;

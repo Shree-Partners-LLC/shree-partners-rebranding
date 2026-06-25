@@ -1,69 +1,37 @@
 :root{
-
---display:'Bricolage Grotesque',sans-serif;
-
---body:'Albert Sans',sans-serif;
-
---mono:'Spline Sans Mono',monospace;
-
+    --display:'Bricolage Grotesque',sans-serif;
+    --body:'Albert Sans',sans-serif;
+    --mono:'Spline Sans Mono',monospace;
 }
-
 body{
-
-font-family:var(--body);
-
+    font-family:var(--body);
 }
-
 html{
-scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
-
 h1,h2,h3{
-
-font-family:var(--display);
-
+    font-family:var(--display);
 }
-
 .eyebrow,
 .term-body{
-
-font-family:var(--mono);
-
+    font-family:var(--mono);
 }
 .wrap{
-
-max-width:1140px;
-
-margin:auto;
-
-padding:0 24px;
-
+    max-width:1140px;
+    margin:auto;
+    padding:0 24px;
 }
-
 section{
-
-padding:90px 0;
-
+    padding:90px 0;
 }
-
 img{
-
-max-width:100%;
-
-display:block;
-
+    max-width:100%;
+    display:block;
 }
-
 a{
-
-text-decoration:none;
-
-color:inherit;
-
+    text-decoration:none;
+    color:inherit;
 }
-
 ul{
-
-list-style:none;
-
+    list-style:none;
 }

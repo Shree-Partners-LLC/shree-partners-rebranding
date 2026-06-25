@@ -1,10 +1,8 @@
 import { useState } from "react";
 import "../styles/navbar.css";
 import { Link } from "react-router-dom";
-
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-
   return (
     <header>
       <div className="wrap nav">
@@ -40,5 +38,4 @@ function Navbar() {
     </header>
   );
 }
-
 export default Navbar;

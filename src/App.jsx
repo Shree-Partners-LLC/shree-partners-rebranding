@@ -1,5 +1,6 @@
-import { Routes, Route } from "react-router-dom";
-
+import {Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import DiscoveryCall from "./pages/DiscoveryCall";
 import TravelHospitality from "./pages/TravelHospitality";
@@ -24,5 +25,4 @@ function App() {
     </Routes>
   );
 }
-
 export default App;
