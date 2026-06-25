@@ -1,49 +1,36 @@
 import "../styles/industries.css";
-
+import { Link } from "react-router-dom";
 function Industries() {
   return (
     <section className="industries">
-
       <div className="wrap">
-
         <div className="sec-head">
-
-          <span className="eyebrow">
-            Where we've delivered
-          </span>
+          <span className="eyebrow">Where we've delivered</span>
 
           <h2 className="industry-title">
             Deep roots in complex, regulated industries.
           </h2>
-
         </div>
 
         <div className="ind-row">
-
-          <span className="chip">
+          <Link to="/travel-hospitality" className="chip">
             Travel & Hospitality
-          </span>
-
-          <span className="chip">
+          </Link>
+          <Link to="/insurance-claims" className="chip">
             Insurance & Claims
-          </span>
-
-          <span className="chip">
+          </Link>
+          <Link to="/logistics" className="chip">
             Logistics & Cold Chain
-          </span>
+          </Link>
 
-          <span className="chip">
+          <Link to="/banking" className="chip">
             Banking & Financial Services
-          </span>
-
-          <span className="chip">
+          </Link>
+          <Link to="/healthcare" className="chip">
             Healthcare
-          </span>
-
+          </Link>
         </div>
-
       </div>
-
     </section>
   );
 }
