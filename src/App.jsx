@@ -10,19 +10,19 @@ import Logistics from "./pages/Logistics";
 import InsuranceClaims from "./pages/InsuranceClaims";
 function App() {
   return (
+    <>
+    <Navbar/>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/discovery-call" element={<DiscoveryCall />} />
-
       <Route path="/travel-hospitality" element={<TravelHospitality />} />
-
       <Route path="/insurance-claims" element={<InsuranceClaims />} />
       <Route path="/banking" element={<Banking />} />
-
       <Route path="/healthcare" element={<Healthcare />} />
-
       <Route path="/logistics" element={<Logistics />} />
     </Routes>
+    <Footer/>
+    </>
   );
 }
 export default App;
