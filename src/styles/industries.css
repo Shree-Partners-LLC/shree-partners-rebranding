@@ -1,51 +1,26 @@
 .industries{
-
-padding-top:0;
-
+    padding-top:0;
 }
-
 .industry-title{
-
-font-size:32px;
-
+    font-size:32px;
 }
-
 .ind-row{
-
-display:flex;
-
-gap:15px;
-
-flex-wrap:wrap;
-
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
 }
-
 .chip{
-
-background:white;
-
-border:1px solid #D7DAE3;
-
-padding:12px 22px;
-
-border-radius:40px;
-
-font-size:15px;
-
-font-weight:500;
-
-color:#1C2340;
-
-transition:.3s;
-
+    background:white;
+    border:1px solid #D7DAE3;
+    padding:12px 22px;
+    border-radius:40px;
+    font-size:15px;
+    font-weight:500;
+    color:#1C2340;
+    transition:.3s;
 }
-
 .chip:hover{
-
-background:#1C2340;
-
-color:white;
-
-border-color:#1C2340;
-
+    background:#1C2340;
+    color:white;
+    border-color:#1C2340;
 }

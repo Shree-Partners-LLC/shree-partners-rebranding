@@ -1,149 +1,75 @@
 .sec-head{
-
-max-width:650px;
-
-margin-bottom:55px;
-
+    max-width:650px;
+    margin-bottom:55px;
 }
-
 .sec-head h2{
-
-font-size:42px;
-
-line-height:1.1;
-
-margin-bottom:18px;
-
-color:#1C2340;
-
+    font-size:42px;
+    line-height:1.1;
+    margin-bottom:18px;
+    color:#1C2340;
 }
-
 .sec-head p{
-
-font-size:18px;
-
-color:#6A7188;
-
+    font-size:18px;
+    color:#6A7188;
 }
-
 .svc-grid{
-
-display:grid;
-
-grid-template-columns:repeat(2,1fr);
-
-gap:22px;
-
+    display:grid;   
+    grid-template-columns:repeat(2,1fr);
+    gap:22px;
 }
-
 .svc{
-
-background:white;
-
-padding:34px;
-
-border-radius:14px;
-
-border:1px solid #D7DAE3;
-
-transition:.3s;
-
+    background:white;
+    padding:34px;
+    border-radius:14px;
+    border:1px solid #D7DAE3;
+    transition:.3s;
 }
-
 .svc:hover{
-
-border-color:#E89B2E;
-
-box-shadow:0 15px 30px rgba(0,0,0,.05);
-
+    border-color:#E89B2E;
+    box-shadow:0 15px 30px rgba(0,0,0,.05);
 }
-
 .svc-tag{
-
-display:block;
-
-margin-bottom:18px;
-
-font-size:12px;
-
-letter-spacing:2px;
-
-text-transform:uppercase;
-
-color:#C97F15;
-
-font-weight:600;
-
+    display:block;
+    margin-bottom:18px;
+    font-size:12px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:#C97F15;
+    font-weight:600;
 }
-
-.svc h3{
-
-font-size:24px;
-
-margin-bottom:12px;
-
-color:#1C2340;
-
+.svc h3{    
+    font-size:24px;
+    margin-bottom:12px;
+    color:#1C2340;
 }
-
 .svc p{
-
-color:#6A7188;
-
-font-size:16px;
-
-margin-bottom:20px;
-
+    color:#6A7188;
+    font-size:16px;
+    margin-bottom:20px;
 }
-
 .svc ul{
-
-padding:0;
-
-margin:0;
-
+    padding:0;
+    margin:0;
 }
-
 .svc li{
-
-list-style:none;
-
-padding:10px 0 10px 24px;
-
-border-top:1px dashed #D7DAE3;
-
-position:relative;
-
-font-size:15px;
-
+    list-style:none;
+    padding:10px 0 10px 24px;
+    border-top:1px dashed #D7DAE3;
+    position:relative;
+    font-size:15px;
 }
-
 .svc li::before{
-
-content:"→";
-
-position:absolute;
-
-left:0;
-
-color:#C97F15;
-
-font-weight:bold;
-
+    content:"→";
+    position:absolute;
+    left:0;
+    color:#C97F15;
+    font-weight:bold;
 }
-
 @media(max-width:900px){
-
-.svc-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.sec-head h2{
-
-font-size:34px;
-
-}
-
+    .svc-grid{
+        grid-template-columns:1fr;
+    }
+    .sec-head h2{
+        font-size:34px;
+    }
 }

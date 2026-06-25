@@ -1,99 +1,50 @@
 .band{
-
-background:#1C2340;
-
-padding:80px 0;
-
-color:white;
-
+    background:#1C2340;
+    padding:80px 0;
+    color:white;
 }
-
 .band h2{
-
-color:white;
-
-font-size:40px;
-
-margin-bottom:15px;
-
+    color:white;
+    font-size:40px;
+    margin-bottom:15px;
 }
-
 .sub{
-
-max-width:700px;
-
-font-size:17px;
-
-color:#BBC1D6;
-
-margin-bottom:45px;
-
+    max-width:700px;
+    font-size:17px;
+    color:#BBC1D6;
+    margin-bottom:45px;
 }
-
 .band-grid{
-
-display:grid;
-
-grid-template-columns:repeat(4,1fr);
-
-border-top:1px solid rgba(255,255,255,.12);
-
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    border-top:1px solid rgba(255,255,255,.12);
 }
-
 .band-cell{
-
-padding:35px 25px 10px 0;
-
-border-right:1px solid rgba(255,255,255,.12);
-
+    padding:35px 25px 10px 0;
+    border-right:1px solid rgba(255,255,255,.12);
 }
-
 .band-cell:last-child{
-
-border-right:none;
-
+    border-right:none;
 }
-
 .band-cell strong{
-
-display:block;
-
-font-size:42px;
-
-color:#E89B2E;
-
-margin-bottom:8px;
-
+    display:block;
+    font-size:42px;
+    color:#E89B2E;
+    margin-bottom:8px;
 }
-
 .band-cell span{
-
-font-size:15px;
-
-color:#BBC1D6;
-
-line-height:1.6;
-
+    font-size:15px;
+    color:#BBC1D6;
+    line-height:1.6;
 }
-
 @media(max-width:900px){
-
-.band-grid{
-
-grid-template-columns:1fr 1fr;
-
-}
-
-.band-cell{
-
-border-bottom:1px solid rgba(255,255,255,.12);
-
-}
-
-.band-cell:nth-child(2){
-
-border-right:none;
-
-}
-
+    .band-grid{
+        grid-template-columns:1fr 1fr;
+    }
+    .band-cell{    
+        border-bottom:1px solid rgba(255,255,255,.12);
+    }
+    .band-cell:nth-child(2){
+        border-right:none;
+    }
 }
