@@ -59,11 +59,11 @@ header{
     font-weight:600;
 }
 .btn-solid{
-    background:#1C2340;
-    color:white;
+    background:#293668;
+    color:rgb(255, 255, 255);
 }
 .btn-solid:hover{
-    background:#141A30;
+    background:#293668;
     color:white;
 }
 .menu-btn{
