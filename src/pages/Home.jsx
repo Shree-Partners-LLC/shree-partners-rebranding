@@ -10,13 +10,13 @@ import Footer from "../components/Footer";
 function Home() {
   return (
     <>
-      <Hero />
-      <Services />
-      <ProofBand />
-      <HowWeWork />
-      <Industries />
-      <About />
-      <CTA />
+    <Hero />
+    <Services />
+    <ProofBand />
+    <HowWeWork />
+    <Industries />
+    <About />
+    <CTA />
     </>
   );
 }
