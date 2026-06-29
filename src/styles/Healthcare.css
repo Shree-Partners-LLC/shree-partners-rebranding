@@ -1,0 +1,282 @@
+.healthcare{
+  background:#f5f6f3;
+  color:#3C4358;
+}
+.healthcare-hero{
+  position:relative;
+  height:70vh;
+  min-height:500px;
+  overflow:hidden;
+}
+.healthcare-hero img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.healthcare-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(20,26,48,.55);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:#fff;
+  padding:20px;
+}
+.healthcare-overlay h1{
+  font-size:58px;
+  margin-bottom:18px;
+  color:#fff;
+}
+.healthcare-overlay p{
+  font-size:22px;
+  line-height:1.6;
+}
+.healthcare-intro{
+  padding:90px 8%;
+}
+.healthcare-content{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+.healthcare-text p{
+  font-size:17px;
+  line-height:1.8;
+  margin-bottom:22px;
+  color:#555;
+}
+
+.healthcare-image img{
+  width:100%;
+  border-radius:14px;
+  display:block;
+  box-shadow:0 12px 35px rgba(0,0,0,.15);
+}
+
+.contact-btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:13px 30px;
+  background:#1C2340;
+  color:#fff;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+  transition:.3s;
+}
+
+.contact-btn:hover{
+  background:#E89B2E;
+  color:#1C2340;
+}
+.segments{
+  padding:90px 8%;
+  background:#fff;
+}
+
+.segments h2{
+  text-align:center;
+  margin-bottom:15px;
+  font-size:40px;
+}
+
+.segments>p{
+  text-align:center;
+  color:#666;
+  margin-bottom:45px;
+}
+
+.segment-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.segment-card{
+  background:#fff;
+  border:1px solid #ddd;
+  border-radius:14px;
+  padding:35px;
+  text-decoration:none;
+  color:inherit;
+  transition:.3s;
+}
+
+.segment-card:hover{
+  transform:translateY(-6px);
+  border-color:#E89B2E;
+  box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.segment-icon{
+  font-size:38px;
+  color:#E89B2E;
+  margin-bottom:20px;
+}
+
+.segment-card h3{
+  margin-bottom:18px;
+  color:#1C2340;
+}
+
+.segment-card ul{
+  padding-left:20px;
+  color:#555;
+  line-height:1.8;
+}
+
+.segment-card span{
+  display:inline-block;
+  margin-top:22px;
+  color:#E89B2E;
+  font-weight:700;
+  font-size:14px;
+}
+.offerings{
+  padding:90px 8%;
+}
+
+.offerings h2{
+  text-align:center;
+  margin-bottom:55px;
+  font-size:40px;
+}
+
+.offer-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.offer-card{
+  background:#fff;
+  padding:35px;
+  border-radius:14px;
+  border:1px solid #ddd;
+  transition:.3s;
+}
+
+.offer-card:hover{
+  transform:translateY(-5px);
+  border-color:#E89B2E;
+}
+
+.offer-card h3{
+  margin-bottom:18px;
+  color:#1C2340;
+}
+
+.offer-card p{
+  color:#666;
+  line-height:1.8;
+}
+
+.offer-card ul{
+  padding-left:20px;
+  color:#666;
+  line-height:1.8;
+}
+.business-value{
+  padding:90px 8%;
+  background:#1C2340;
+  color:#fff;
+}
+
+.business-value h2{
+  color:#fff;
+  text-align:center;
+  margin-bottom:15px;
+  font-size:40px;
+}
+
+.business-value>p{
+  text-align:center;
+  color:#ddd;
+  margin-bottom:50px;
+}
+
+.business-wrapper{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  align-items:center;
+}
+
+.business-card{
+  background:#fff;
+  color:#444;
+  border-radius:14px;
+  padding:35px;
+}
+
+.business-icon{
+  font-size:40px;
+  color:#E89B2E;
+  margin-bottom:20px;
+}
+
+.business-card ul{
+  padding-left:22px;
+  line-height:1.9;
+}
+
+.business-image img{
+  width:100%;
+  border-radius:14px;
+  display:block;
+}
+@media(max-width:992px){
+
+  .healthcare-content,
+  .segment-grid,
+  .offer-grid,
+  .business-wrapper{
+    grid-template-columns:1fr;
+  }
+
+  .healthcare-overlay h1{
+    font-size:42px;
+  }
+
+  .healthcare-overlay p{
+    font-size:18px;
+  }
+
+  .segments h2,
+  .offerings h2,
+  .business-value h2{
+    font-size:32px;
+  }
+}
+
+@media(max-width:600px){
+
+  .healthcare-hero{
+    min-height:380px;
+  }
+
+  .healthcare-overlay h1{
+    font-size:34px;
+  }
+
+  .healthcare-overlay p{
+    font-size:16px;
+  }
+
+  .healthcare-intro,
+  .segments,
+  .offerings,
+  .business-value{
+    padding:70px 6%;
+  }
+
+  .segment-card,
+  .offer-card,
+  .business-card{
+    padding:25px;
+  }
+}

@@ -1,4 +1,5 @@
 import heroImg from "../assets/airline-banner.webp";
+import "../styles/Airline.css";
 import introImg from "../assets/airline-intro.jpeg";
 import serviceImg from "../assets/airline-service.jpeg";
 function Airline() {

@@ -1,5 +1,6 @@
 import heroImg from "../assets/pharma-banner.webp";
 import introImg from "../assets/pharma-intro.jpeg";
+import "../styles/HealthcareSubPages.css";
 function PharmaAndLifeSciences() {
   return (
     <div className="pharma">

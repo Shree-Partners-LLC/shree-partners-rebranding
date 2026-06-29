@@ -1,6 +1,7 @@
 import heroImg from "../assets/hospitality-banner.jpg";
 import introImg from "../assets/hospitality-intro.jpeg";
 import businessImg from "../assets/hospitality-business.jpeg";
+import "../styles/Hospitality.css";
 function Hospitality() {
   return (
     <div className="hospitality">

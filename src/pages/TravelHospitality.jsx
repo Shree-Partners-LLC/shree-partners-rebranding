@@ -1,59 +1,95 @@
-import heroImg from "../assets/provider-banner.jpg";
-import introImg from "../assets/provider-intro.webp";
-function Provider() {
+import { Link } from "react-router-dom";
+
+import heroImg from "../assets/airline-intro.jpeg";
+import solutionImg from "../assets/travel-solution.jpeg";
+import valueImg from "../assets/travel-value.jpeg";
+import bulbIcon from "../assets/bulb.jpeg";
+import "../styles/TravelHospitality.css";
+function TravelHospitality() {
   return (
-    <div className="provider">
-      <section className="provider-hero">
-        <img src={heroImg} alt="Provider" />
-        <div className="provider-overlay">
-          <h1>Provider</h1>
+    <div className="travel-page">
+      <section className="travel-hero">
+        <div className="travel-overlay">
+          <h1>Travel and Hospitality</h1>
+          <p>
+            Transform your business with
+            <br />
+            industry-leading technology
+          </p>
+        </div>
+        <img src={heroImg} alt="Travel Hospitality" />
+      </section>
+      <section className="travel-intro">
+        <div className="travel-content">
+          <div className="travel-text">
+            <p>
+              The travel and hospitality industry is witnessing a seismic shift
+              in customer behaviors due to increased competition, price wars and
+              new, disruptive technologies.
+            </p>
+            <h2>Shree Partners Solutions</h2>
+            <p>
+              Shree Partners helps travel, transportation and hospitality
+              clients improve business processes, manage costs, and grow revenue
+              through transformative technologies.
+            </p>
+            <Link to="/Contact" className="contact-btn">
+              Contact Us
+            </Link>
+          </div>
+          <div className="travel-image">
+            <img src={solutionImg} alt="Travel Solution" />
+          </div>
         </div>
       </section>
-      <section className="provider-intro">
-        <h2>Navigating the Future of Healthcare with Advanced Technology Solutions</h2>
-        <div className="provider-intro-content">
-          <div className="provider-text">
-            <p>To stay competitive, healthcare providers must embrace new business models that help them deliver higher levels of quality care at affordable costs.</p>
-            <p> Reforms and regulations are driving the need for greater collaboration and accountability while changing reimbursement models force providers to consider different patient care delivery models.</p>
-            <h3>In this “new normal,” how can healthcare provider deliver higher levels of quality care, collaborate better, and engage more fully with consumers?</h3>
-            <p>At Shree Partners, we work closely with healthcare providers to deliver innovative services and solutions that help create patient-centric systems that are interconnected, engaging and efficient.</p>
-          </div>
-          <div className="provider-image"><img src={introImg} alt="Provider" /></div>
-        </div>
-      </section>
-      <section className="provider-services">
-        <h2>Key Service Offerings</h2>
-        <p>From consulting through implementation and ongoing support, we offer these solutions and services:</p>
-        <div className="provider-grid">
-          <div className="provider-card">
-            <h3>Consulting Services</h3>
-            <p>We help optimize your business end-to-end: from assessment to strategy to implementation.</p>
+      <div className="segments-grid">
+        <Link to="/industries/airline" className="segment-card">
+          <i className="fa-solid fa-plane segment-icon"></i>
+          <span>Airlines</span>
+          <i className="fa-solid fa-arrow-right arrow-icon"></i>
+        </Link>
+
+        <Link to="/industries/travel-management" className="segment-card">
+          <i className="fa-solid fa-suitcase-rolling segment-icon"></i>
+          <span>Travel Management Companies (TMC)</span>
+          <i className="fa-solid fa-arrow-right arrow-icon"></i>
+        </Link>
+
+        <Link to="/industries/hospitality" className="segment-card">
+          <i className="fa-solid fa-hotel segment-icon"></i>
+          <span>Hospitality</span>
+          <i className="fa-solid fa-arrow-right arrow-icon"></i>
+        </Link>
+      </div>
+      <section className="business-value">
+        <h2>Business Value</h2>
+        <p className="business-text">
+          Benefits to travel and hospitality customers include:
+        </p>
+        <div className="business-wrapper">
+          <div className="business-box">
+            <i className="fa-regular fa-lightbulb business-icon"></i>
             <ul>
-              <li>Integrated Health Management</li>
-              <li>Hospital Performance Management</li>
-              <li>Clinical Care Management</li>
-              <li>EHR & HIE Systems</li>
-              <li>Health Intelligence and Analytics</li>
-              <li>ACO Compliance & Reviews</li>
-              <li>Regulatory Compliance (HIPPA, HL7)</li>
+              <li>
+                <strong>Reduce</strong> IT operational expenses by up to 30%
+              </li>
+              <li>
+                <strong>Improve</strong> ROI on capital expenses
+              </li>
+              <li>
+                <strong>Integrate</strong> IT, BPO and infrastructure services
+              </li>
+              <li>
+                <strong>Grow</strong> to new heights with innovation networks
+              </li>
             </ul>
           </div>
-          <div className="provider-card">
-            <h3>Technology Solutions and Services</h3>
-            <p>We offer contemporary and disruptive technology solutions that accelerate digital transformation for healthcare providers.</p>
-            <ul>
-              <li>System Integration</li>
-              <li>Industry and Platform Solutions</li>
-              <li>Infrastructure Solutions and Services</li>
-              <li>Application Development, Enhancement and Support</li>
-              <li>Clinical Data Integration</li>
-              <li>Enterprise Data Warehousing</li>
-              <li>Quality Assurance Services</li>
-            </ul>
+          <div className="business-image">
+            <img src={valueImg} alt="Business Value" />
           </div>
         </div>
       </section>
     </div>
   );
 }
-export default Provider;
+export default TravelHospitality;

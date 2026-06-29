@@ -1,0 +1,200 @@
+
+.hospitality{
+    background:#f5f6f3;
+    color:#3C4358;
+}
+.hospitality-hero{
+    position:relative;
+    height:70vh;
+    min-height:500px;
+    overflow:hidden;
+}
+
+.hospitality-hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.hospitality-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(20,26,48,.55);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hospitality-overlay h1{
+    color:#fff;
+    font-size:58px;
+}
+.hospitality-intro{
+    padding:90px 8%;
+}
+
+.hospitality-intro h2{
+    text-align:center;
+    font-size:40px;
+    color:#1C2340;
+    max-width:850px;
+    margin:0 auto 60px;
+}
+
+.hospitality-intro-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.hospitality-text p{
+    margin-bottom:22px;
+    line-height:1.9;
+    color:#555;
+    font-size:17px;
+}
+
+.hospitality-image img{
+    width:100%;
+    border-radius:14px;
+    display:block;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+.hospitality-services{
+    padding:90px 8%;
+    background:#fff;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+}
+
+.service-card{
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:14px;
+    padding:35px;
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-5px);
+    border-color:#E89B2E;
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+}
+
+.service-card h3{
+    color:#1C2340;
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+.service-card p{
+    line-height:1.8;
+    color:#666;
+    margin-bottom:18px;
+}
+
+.service-card ul{
+    padding-left:20px;
+}
+
+.service-card li{
+    margin-bottom:12px;
+    color:#555;
+}
+.hospitality-business{
+    background:#1C2340;
+    color:#fff;
+    padding:90px 8%;
+}
+
+.hospitality-business h2{
+    text-align:center;
+    color:#fff;
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.hospitality-business>p{
+    text-align:center;
+    color:#d8d8d8;
+    margin-bottom:50px;
+}
+
+.business-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.business-card{
+    background:#fff;
+    color:#444;
+    padding:35px;
+    border-radius:14px;
+}
+
+.business-icon{
+    font-size:42px;
+    color:#E89B2E;
+    margin-bottom:20px;
+}
+
+.business-card ul{
+    padding-left:20px;
+    line-height:1.9;
+}
+
+.business-card li{
+    margin-bottom:12px;
+}
+
+.business-image img{
+    width:100%;
+    border-radius:14px;
+    display:block;
+}
+@media(max-width:992px){
+
+    .hospitality-intro-content,
+    .hospitality-services,
+    .business-content{
+        grid-template-columns:1fr;
+    }
+
+    .hospitality-overlay h1{
+        font-size:42px;
+    }
+
+    .hospitality-intro h2,
+    .hospitality-business h2{
+        font-size:32px;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .hospitality-hero{
+        min-height:380px;
+    }
+
+    .hospitality-overlay h1{
+        font-size:34px;
+    }
+
+    .hospitality-intro,
+    .hospitality-services,
+    .hospitality-business{
+        padding:70px 6%;
+    }
+
+    .service-card,
+    .business-card{
+        padding:25px;
+    }
+
+}

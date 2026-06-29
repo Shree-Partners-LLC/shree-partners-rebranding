@@ -1,0 +1,257 @@
+.airline{
+    background:#F5F6F3;
+    color:#3C4358;
+}
+.airline-hero{
+    position:relative;
+    width:100%;
+    height:65vh;
+    overflow:hidden;
+}
+.airline-hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.airline-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(20,26,48,.65);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.airline-overlay h1{
+    color:#fff;
+    font-size:58px;
+    font-weight:800;
+    letter-spacing:-1px;
+}
+.airline-intro{
+    width:90%;
+    max-width:1200px;
+    margin:90px auto;
+}
+.airline-intro h2{
+    color:#1C2340;
+    font-size:40px;
+    margin-bottom:50px;
+    max-width:800px;
+    line-height:1.2;
+}
+.airline-intro-content{
+    display:flex;
+    gap:60px;
+    align-items:center;
+}
+.airline-text{
+    flex:1;
+}
+.airline-text p{
+    margin-bottom:24px;
+    color:#555;
+    line-height:1.9;
+    font-size:17px;
+}
+.airline-image{
+    flex:1;
+}
+.airline-image img{
+    width:100%;
+    border-radius:16px;
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+}
+.airline-box-section{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+    padding-bottom:100px;
+}
+.airline-box{
+    background:#fff;
+    padding:45px;
+    border-radius:16px;
+    border:1px solid #ddd;
+    transition:.3s;
+}
+.airline-box:hover{
+    transform:translateY(-6px);
+    border-color:#E89B2E;
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+}
+.airline-box h3{
+    color:#1C2340;
+    margin-bottom:25px;
+    font-size:28px;
+}
+.airline-box ul{
+    padding-left:18px;
+}
+.airline-box li{
+    margin-bottom:18px;
+    line-height:1.7;
+}
+.airline-box p{
+    line-height:1.8;
+    margin-bottom:18px;
+}
+.service-offerings{
+    background:#1C2340;
+    padding:100px 0;
+}
+.service-offerings h2{
+    color:#fff;
+    text-align:center;
+    font-size:42px;
+    margin-bottom:60px;
+}
+.service-wrapper{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    gap:60px;
+    align-items:center;
+}
+.service-image{
+    flex:1;
+}
+.service-image img{
+    width:100%;
+    border-radius:18px;
+}
+.service-list{
+    flex:1;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+}
+.service-list ul{
+    list-style:none;
+}
+.service-list li{
+    color:#fff;
+    padding:16px 0;
+    border-bottom:1px solid rgba(255,255,255,.12);
+    position:relative;
+    padding-left:28px;
+}
+.service-list li::before{
+    content:"✓";
+    position:absolute;
+    left:0;
+    color:#E89B2E;
+}
+
+.business-value{
+    width:90%;
+    max-width:1200px;
+    margin:100px auto;
+}
+
+.business-value h2{
+    text-align:center;
+    color:#1C2340;
+    font-size:42px;
+}
+
+.business-value>p{
+    text-align:center;
+    margin:18px 0 60px;
+    color:#666;
+}
+
+.value-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.value-card{
+    background:#fff;
+    border-radius:18px;
+    border:1px solid #ddd;
+    padding:40px 30px;
+    transition:.3s;
+}
+
+.value-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+    border-color:#E89B2E;
+}
+
+.value-icon{
+    font-size:42px;
+    color:#E89B2E;
+    margin-bottom:20px;
+}
+
+.value-card h3{
+    color:#1C2340;
+    margin-bottom:20px;
+}
+
+.value-card ul{
+    padding-left:18px;
+}
+
+.value-card li{
+    margin-bottom:14px;
+    line-height:1.7;
+}
+
+@media(max-width:992px){
+
+.airline-intro-content,
+.service-wrapper{
+    flex-direction:column;
+}
+
+.airline-box-section{
+    grid-template-columns:1fr;
+}
+
+.value-grid{
+    grid-template-columns:1fr;
+}
+
+.service-list{
+    grid-template-columns:1fr;
+}
+
+.airline-overlay h1{
+    font-size:42px;
+}
+
+.airline-intro h2,
+.service-offerings h2,
+.business-value h2{
+    font-size:32px;
+}
+
+}
+
+@media(max-width:576px){
+
+.airline-hero{
+    height:45vh;
+}
+
+.airline-overlay h1{
+    font-size:34px;
+}
+
+.airline-intro{
+    margin:60px auto;
+}
+
+.airline-box,
+.value-card{
+    padding:30px 22px;
+}
+
+}

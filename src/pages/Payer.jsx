@@ -1,5 +1,6 @@
 import heroImg from "../assets/payer-banner.webp";
 import introImg from "../assets/payer-intro.jpeg";
+import "../styles/HealthcareSubPages.css";
 function Payer() {
   return (
     <div className="payer">

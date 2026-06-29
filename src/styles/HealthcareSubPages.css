@@ -1,0 +1,251 @@
+.payer,
+.provider,
+.pharma{
+    width:100%;
+    background:#fff;
+}
+.payer-hero,
+.provider-hero,
+.pharma-hero{
+    position:relative;
+    height:60vh;
+}
+
+.payer-hero img,
+.provider-hero img,
+.pharma-hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.payer-overlay,
+.provider-overlay,
+.pharma-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.payer-overlay h1,
+.provider-overlay h1,
+.pharma-overlay h1{
+    color:#fff;
+    font-size:52px;
+    font-weight:700;
+}
+.payer-intro,
+.provider-intro,
+.pharma-intro{
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
+}
+
+.payer-intro h2,
+.provider-intro h2,
+.pharma-intro h2{
+    text-align:center;
+    font-size:36px;
+    color:#04164c;
+    margin-bottom:60px;
+    position:relative;
+}
+
+.payer-intro h2::after,
+.provider-intro h2::after,
+.pharma-intro h2::after{
+    content:"";
+    width:80px;
+    height:4px;
+    background:#f59e0b;
+    display:block;
+    margin:16px auto 0;
+}
+
+.payer-intro-content,
+.provider-intro-content,
+.pharma-intro-content{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:60px;
+    align-items:center;
+}
+
+.payer-text p,
+.provider-text p,
+.pharma-text p{
+    color:#555;
+    line-height:1.9;
+    margin-bottom:20px;
+}
+
+.payer-text h3,
+.provider-text h3,
+.pharma-text h3{
+    color:#04164c;
+    font-size:24px;
+    margin:30px 0 18px;
+    line-height:1.4;
+}
+
+.payer-image img,
+.provider-image img,
+.pharma-image img{
+    width:100%;
+    border-radius:12px;
+    display:block;
+}
+.payer-services,
+.provider-services,
+.pharma-services{
+    background:#f8f9fc;
+    padding:80px 0;
+}
+
+.payer-services h2,
+.provider-services h2,
+.pharma-services h2{
+    text-align:center;
+    font-size:36px;
+    color:#04164c;
+}
+
+.payer-services h2::after,
+.provider-services h2::after,
+.pharma-services h2::after{
+    content:"";
+    width:80px;
+    height:4px;
+    background:#f59e0b;
+    display:block;
+    margin:15px auto 25px;
+}
+
+.payer-services>p,
+.provider-services>p,
+.pharma-services>p{
+    text-align:center;
+    color:#666;
+    max-width:850px;
+    margin:0 auto 50px;
+    line-height:1.8;
+}
+.services-grid,
+.provider-grid,
+.pharma-grid{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+}
+.service-card,
+.provider-card,
+.pharma-card{
+    background:#fff;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.service-card:hover,
+.provider-card:hover,
+.pharma-card:hover{
+    transform:translateY(-8px);
+}
+
+.service-card h3,
+.provider-card h3,
+.pharma-card h3{
+    color:#04164c;
+    margin-bottom:18px;
+    font-size:24px;
+}
+
+.service-card p,
+.provider-card p,
+.pharma-card p{
+    color:#555;
+    line-height:1.8;
+    margin-bottom:18px;
+}
+
+.service-card ul,
+.provider-card ul,
+.pharma-card ul{
+    padding-left:20px;
+}
+
+.service-card li,
+.provider-card li,
+.pharma-card li{
+    margin-bottom:12px;
+    color:#555;
+    line-height:1.7;
+}
+@media(max-width:992px){
+
+.payer-intro-content,
+.provider-intro-content,
+.pharma-intro-content{
+    grid-template-columns:1fr;
+}
+
+.services-grid,
+.provider-grid,
+.pharma-grid{
+    grid-template-columns:1fr;
+}
+
+.payer-overlay h1,
+.provider-overlay h1,
+.pharma-overlay h1{
+    font-size:42px;
+}
+
+}
+
+@media(max-width:768px){
+
+.payer-hero,
+.provider-hero,
+.pharma-hero{
+    height:45vh;
+}
+
+.payer-overlay h1,
+.provider-overlay h1,
+.pharma-overlay h1{
+    font-size:34px;
+}
+
+.payer-intro h2,
+.provider-intro h2,
+.pharma-intro h2,
+
+.payer-services h2,
+.provider-services h2,
+.pharma-services h2{
+    font-size:30px;
+}
+
+.payer-text h3,
+.provider-text h3,
+.pharma-text h3{
+    font-size:22px;
+}
+
+.service-card,
+.provider-card,
+.pharma-card{
+    padding:28px;
+}
+
+}

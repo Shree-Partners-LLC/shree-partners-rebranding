@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
 import heroImg from "../assets/banking-banner.webp";
 import bankingImg from "../assets/banking-service.jpeg";
 import valueImg from "../assets/business-value.jpeg";
-function BankingAndFinance() {
+import "../styles/BankingAndFinance.css";
+function Banking() {
   return (
     <div className="banking-page">
       <section className="banking-hero">
@@ -17,7 +19,9 @@ function BankingAndFinance() {
             <p> Banking and financial organizations are witnessing increased disruption in key business areas including customer interaction, satisfaction, relationship management, servicing and business transparency.</p>
             <h2>Shree Partners Solutions</h2>
             <p>Shree Partners serves as your offshore partner to deliver improvements in customer servicing, operations and risk mitigation. Our leading-edge, secure systems help you quickly address market changes and create profitable customer relationships.</p>
-            <a href="/contact" className="contact-btn">Contact Us</a>
+           <Link to="/Contact" className="contact-btn">
+              Contact Us
+            </Link>
           </div>
           <div className="banking-image">
             <img src={bankingImg} alt="Banking Solutions" />
@@ -109,4 +113,4 @@ function BankingAndFinance() {
     </div>
   );
 }
-export default BankingAndFinance;
+export default Banking;

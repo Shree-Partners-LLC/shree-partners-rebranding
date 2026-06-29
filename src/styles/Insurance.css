@@ -1,0 +1,244 @@
+
+.insurance-page{
+    background:#f5f6f3;
+    color:#3C4358;
+}
+.insurance-hero{
+    position:relative;
+    height:70vh;
+    min-height:500px;
+    overflow:hidden;
+}
+
+.insurance-hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.insurance-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(20,26,48,.55);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+}
+
+.insurance-overlay h1{
+    font-size:58px;
+    color:#fff;
+    margin-bottom:15px;
+}
+
+.insurance-overlay p{
+    font-size:22px;
+    line-height:1.6;
+}
+.insurance-intro{
+    padding:90px 8%;
+}
+
+.insurance-intro-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.insurance-text p{
+    color:#555;
+    line-height:1.9;
+    margin-bottom:22px;
+    font-size:17px;
+}
+
+.insurance-text button{
+    margin-top:18px;
+    padding:14px 32px;
+    background:#1C2340;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.insurance-text button:hover{
+    background:#E89B2E;
+    color:#1C2340;
+}
+
+.insurance-image img{
+    width:100%;
+    border-radius:14px;
+    display:block;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+.insurance-services{
+    background:#fff;
+    padding:90px 8%;
+}
+
+.insurance-services h2{
+    text-align:center;
+    margin-bottom:55px;
+    font-size:40px;
+    color:#1C2340;
+}
+
+.insurance-services-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.insurance-card{
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:14px;
+    padding:35px;
+    transition:.3s;
+}
+
+.insurance-card:hover{
+    transform:translateY(-6px);
+    border-color:#E89B2E;
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+}
+
+.insurance-card h3{
+    color:#1C2340;
+    margin-bottom:12px;
+}
+
+.insurance-card h4{
+    color:#E89B2E;
+    margin-bottom:18px;
+    font-size:17px;
+}
+
+.insurance-card p{
+    color:#666;
+    line-height:1.8;
+}
+
+.insurance-card ul{
+    padding-left:20px;
+    margin-top:18px;
+}
+
+.insurance-card li{
+    margin-bottom:12px;
+    color:#555;
+    line-height:1.7;
+}
+.insurance-card:last-child{
+    grid-column:1/-1;
+}
+.insurance-value{
+    background:#1C2340;
+    color:#fff;
+    padding:90px 8%;
+}
+
+.insurance-value h2{
+    color:#fff;
+    text-align:center;
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.value-subtitle{
+    text-align:center;
+    color:#d9d9d9;
+    margin-bottom:50px;
+}
+
+.insurance-value-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.insurance-value-box{
+    background:#fff;
+    color:#444;
+    padding:35px;
+    border-radius:14px;
+}
+
+.insurance-value-icon{
+    color:#E89B2E;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.insurance-value-box ul{
+    padding-left:22px;
+    line-height:1.9;
+}
+
+.insurance-value-image img{
+    width:100%;
+    border-radius:14px;
+    display:block;
+}
+@media(max-width:992px){
+
+    .insurance-intro-content,
+    .insurance-services-grid,
+    .insurance-value-content{
+        grid-template-columns:1fr;
+    }
+
+    .insurance-card:last-child{
+        grid-column:auto;
+    }
+
+    .insurance-overlay h1{
+        font-size:42px;
+    }
+
+    .insurance-overlay p{
+        font-size:18px;
+    }
+
+    .insurance-services h2,
+    .insurance-value h2{
+        font-size:32px;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .insurance-hero{
+        min-height:380px;
+    }
+
+    .insurance-overlay h1{
+        font-size:34px;
+    }
+
+    .insurance-overlay p{
+        font-size:16px;
+    }
+
+    .insurance-intro,
+    .insurance-services,
+    .insurance-value{
+        padding:70px 6%;
+    }
+
+    .insurance-card,
+    .insurance-value-box{
+        padding:25px;
+    }
+
+}

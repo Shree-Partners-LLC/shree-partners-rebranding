@@ -2,6 +2,7 @@ import heroImg from "../assets/travel.webp";
 import introImg from "../assets/tmc-intro.jpeg";
 import businessImg from "../assets/tmc-business.jpeg";
 import successImg from "../assets/tmc-success.jpeg";
+import "../styles/TravelManagementCompanies.css";
 function TravelManagementCompanies() {
   return (
     <div className="tmc">
