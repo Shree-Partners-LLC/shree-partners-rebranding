@@ -1,0 +1,63 @@
+.agentic{
+    background:#F3F7FA;
+    border-top:1px solid #E2E9EF;
+    border-bottom:1px solid #E2E9EF;
+    padding:96px 48px;
+}
+
+.agentic-container{
+    max-width:1312px;
+    margin:auto;
+}
+
+.agentic-heading{
+    max-width:680px;
+    margin:0 auto 56px;
+    text-align:center;
+}
+
+.agentic-heading span{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:.12em;
+    color:#1175B5;
+}
+
+.agentic-heading h2{
+    margin-top:18px;
+    font-size:40px;
+    line-height:1.1;
+    color:#0A3B5E;
+    font-weight:800;
+}
+
+.agentic-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+}
+
+.agentic-card{
+    background:#fff;
+    border:1px solid #E2E9EF;
+    border-radius:14px;
+    padding:32px;
+}
+
+.step{
+    color:#1175B5;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:14px;
+}
+
+.agentic-card h3{
+    margin:14px 0 10px;
+    font-size:20px;
+    color:#0A3B5E;
+}
+
+.agentic-card p{
+    color:#46586B;
+    line-height:1.6;
+}

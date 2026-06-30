@@ -1,0 +1,129 @@
+.services{
+    padding:96px 48px;
+}
+
+.services-container{
+    max-width:1312px;
+    margin:auto;
+}
+
+.section-tag{
+    color:#1175B5;
+    text-transform:uppercase;
+    letter-spacing:.12em;
+    font-size:13px;
+    font-family:'IBM Plex Mono', monospace;
+}
+
+.services h2{
+    margin:18px 0 48px;
+    color:#0A3B5E;
+    font-size:42px;
+    line-height:1.08;
+    max-width:640px;
+    font-weight:800;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.service-card{
+    border:1px solid #E2E9EF;
+    border-radius:16px;
+    background:#F3F7FA;
+    padding:36px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    min-height:250px;
+}
+
+.featured{
+    grid-column:span 2;
+    background:#0A3B5E;
+    color:white;
+}
+
+.featured h3{
+    color:white;
+}
+
+.featured p{
+    color:#B7CCDC;
+}
+
+.service-card h3{
+    margin:20px 0 12px;
+    color:#0A3B5E;
+    font-size:26px;
+}
+
+.service-card p{
+    line-height:1.7;
+    color:#46586B;
+}
+
+.small-tag{
+    color:#3FA9C9;
+    text-transform:uppercase;
+    font-size:12px;
+    letter-spacing:.1em;
+}
+
+.service-icon{
+    width:50px;
+    height:50px;
+    border-radius:12px;
+    background:rgba(63,169,201,.22);
+}
+
+.circle::after{
+    content:"";
+    width:18px;
+    height:18px;
+    background:#3FA9C9;
+    border-radius:50%;
+    display:block;
+    margin:16px auto;
+}
+
+.square::after{
+    content:"";
+    width:18px;
+    height:18px;
+    background:#1175B5;
+    display:block;
+    margin:16px auto;
+}
+
+.diamond::after{
+    content:"";
+    width:18px;
+    height:18px;
+    background:#0A3B5E;
+    transform:rotate(45deg);
+    display:block;
+    margin:16px auto;
+}
+
+.industry{
+    grid-column:span 2;
+    flex-direction:row;
+    align-items:center;
+}
+
+.mini-boxes{
+    display:flex;
+    gap:10px;
+}
+
+.mini-boxes div{
+    width:48px;
+    height:48px;
+    background:white;
+    border:1px solid #E2E9EF;
+    border-radius:10px;
+}

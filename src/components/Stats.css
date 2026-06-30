@@ -1,0 +1,61 @@
+.stats{
+
+    border-bottom:1px solid #E2E9EF;
+
+    background:#fff;
+
+}
+
+.stats-container{
+
+    max-width:1312px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+.stat-card{
+
+    padding:48px;
+
+    border-right:1px solid #E2E9EF;
+
+}
+
+.last{
+
+    border-right:none;
+
+}
+
+.stat-card h2{
+
+    font-size:42px;
+
+    font-weight:800;
+
+    color:#0A3B5E;
+
+    line-height:1;
+
+}
+
+.stat-card p{
+
+    margin-top:12px;
+
+    font-size:12px;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+
+    color:#7F8E9C;
+
+    font-family:'IBM Plex Mono',monospace;
+
+}
