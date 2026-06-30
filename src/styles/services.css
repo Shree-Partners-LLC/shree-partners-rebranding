@@ -65,6 +65,9 @@
     color:#C97F15;
     font-weight:bold;
 }
+.svc-link{
+    text-decoration: none;
+}
 @media(max-width:900px){
     .svc-grid{
         grid-template-columns:1fr;

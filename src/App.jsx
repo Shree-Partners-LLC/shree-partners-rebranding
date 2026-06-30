@@ -19,6 +19,11 @@ import Airline from "./pages/Airline";
 import Hospitality from "./pages/Hospitality";
 import TravelManagementCompanies from "./pages/TravelManagementCompanies";
 
+import Agents from "./pages/Agents";
+import AI from "./pages/AI";
+import Audits from "./pages/Audits";
+import Legacy from "./pages/Legacy";
+
 import Contact from "./pages/Contact";
 
 function App() {
@@ -54,6 +59,11 @@ function App() {
           path="/industries/travel-management"
           element={<TravelManagementCompanies />}
         />
+
+        <Route path="/agents" element={<Agents />} />
+        <Route path="/ai" element={<AI />} />
+        <Route path="/audits" element={<Audits />} />
+        <Route path="/legacy" element={<Legacy />} />
       </Routes>
 
       <Footer />

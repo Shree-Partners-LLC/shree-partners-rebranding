@@ -8,7 +8,7 @@ function Hero() {
           <h1>Your legacy systems are an asset.<br /><em>If your AI can read them.</em></h1>
           <p className="lede">Shree Partners helps enterprises modernize aging codebases, accelerate delivery with AI-assisted engineering, and put production-grade agents to work on real business systems.</p>
           <div className="hero-ctas">
-            <a href="#contact" className="btn btn-gold">Book a Discovery Call</a>
+            <a href="/discovery-call" className="btn btn-gold">Book a Discovery Call</a>
             <a href="#services" className="btn btn-ghost">Explore Services</a>
           </div>
           <div className="hero-meta">
