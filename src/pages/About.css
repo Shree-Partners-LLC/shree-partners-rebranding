@@ -1,44 +1,60 @@
-.about {
-  padding: 80px 0;
-  background: #f5f6f3;
-  min-height: calc(100vh - 70px);
+.about-hero{
+    background:radial-gradient(120% 120% at 82% 0%,#10527d 0%,#0A3B5E 58%);
+    color:#fff;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
+.about-container{
+    max-width:1312px;
+    margin:auto;
+    padding:90px 48px;
 }
 
-.about h1 {
-  font-size: 48px;
-  color: #04164c;
-  margin-bottom: 20px;
+.about-hero h1{
+    margin-top:18px;
+    max-width:760px;
+    font-size:56px;
+    line-height:1.05;
+    font-weight:800;
+    color:#fff;
 }
 
-.about p {
-  font-size: 18px;
-  line-height: 1.8;
-  color: #555;
+.about-hero p{
+    margin-top:22px;
+    max-width:600px;
+    font-size:19px;
+    line-height:1.6;
+    color:#B7CCDC;
+}
+.company-story{
+    padding:100px 0;
 }
 
-.about-cards {
-  display: flex;
-  gap: 30px;
-  margin-top: 50px;
-  flex-wrap: wrap;
+.story-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
 }
 
-.card {
-  flex: 1;
-  min-width: 280px;
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+.story-left h2{
+    margin:18px 0 24px;
+    font-size:44px;
+    line-height:1.1;
+    color:#0A3B5E;
+    font-weight:800;
 }
 
-.card h2 {
-  color: #04164c;
-  margin-bottom: 15px;
+.story-left p{
+    margin-bottom:20px;
+    color:#46586B;
+    font-size:17px;
+    line-height:1.8;
+}
+
+.story-right img{
+    width:100%;
+    height:520px;
+    object-fit:cover;
+    border-radius:20px;
+    display:block;
 }
