@@ -1,19 +1,18 @@
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-
 import logo from "../assets/shree-logo.png";
 
 function Navbar() {
   return (
     <header className="header">
 
-      <div className="navbar">
+      <div className="nav-container">
 
         <Link to="/" className="logo">
           <img src={logo} alt="Shree Partners" />
         </Link>
 
-        <nav className="nav-links">
+        <nav className="nav-menu">
 
           <Link to="/">Home</Link>
 

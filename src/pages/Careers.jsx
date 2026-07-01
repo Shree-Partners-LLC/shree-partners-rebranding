@@ -129,11 +129,11 @@ const Careers = () => {
               <form onSubmit={handleSubmit}>
                 <div className="form-grid">
                   <div className="form-group">
-                    <label>Full Name</label>
+                    <label>Full Name *</label>
                     <input type="text" name="name" placeholder="Jane Doe"/>
                   </div>
                   <div className="form-group">
-                    <label>Email</label>
+                    <label>Email *</label>
                     <input type="email" name="email" placeholder="jane@email.com"/>
                   </div>
                   <div className="form-group">
@@ -146,7 +146,7 @@ const Careers = () => {
                   </div>
                 </div>
                 <div className="form-group">
-                  <label>Position </label>
+                  <label>Position *</label>
                   <select value={selectedRole} onChange={(e) => setSelectedRole(e.target.value)} >
                     <option>General application</option>
                     {roles.map((role, index) => ( <option key={index}> {role.title}</option>))}

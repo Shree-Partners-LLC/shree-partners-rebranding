@@ -5,6 +5,7 @@
 }
 
 body{
+    background:#fff;
     font-family:'Manrope',sans-serif;
 }
 
@@ -13,91 +14,49 @@ a{
 }
 
 .header{
-
     position:sticky;
-
     top:0;
-
-    width:100%;
-
     z-index:999;
-
     background:#fff;
-
     border-bottom:1px solid #E2E9EF;
-
 }
 
-.navbar{
-
+.nav-container{
     max-width:1312px;
-
-    margin:auto;
-
-    padding:0 48px;
-
     height:82px;
-
+    margin:auto;
+    padding:0 48px;
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
 }
 
 .logo img{
-
     height:38px;
-
     display:block;
-
 }
 
-.nav-links{
-
+.nav-menu{
     display:flex;
-
     align-items:center;
-
     gap:30px;
-
 }
 
-.nav-links a{
-
-    color:#0A3B5E;
-
+.nav-menu a{
     font-size:15px;
-
     font-weight:600;
-
+    color:#0A3B5E;
     transition:.3s;
-
 }
 
-.nav-links a:hover{
-
+.nav-menu a:hover{
     color:#1175B5;
-
 }
 
 .demo-btn{
-
     background:#1175B5;
-
     color:#fff !important;
-
     padding:11px 22px;
-
     border-radius:7px;
-
     font-weight:700;
-
-}
-
-.demo-btn:hover{
-
-    background:#0A3B5E;
-
 }
