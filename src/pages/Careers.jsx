@@ -1,7 +1,6 @@
 import Navbar from "../components/Navbar";
 import "./Careers.css";
 
-
 function Careers() {
   return (
     <>
@@ -157,104 +156,6 @@ function Careers() {
         <button>Apply</button>
 
       </div>
-
-    </div>
-
-  </div>
-
-</section>
-<section className="career-form">
-
-  <div className="form-container">
-
-    <span className="section-title">
-      Apply Now
-    </span>
-
-    <h2>
-      Submit your application
-    </h2>
-
-    <p>
-      Don't see a perfect fit? Select General Application and tell us
-      what you do best.
-    </p>
-
-    <div className="form-box">
-
-      <div className="form-grid">
-
-        <div>
-          <label>Full Name *</label>
-          <input type="text" placeholder="Jane Doe" />
-        </div>
-
-        <div>
-          <label>Email *</label>
-          <input type="email" placeholder="jane@email.com" />
-        </div>
-
-        <div>
-          <label>Phone</label>
-          <input type="text" placeholder="+91 9876543210" />
-        </div>
-
-        <div>
-          <label>Location</label>
-          <input type="text" placeholder="City, Country" />
-        </div>
-
-      </div>
-
-      <div className="full-field">
-
-        <label>Position</label>
-
-        <select>
-
-          <option>General Application</option>
-          <option>Senior Machine Learning Engineer</option>
-          <option>AI Solutions Architect</option>
-          <option>Generative AI Engineer</option>
-          <option>Cloud Infrastructure Engineer</option>
-
-        </select>
-
-      </div>
-
-      <div className="full-field">
-
-        <label>LinkedIn / Portfolio</label>
-
-        <input
-          type="text"
-          placeholder="https://linkedin.com/in/username"
-        />
-
-      </div>
-
-      <div className="full-field">
-
-        <label>Resume / CV</label>
-
-        <input type="file" />
-
-      </div>
-
-      <div className="full-field">
-
-        <label>Why Shree Partners?</label>
-
-        <textarea
-          rows="5"
-          placeholder="Tell us about yourself..."
-        ></textarea>
-
-      </div>
-
-      <button className="submit-btn">
-        Submit Application
-      </button>
 
     </div>
 
