@@ -1,10 +1,10 @@
-import Navbar from "../components/Navbar";
+
 import "./Careers.css";
 
 function Careers() {
   return (
     <>
-      <Navbar />
+   
 
       <section className="career-hero">
         <div className="career-container">

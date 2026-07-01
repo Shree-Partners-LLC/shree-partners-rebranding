@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+
 import "./Home.css";
 import heroImage from "../assets/home-hero-img.jpeg";
 import travelImg from "../assets/travel-and-hospitality.jpg";
@@ -7,7 +7,7 @@ import financeImg from "../assets/insurance.avif";
 function Home() {
   return (
     <>
-      <Navbar />
+      
 
       <section className="hero">
         <div className="hero-container">
