@@ -1,21 +1,32 @@
 import React, { useState } from "react";
 import "./Contact.css";
 const Contact = () => {
-  const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState("");
+  const [messages, setMessages] = useState([]);
+  const [submitted, setSubmitted] = useState(false);    const [error, setError] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
-    const name = form.name.value.trim();
-    const email = form.email.value.trim();
-    const message = form.message.value.trim();
-    if (!name || !email || !message) {
-      setError("Please fill in your name, email, and message.");
-      return;
-    }
+    const { name, email, company, phone, interest, message } = form;
+    if (!name.value.trim() || !email.value.trim() || !message.value.trim()) return setError("Please fill in your name, email, and message.");
+    setMessages((prev) => [
+      ...prev,
+      {
+        name: name.value.trim(),
+        email: email.value.trim(),
+        company: company.value.trim(),
+        phone: phone.value.trim(),
+        interest: interest.value,
+        message: message.value.trim(),
+        submittedAt: new Date().toLocaleString(),
+      },
+    ]);
     setSubmitted(true);
     setError("");
     form.reset();
+  };
+  const handleNewMessage = () => {
+    setSubmitted(false);
+    setError("");
   };
   return (
     <div className="contact-page">
@@ -31,11 +42,11 @@ const Contact = () => {
                   <div className="form-grid">
                     <div className="form-group">
                       <label>Full Name </label>
-                      <input type="text" name="name" placeholder="Jane Doe" />
+                      <input type="text" name="name" required placeholder="Jane Doe" />
                     </div>
                     <div className="form-group">
                       <label>Work Email</label>
-                      <input type="email" name="email" placeholder="jane@company.com" />
+                      <input type="email" name="email" required placeholder="jane@company.com" />
                     </div>
                     <div className="form-group">
                       <label>Company</label>
@@ -59,7 +70,7 @@ const Contact = () => {
                   </div>
                   <div className="form-group">
                     <label>Message </label>
-                    <textarea rows="5" name="message" placeholder="Tell us about your goals, timeline, and where AI could help..." ></textarea>
+                    <textarea rows="5" name="message" required placeholder="Tell us about your goals, timeline, and where AI could help..." ></textarea>
                   </div>
                   {error && (<p className="error-text"> {error}</p>)}
                   <button type="submit"className="submit-btn"> Send Message</button>
@@ -72,9 +83,7 @@ const Contact = () => {
                   <p>A member of our team will be in touch within one business day. We're looking forward to it.</p>
                   <button
                     className="secondary-btn"
-                    onClick={() => {
-                      setSubmitted(false);setError("");
-                  }}>
+                    onClick={handleNewMessage}>
                     Send Another Message
                   </button>
                 </div>

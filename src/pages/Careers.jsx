@@ -39,6 +39,7 @@ const roles = [
   },
 ];
 const Careers = () => {
+  const [applications, setApplications] = useState([]);
   const [selectedRole, setSelectedRole] = useState("General application");
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
@@ -46,33 +47,44 @@ const Careers = () => {
     setSelectedRole(role);
     setSubmitted(false);
     setError("");
-    const section = document.getElementById("apply");
-    if (section) {
-      section.scrollIntoView({
-        behavior: "smooth",
-      });
-    }
+    document.getElementById("apply")?.scrollIntoView({
+      behavior: "smooth",
+    });
   };
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
-    const name = form.name.value.trim();
-    const email = form.email.value.trim();
-    const resume = form.resume.files[0];
-    if (!name || !email || !resume) {
-      setError("Please add your name, email, and résumé.");
-      return;
+    const { name, email, phone, location, portfolio, resume, note ,} = form;
+    if (!name.value.trim() || !email.value.trim() || !resume.files.length) {
+      return setError("Please add your name, email, and résumé.");
     }
+    const application = {
+      name: name.value.trim(),
+      email: email.value.trim(),
+      phone: phone.value.trim(),
+      location: location.value.trim(),
+      position: selectedRole,
+      portfolio: portfolio.value.trim(),
+      resume: resume.files[0],
+      resumeName: resume.files[0].name,
+      note: note.value.trim(),
+      submittedAt: new Date().toLocaleString(),
+    };
+    setApplications((prev) => [...prev, application]);
     setSubmitted(true);
     setError("");
     form.reset();
+  };
+  const handleNewApplication = () => {
+    setSubmitted(false);
+    setError("");
   };
   return (
     <div className="careers-page">
       <section className="hero">
         <div className="container">
           <span className="section-tag">Careers</span>
-          <h1>Build the AI-first future — with people who ship it.</h1>
+          <h1>Build the AI-first future with people who ship it.</h1>
           <p>Join a team that puts real AI into production for enterprises across travel, healthcare, and finance. Work with senior engineers on problems that matter from the US or India. </p>
         </div>
       </section>
@@ -99,21 +111,19 @@ const Careers = () => {
       <section className="roles-section">
         <div className="container">
           <span className="section-tag blue">Open Roles</span>
-          <h2> Find your next role</h2>
+          <h2>Find your next role</h2>
           <div className="roles-list">
-            {roles.map((role, index) => (
-              <div key={index} className="role-card">
+            {roles.map(({ id, title, location, type, team }, index) => (
+              <div key={id ?? index} className="role-card">
                 <div className="role-info">
-                  <h3>{role.title}</h3>
+                  <h3>{title}</h3>
                   <div className="role-meta">
-                    <span>{role.location}</span>
-                    <span>{role.type}</span>
-                    <span>{role.team}</span>
+                    {[location, type, team].map((item) => (
+                      <span key={item}>{item}</span>
+                    ))}
                   </div>
                 </div>
-                <button className="apply-btn" onClick={() => handleApply(role.title)}>
-                  Apply
-                </button>
+                <button className="apply-btn" onClick={() => handleApply(title)}>Apply</button>
               </div>
             ))}
           </div>
@@ -129,12 +139,12 @@ const Careers = () => {
               <form onSubmit={handleSubmit}>
                 <div className="form-grid">
                   <div className="form-group">
-                    <label>Full Name *</label>
-                    <input type="text" name="name" placeholder="Jane Doe"/>
+                    <label>Full Name</label>
+                    <input type="text" name="name" required placeholder="Jane Doe"/>
                   </div>
                   <div className="form-group">
-                    <label>Email *</label>
-                    <input type="email" name="email" placeholder="jane@email.com"/>
+                    <label>Email</label>
+                    <input type="email" name="email" required placeholder="jane@email.com"/>
                   </div>
                   <div className="form-group">
                     <label>Phone</label>
@@ -146,10 +156,10 @@ const Careers = () => {
                   </div>
                 </div>
                 <div className="form-group">
-                  <label>Position *</label>
+                  <label>Position</label>
                   <select value={selectedRole} onChange={(e) => setSelectedRole(e.target.value)} >
                     <option>General application</option>
-                    {roles.map((role, index) => ( <option key={index}> {role.title}</option>))}
+                    {roles.map(({ id, title }, index) => (<option key={id ?? index} value={title}>{title}</option>))}
                   </select>
                 </div>
                 <div className="form-group">
@@ -158,7 +168,7 @@ const Careers = () => {
                 </div>
                 <div className="form-group">
                   <label>Résumé / CV </label>
-                  <input type="file" name="resume" accept=".pdf,.doc,.docx" />
+                  <input type="file" name="resume" required accept=".pdf,.doc,.docx" />
                 </div>
                 <div className="form-group">
                   <label>Why Shree Partners?</label>
@@ -169,24 +179,14 @@ const Careers = () => {
                   <label htmlFor="consent"> I consent to Shree Partners storing my information for recruitment purposes.</label>
                 </div>
                 {error && ( <p className="error-text">{error}</p>)}
-                <button
-                  type="submit"
-                  className="submit-btn"
-                >
-                  Submit Application
-                </button>
+                <button type="submit" className="submit-btn"> Submit Application</button>
               </form>
             ) : (
               <div className="success-box">
                 <div className="success-icon">✓</div>
                 <h3>Application received — thank you!</h3>
                 <p>We've got your application for the{" "} <strong>{selectedRole}</strong> role. Our recruitment team reviews every application and will contact you if your profile matches our requirements.</p>
-                <button
-                  className="secondary-btn"
-                  onClick={() => {
-                    setSubmitted(false);setError("");
-                }}>
-                  Submit Another Application
+                <button className="secondary-btn" onClick={handleNewApplication}>Submit Another Application
                 </button>
               </div>
             )}

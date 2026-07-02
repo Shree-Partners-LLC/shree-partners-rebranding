@@ -30,6 +30,7 @@ select{
     font-family:'Manrope',sans-serif;
 }
 .container{
+    text-align: left;
     max-width:1312px;
     margin:0 auto;
     padding:0 48px;
@@ -41,10 +42,6 @@ select{
         #0A3B5E 58%
     );
     color:#fff;
-}
-.hero .container{
-    padding-top:88px;
-    padding-bottom:88px;
 }
 .section-tag{
     font-family:'IBM Plex Mono',monospace;
@@ -108,18 +105,6 @@ select{
     border-top:1px solid var(--line);
     border-bottom:1px solid var(--line);
 }
-.roles-section .container{
-    padding-top:88px;
-    padding-bottom:88px;
-}
-.roles-section h2{
-    margin:18px 0 40px;
-    color:var(--navy);
-    font-size:38px;
-    font-weight:800;
-    line-height:1.1;
-    letter-spacing:-0.02em;
-}
 .roles-list{
     display:flex;
     flex-direction:column;
@@ -158,6 +143,10 @@ select{
     text-transform:uppercase;
     color:var(--muted);
 }
+.hero .container,
+.roles-section .container{
+    padding-block:88px;
+}
 .apply-btn{
     flex-shrink:0;
     background:var(--blue);
@@ -187,14 +176,7 @@ select{
     padding:0 48px;
     text-align:center;
 }
-.application-container h2{
-    margin:18px 0 8px;
-    color:var(--navy);
-    font-size:38px;
-    font-weight:800;
-    line-height:1.1;
-    letter-spacing:-0.02em;
-}
+
 .application-text{
     margin-bottom:44px;
     color:var(--muted);
@@ -209,7 +191,15 @@ select{
     text-align:left;
     box-shadow:0 18px 50px rgba(11,39,66,.06);
 }
-
+.roles-section h2,
+.application-container h2{
+    margin:18px 0 40px;
+    color:var(--navy);
+    font-size:38px;
+    font-weight:800;
+    line-height:1.1;
+    letter-spacing:-.02em;
+}
 .job-card h2 {
   color: #04164c;
   margin-bottom: 15px;
@@ -322,63 +312,4 @@ select{
 }
 .secondary-btn:hover{
     background:var(--wash);
-}
-@media (max-width:1024px){
-    .perks-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-    .form-grid{
-        grid-template-columns:1fr;
-    }
-    .container{
-        padding:0 32px;
-    }
-    .hero h1{
-        font-size:46px;
-    }
-}
-@media (max-width:768px){
-    .container{
-        padding:0 20px;
-    }
-    .hero{
-        padding:70px 0;
-    }
-    .hero h1{
-        font-size:36px;
-    }
-    .hero p{
-        font-size:16px;
-    }
-    .perks-grid{
-        grid-template-columns:1fr;
-    }
-    .role-card{
-        flex-direction:column;
-        align-items:flex-start;
-    }
-    .role-meta{
-        gap:10px;
-    }
-    .apply-btn{
-        width:100%;
-    }
-    .application-card{
-        padding:24px;
-    }
-    .application-container{
-        padding:0 20px;
-    }
-}
-@media (max-width:480px){
-    .hero h1{
-        font-size:30px;
-    }
-    .roles-section h2,
-    .application-container h2{
-        font-size:30px;
-    }
-    .application-card{
-        padding:20px;
-    }
 }
