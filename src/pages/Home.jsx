@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 import "./Home.css";
 import heroImage from "../assets/home-hero-img.jpeg";
 import travelImg from "../assets/travel-and-hospitality.jpg";
@@ -7,8 +7,6 @@ import financeImg from "../assets/insurance.avif";
 function Home() {
   return (
     <>
-      
-
       <section className="hero">
         <div className="hero-container">
           <div className="hero-left">
@@ -33,9 +31,13 @@ function Home() {
             </p>
 
             <div className="hero-buttons">
-              <button className="primary-btn">Request a demo</button>
+              <Link to="/Contact" className="primary-btn">
+                Request a Demo
+              </Link>
 
-              <button className="secondary-btn">See our work</button>
+              <Link to="/About" className="secondary-btn">
+                See Our Work
+              </Link>
             </div>
           </div>
 
@@ -120,6 +122,7 @@ function Home() {
 
             <div className="service-card service-industry-card">
               <div>
+                 <div className="icon diamond"></div>
                 <h3>Industry AI Solutions</h3>
 
                 <p>
@@ -128,254 +131,183 @@ function Home() {
                 </p>
               </div>
 
-              <div className="mini-icons">
-                <div></div>
-
-                <div></div>
-
-                <div></div>
-              </div>
+             
             </div>
           </div>
         </div>
       </section>
       <section className="agentic">
+        <div className="agentic-container">
+          <div className="agentic-heading">
+            <span>How agentic AI works</span>
 
-  <div className="agentic-container">
+            <h2>From task to autonomous outcome</h2>
+          </div>
 
-    <div className="agentic-heading">
+          <div className="agentic-grid">
+            <div className="agent-card">
+              <span className="step">STEP 01</span>
 
-      <span>How agentic AI works</span>
+              <h3>Perceive & Plan</h3>
 
-      <h2>From task to autonomous outcome</h2>
+              <p>
+                Agents read context from your systems and break goals into safe,
+                ordered steps.
+              </p>
+            </div>
 
-    </div>
+            <div className="agent-card">
+              <span className="step">STEP 02</span>
 
-    <div className="agentic-grid">
+              <h3>Act with Tools</h3>
 
-      <div className="agent-card">
+              <p>
+                They call your APIs and applications to execute work within
+                strict permissions.
+              </p>
+            </div>
 
-        <span className="step">STEP 01</span>
+            <div className="agent-card">
+              <span className="step">STEP 03</span>
 
-        <h3>Perceive & Plan</h3>
+              <h3>Verify & Escalate</h3>
 
-        <p>
-          Agents read context from your systems and break goals into safe,
-          ordered steps.
-        </p>
+              <p>
+                Outcomes are checked and audited while escalating to humans
+                whenever judgment is needed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="feature-band">
+        <div className="feature-container">
+          <div className="feature-left">
+            <span className="feature-label">Why Shree Partners</span>
 
-      </div>
+            <h2>
+              Two decades of delivery,
+              <br />
+              now AI-first.
+            </h2>
 
-      <div className="agent-card">
+            <p>
+              We don't run pilots that never ship. We embed AI into production
+              operations with the governance, security and accountability that
+              CIOs, CSOs and CEOs require.
+            </p>
+          </div>
 
-        <span className="step">STEP 02</span>
+          <div className="feature-right">
+            <div className="feature-item">
+              <span className="dot"></span>
 
-        <h3>Act with Tools</h3>
+              <div>
+                <h3>Outcome-led, not pilot-led</h3>
 
-        <p>
-          They call your APIs and applications to execute work within
-          strict permissions.
-        </p>
+                <p>Every engagement targets a measurable business result.</p>
+              </div>
+            </div>
 
-      </div>
+            <div className="feature-item">
+              <span className="dot"></span>
 
-      <div className="agent-card">
+              <div>
+                <h3>Governed & Secure by Design</h3>
 
-        <span className="step">STEP 03</span>
+                <p>
+                  Built for audit, compliance and enterprise risk from day one.
+                </p>
+              </div>
+            </div>
 
-        <h3>Verify & Escalate</h3>
+            <div className="feature-item">
+              <span className="dot"></span>
 
-        <p>
-          Outcomes are checked and audited while escalating to humans
-          whenever judgment is needed.
-        </p>
+              <div>
+                <h3>Global Delivery, Your Timezone</h3>
 
-      </div>
+                <p>
+                  Onshore strategy with scaled engineering across the US &
+                  India.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="industries" id="industries">
+        <div className="industries-container">
+          <span className="section-title">Industries</span>
 
-    </div>
+          <h2>Deep expertise where the stakes are highest</h2>
 
-  </div>
+          <div className="industry-grid">
+            <div className="industry-card">
+              <img src={travelImg} alt="Travel" />
 
-</section>
-<section className="feature-band">
+              <div className="industry-content">
+                <h3>Travel & Hospitality</h3>
 
-  <div className="feature-container">
+                <p>
+                  Dynamic pricing, AI concierge and operations automation for a
+                  24/7 industry.
+                </p>
+              </div>
+            </div>
 
-    <div className="feature-left">
+            <div className="industry-card">
+              <img src={healthcareImg} alt="Healthcare" />
 
-      <span className="feature-label">
-        Why Shree Partners
-      </span>
+              <div className="industry-content">
+                <h3>Healthcare</h3>
 
-      <h2>
-        Two decades of delivery,
-        <br />
-        now AI-first.
-      </h2>
+                <p>
+                  Clinical document intelligence and compliant automation that
+                  protects patient data.
+                </p>
+              </div>
+            </div>
 
-      <p>
-        We don't run pilots that never ship. We embed AI into production
-        operations with the governance, security and accountability that
-        CIOs, CSOs and CEOs require.
-      </p>
+            <div className="industry-card">
+              <img src={financeImg} alt="Finance" />
 
-    </div>
+              <div className="industry-content">
+                <h3>Banking & Financial Services</h3>
 
-    <div className="feature-right">
-
-      <div className="feature-item">
-
-        <span className="dot"></span>
-
-        <div>
-
-          <h3>Outcome-led, not pilot-led</h3>
+                <p>
+                  Risk, fraud and back-office agents built for audit, security
+                  and scale.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="cta">
+        <div className="cta-container">
+          <h2>
+            Let's make AI your
+            <br />
+            operating advantage.
+          </h2>
 
           <p>
-            Every engagement targets a measurable business result.
+            Book a discovery session and we'll map your first high-value
+            automation with a roadmap your board will back.
           </p>
 
+          <div className="cta-buttons">
+            <Link to="/Contact" className="primary-btn">
+              Request a Demo
+            </Link>
+
+            <Link to="/Contact" className="secondary-btn">
+              Talk to sales
+            </Link>
+          </div>
         </div>
-
-      </div>
-
-      <div className="feature-item">
-
-        <span className="dot"></span>
-
-        <div>
-
-          <h3>Governed & Secure by Design</h3>
-
-          <p>
-            Built for audit, compliance and enterprise risk from day one.
-          </p>
-
-        </div>
-
-      </div>
-
-      <div className="feature-item">
-
-        <span className="dot"></span>
-
-        <div>
-
-          <h3>Global Delivery, Your Timezone</h3>
-
-          <p>
-            Onshore strategy with scaled engineering across the US & India.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-<section className="industries" id="industries">
-
-  <div className="industries-container">
-
-    <span className="section-title">
-      Industries
-    </span>
-
-    <h2>
-      Deep expertise where the stakes are highest
-    </h2>
-
-    <div className="industry-grid">
-
-      <div className="industry-card">
-
-        <img src={travelImg} alt="Travel" />
-
-        <div className="industry-content">
-
-          <h3>Travel & Hospitality</h3>
-
-          <p>
-            Dynamic pricing, AI concierge and operations automation
-            for a 24/7 industry.
-          </p>
-
-        </div>
-
-      </div>
-
-      <div className="industry-card">
-
-        <img src={healthcareImg} alt="Healthcare" />
-
-        <div className="industry-content">
-
-          <h3>Healthcare</h3>
-
-          <p>
-            Clinical document intelligence and compliant automation
-            that protects patient data.
-          </p>
-
-        </div>
-
-      </div>
-
-      <div className="industry-card">
-
-        <img src={financeImg} alt="Finance" />
-
-        <div className="industry-content">
-
-          <h3>Banking & Financial Services</h3>
-
-          <p>
-            Risk, fraud and back-office agents built for audit,
-            security and scale.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-<section className="cta">
-
-  <div className="cta-container">
-
-    <h2>
-      Let's make AI your
-      <br />
-      operating advantage.
-    </h2>
-
-    <p>
-      Book a discovery session and we'll map your first high-value
-      automation with a roadmap your board will back.
-    </p>
-
-    <div className="cta-buttons">
-
-      <button className="cta-primary">
-        Request a demo
-      </button>
-
-      <button className="cta-secondary">
-        Talk to sales
-      </button>
-
-    </div>
-
-  </div>
-
-</section>
+      </section>
     </>
   );
 }

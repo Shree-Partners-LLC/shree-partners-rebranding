@@ -360,89 +360,115 @@
     line-height:1.6;
     color:#46586B;
 }
-.offices{
-    background:#0A3B5E;
-    padding:96px 48px;
+
+
+.about-office-section{
+    width:100%;
+    background:#123F63;
+    padding:100px 0;
 }
 
-.offices-container{
-    max-width:1312px;
-    margin:auto;
+.about-office-wrapper{
+    max-width:1320px;
+    margin:0 auto;
+    padding:0 50px;
 }
 
-.offices-title{
+.about-office-label{
     display:block;
-    font-size:13px;
-    letter-spacing:.12em;
+    color:#37A7D4;
+    font-size:14px;
+    font-family:"IBM Plex Mono", monospace;
+    letter-spacing:4px;
     text-transform:uppercase;
-    color:#3FA9C9;
-    margin-bottom:18px;
-    font-family:monospace;
+    margin-bottom:22px;
 }
 
-.offices h2{
-    font-size:48px;
-    font-weight:800;
+.about-office-title{
     color:#fff;
-    line-height:1.15;
-    margin:0 0 50px;
+    font-size:64px;
+    font-weight:800;
+    line-height:1.1;
+    max-width:900px;
+    margin-bottom:60px;
 }
 
-.offices-grid{
+.about-office-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:28px;
+    gap:34px;
 }
 
-.office-card{
-    background:rgba(255,255,255,.06);
-    border:1px solid rgba(255,255,255,.15);
-    border-radius:16px;
-    padding:36px;
-    text-align:left;
+.about-office-box{
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:22px;
+    padding:42px;
+    min-height:255px;
 }
 
-.office-heading{
+.about-office-header{
     display:flex;
     align-items:center;
-    gap:12px;
-    margin-bottom:24px;
+    gap:16px;
+    margin-bottom:28px;
 }
 
-.office-dot{
-    width:12px;
-    height:12px;
+.about-office-circle{
+    width:14px;
+    height:14px;
+    background:#38A7D5;
     border-radius:50%;
-    background:#3FA9C9;
     flex-shrink:0;
 }
 
-.office-heading h3{
-    margin:0;
-    font-size:20px;
-    font-weight:700;
+.about-office-header h3{
     color:#fff;
+    font-size:21px;
+    font-weight:700;
+    margin:0;
 }
 
-.office-card p{
-    margin:0;
-    color:#B7CCDC;
-    font-size:16px;
+.about-office-box p{
+    color:#C9D7E4;
+    font-size:18px;
     line-height:2;
+    margin:0;
 }
 
 @media (max-width:992px){
 
-    .offices{
-        padding:70px 24px;
+    .about-office-title{
+        font-size:42px;
     }
 
-    .offices h2{
-        font-size:36px;
-    }
-
-    .offices-grid{
+    .about-office-grid{
         grid-template-columns:1fr;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .about-office-section{
+        padding:70px 0;
+    }
+
+    .about-office-wrapper{
+        padding:0 24px;
+    }
+
+    .about-office-title{
+        font-size:34px;
+    }
+
+    .about-office-box{
+        padding:30px;
+    }
+
+    .about-office-box p{
+        font-size:16px;
+        line-height:1.8;
     }
 
 }
