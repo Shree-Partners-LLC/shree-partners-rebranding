@@ -1,40 +1,57 @@
 import React from "react";
-import "./Footer.css";
 import { Link } from "react-router-dom";
+import "./Footer.css";
 import logo from "../assets/shree-logo-white.png";
+const services = [
+  "AI & ML",
+  "Generative AI",
+  "Cloud",
+];
+const industries = [
+  "Travel",
+  "Healthcare",
+  "Financial Services",
+];
+const company = [
+  { name: "About", path: "/about" },
+  { name: "Careers", path: "/careers" },
+  { name: "Contact", path: "/contact" },
+];
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-grid">
-          <Link to="/" className="logo">
-          <img src={logo} alt="Shree Partners" />
-        </Link>
-          <div className="footer-about">
-            <p> AI-first digital transformation for the enterprise. Delivering from the US & India since 2005. </p>
+          <div className="footer-brand">
+            <Link to="/" className="logo"><img src={logo} alt="Shree Partners" /></Link>
+            <p> AI-first digital transformation for the enterprise. Delivering from the US & India since 2005.</p>
           </div>
-          <div>
+          <div className="footer-links">
             <h4>Services</h4>
-            <a href="/#capabilities">AI & ML</a>
-            <a href="/#capabilities">Generative AI</a>
-            <a href="/#capabilities">Cloud</a>
+            {services.map((item) => (
+              <a key={item} href="/#capabilities">{item}</a>
+            ))}
           </div>
-          <div>
+          <div className="footer-links">
             <h4>Industries</h4>
-            <a href="/#industries">Travel</a>
-            <a href="/#industries">Healthcare</a>
-            <a href="/#industries">Financial Services</a>
+            {industries.map((item) => (
+              <a key={item} href="/#industries">{item}</a>
+            ))}
           </div>
-          <div>
+          <div className="footer-links">
             <h4>Company</h4>
-            <a href="/about">About</a>
-            <a href="/careers">Careers</a>
-            <a href="/contact">Contact</a>
+            {company.map(({ name, path }) => (
+              <a key={name} href={path}>{name}</a>
+            ))}
           </div>
         </div>
         <div className="footer-bottom">
-          <span> © 2026 Shree Partners. All rights reserved.</span>
-          <span>Privacy · Terms</span>
+          <p>© 2026 Shree Partners. All rights reserved.</p>
+          <div className="footer-policy">
+            <a href="/privacy">Privacy</a>
+            <span> · </span>
+            <a href="/terms">Terms</a>
+          </div>
         </div>
       </div>
     </footer>
