@@ -2,20 +2,20 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 import logo from "../assets/shree-logo-white.png";
-const services = [
-  "AI & ML",
-  "Generative AI",
-  "Cloud",
-];
-const industries = [
-  "Travel",
-  "Healthcare",
-  "Financial Services",
-];
 const company = [
   { name: "About", path: "/about" },
   { name: "Careers", path: "/careers" },
   { name: "Contact", path: "/contact" },
+];
+const services = [
+  { name: "AI & ML", path: "/ai-ml" },
+  { name: "Generative AI", path: "/generative-ai" },
+  { name: "Cloud", path: "/cloud" },
+];
+const industries = [
+  { name: "Travel", path: "/travel" },
+  { name: "Healthcare", path: "/healthcare" },
+  { name: "Financial Services", path: "/financial-services" },
 ];
 const Footer = () => {
   return (
@@ -28,14 +28,14 @@ const Footer = () => {
           </div>
           <div className="footer-links">
             <h4>Services</h4>
-            {services.map((item) => (
-              <a key={item} href="/#capabilities">{item}</a>
+            {services.map(({name,path}) => (
+              <a key={name} href={path}>{name}</a>
             ))}
           </div>
           <div className="footer-links">
             <h4>Industries</h4>
-            {industries.map((item) => (
-              <a key={item} href="/#industries">{item}</a>
+            {industries.map(({name,path}) => (
+              <a key={name} href={path}>{name}</a>
             ))}
           </div>
           <div className="footer-links">
