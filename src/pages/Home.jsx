@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./Home.css";
 import heroImage from "../assets/home-hero-img.jpeg";
 import travelImg from "../assets/travel-and-hospitality.jpg";
@@ -31,13 +30,14 @@ function Home() {
             </p>
 
             <div className="hero-buttons">
-              <Link to="/Contact" className="primary-btn">
+  
+              <a href="/Contact" className="cta-primary">
                 Request a Demo
-              </Link>
-
-              <Link to="/About" className="secondary-btn">
+              </a>
+                <a href="/About" className="cta-secondary">
                 See Our Work
-              </Link>
+              </a>
+             
             </div>
           </div>
 
@@ -122,7 +122,7 @@ function Home() {
 
             <div className="service-card service-industry-card">
               <div>
-                 <div className="icon diamond"></div>
+                <div className="icon diamond"></div>
                 <h3>Industry AI Solutions</h3>
 
                 <p>
@@ -130,8 +130,6 @@ function Home() {
                   financial services that ship value in weeks, not quarters.
                 </p>
               </div>
-
-             
             </div>
           </div>
         </div>
@@ -298,13 +296,12 @@ function Home() {
           </p>
 
           <div className="cta-buttons">
-            <Link to="/Contact" className="primary-btn">
+            <a href="/Contact" className="cta-primary">
               Request a Demo
-            </Link>
-
-            <Link to="/Contact" className="secondary-btn">
+            </a>
+            <a href="/Contact" className="cta-secondary">
               Talk to sales
-            </Link>
+            </a>
           </div>
         </div>
       </section>

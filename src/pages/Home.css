@@ -80,31 +80,48 @@
 }
 
 .hero-buttons{
-    display:flex;
+     display:flex;
     gap:16px;
     margin-top:38px;
+    align-items:center;
 }
 
 .primary-btn{
-    padding:16px 30px;
-    border:none;
-    border-radius:5px;
     background:#fff;
     color:#0A3B5E;
+    border:1px solid #fff;
+}
+
+.primary-btn,
+.secondary-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+
+    padding:14px 30px;
+    min-width:200px;
+    height:54px;
+
+    border-radius:8px;
     font-size:16px;
     font-weight:700;
     cursor:pointer;
+    transition:.3s;
+    box-sizing:border-box;
+}
+.primary-btn:hover{
+    background:#f5f5f5;
 }
 
 .secondary-btn{
-    padding:16px 30px;
-    border-radius:8px;
-    border:1px solid rgba(255,255,255,.3);
     background:transparent;
     color:#fff;
-    font-size:16px;
-    font-weight:600;
-    cursor:pointer;
+    border:1px solid rgba(255,255,255,.3);
+}
+
+.secondary-btn:hover{
+    background:rgba(255,255,255,.08);
 }
 .stats{
 
@@ -755,28 +772,34 @@
 .cta-buttons{
     display:flex;
     justify-content:center;
-    gap:16px;
-    margin-top:36px;
+    align-items:center;
+    gap:24px;
 }
 
-.cta-primary{
-    padding:17px 36px;
-    background:#fff;
-    color:#0A3B5E;
-    border:none;
-    border-radius:8px;
-    font-size:16px;
+.cta-primary,
+.cta-secondary{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+     width:220px;     
+    height:56px; 
+    padding:0;
+    box-sizing:border-box;
+
+    border-radius:12px;
+    font-size:18px;
     font-weight:700;
-    cursor:pointer;
+    text-decoration:none;
+}
+.cta-primary{
+    background:#2A7DB8;
+    color:#fff;
+    border:none;
 }
 
 .cta-secondary{
-    padding:17px 36px;
-    background:transparent;
-    border:1px solid rgba(255,255,255,.3);
-    color:#fff;
-    border-radius:8px;
-    font-size:16px;
-    font-weight:600;
-    cursor:pointer;
+   background:#fff;
+    color:#0A3B5E;
+    border:none;
 }
