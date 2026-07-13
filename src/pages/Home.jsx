@@ -1,9 +1,17 @@
 import "./Home.css";
+import { useEffect } from "react";
+
 import heroImage from "../assets/home-hero-img.jpeg";
 import travelImg from "../assets/travel-and-hospitality.jpg";
 import healthcareImg from "../assets/healthcare.jpg";
 import financeImg from "../assets/insurance.avif";
 function Home() {
+  useEffect(() => {
+    if (window.location.hash === "#industries") {
+      const section = document.getElementById("industries");
+      section?.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
   return (
     <>
       <section className="hero">
@@ -30,14 +38,12 @@ function Home() {
             </p>
 
             <div className="hero-buttons">
-  
               <a href="/Contact" className="cta-primary">
                 Request a Demo
               </a>
-                <a href="/About" className="cta-secondary">
+              <a href="/About" className="cta-secondary">
                 See Our Work
               </a>
-             
             </div>
           </div>
 
@@ -241,44 +247,45 @@ function Home() {
           <h2>Deep expertise where the stakes are highest</h2>
 
           <div className="industry-grid">
-            <div className="industry-card">
-              <img src={travelImg} alt="Travel" />
-
-              <div className="industry-content">
-                <h3>Travel & Hospitality</h3>
-
-                <p>
-                  Dynamic pricing, AI concierge and operations automation for a
-                  24/7 industry.
-                </p>
+            <a href="/travel" className="industry-link">
+              <div className="industry-card">
+                <img src={travelImg} alt="Travel" />
+                <div className="industry-content">
+                  <h3>Travel & Hospitality</h3>
+                  <p>
+                    Dynamic pricing, AI concierge and operations automation for
+                    a 24/7 industry.
+                  </p>
+                </div>
               </div>
-            </div>
+            </a>
 
-            <div className="industry-card">
-              <img src={healthcareImg} alt="Healthcare" />
+             <a href="/healthcare" className="industry-link">
+    <div className="industry-card">
+      <img src={healthcareImg} alt="Healthcare" />
+      <div className="industry-content">
+        <h3>Healthcare</h3>
+        <p>
+          Clinical document intelligence and compliant automation that
+          protects patient data.
+        </p>
+      </div>
+    </div>
+  </a>
 
-              <div className="industry-content">
-                <h3>Healthcare</h3>
+             <a href="/financial-services" className="industry-link">
+    <div className="industry-card">
+      <img src={financeImg} alt="Finance" />
+      <div className="industry-content">
+        <h3>Banking & Financial Services</h3>
+        <p>
+          Risk, fraud and back-office agents built for audit, security
+          and scale.
+        </p>
+      </div>
+    </div>
+  </a>
 
-                <p>
-                  Clinical document intelligence and compliant automation that
-                  protects patient data.
-                </p>
-              </div>
-            </div>
-
-            <div className="industry-card">
-              <img src={financeImg} alt="Finance" />
-
-              <div className="industry-content">
-                <h3>Banking & Financial Services</h3>
-
-                <p>
-                  Risk, fraud and back-office agents built for audit, security
-                  and scale.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>

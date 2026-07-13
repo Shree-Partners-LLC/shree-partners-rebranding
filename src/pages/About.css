@@ -531,11 +531,23 @@
     background:#1175B5;
     color:#fff;
 }
-
+.about-primary-btn:hover{
+    background:#0D679F;
+    color:#fff;
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(17,117,181,.35);
+}
 .about-secondary-btn{
     background:#fff;
     color:#0A3B5E;
     border:1px solid #E2E9EF;
+}
+.about-secondary-btn:hover{
+    background:#F3F7FA;
+    border-color:#1175B5;
+    color:#1175B5;
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
 }
 @media(max-width:768px){
 
