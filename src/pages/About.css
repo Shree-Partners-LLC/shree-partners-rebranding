@@ -493,53 +493,63 @@
 }
 
 .about-cta-buttons{
-    display:flex;
+   display:flex;
     justify-content:center;
+    align-items:center;
     gap:18px;
     margin-top:36px;
 }
+.about-cta-buttons .primary-btn,
+.about-cta-buttons .secondary-btn{
+    width:260px;
+    height:60px;
 
-.primary-btn{
-    background:#1175B5;
-    color:#fff;
-    border:none;
-    padding:16px 34px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    box-sizing:border-box;
+    text-decoration:none;
+}
+.about-primary-btn,
+.about-secondary-btn{
+    width:240px;
+    height:58px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-decoration:none;
     border-radius:8px;
+    box-sizing:border-box;
     font-size:16px;
     font-weight:700;
-    cursor:pointer;
-    transition:.3s;
 }
 
-.primary-btn:hover{
-    background:#0f679f;
+.about-primary-btn{
+    background:#1175B5;
+    color:#fff;
 }
-
-.secondary-btn{
+.about-primary-btn:hover{
+    background:#0D679F;
+    color:#fff;
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(17,117,181,.35);
+}
+.about-secondary-btn{
     background:#fff;
     color:#0A3B5E;
     border:1px solid #E2E9EF;
-    padding:16px 34px;
-    border-radius:8px;
-    font-size:16px;
-    font-weight:600;
-    cursor:pointer;
-    transition:.3s;
 }
-
-.secondary-btn:hover{
+.about-secondary-btn:hover{
     background:#F3F7FA;
+    border-color:#1175B5;
+    color:#1175B5;
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
 }
-
 @media(max-width:768px){
-
-    .about-cta{
-        padding:70px 24px;
-    }
-
-    .about-cta-container h2{
-        font-size:32px;
-    }
 
     .about-cta-buttons{
         flex-direction:column;
@@ -549,6 +559,6 @@
     .primary-btn,
     .secondary-btn{
         width:220px;
+        height:56px;
     }
-
 }
