@@ -60,3 +60,50 @@ a{
     border-radius:7px;
     font-weight:700;
 }
+.demo-btn:hover{
+    background:#0A5C90;
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(17,117,181,.3);
+}
+.menu-toggle{
+    display:none;
+    background:none;
+    border:none;
+    cursor:pointer;
+}
+
+.menu-toggle span{
+    display:block;
+    width:30px;
+    height:3px;
+    background:#555;
+    margin:6px 0;
+    border-radius:2px;
+}
+@media (max-width:992px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-menu{
+        display:none;
+        position:absolute;
+        top:80px;
+        left:0;
+        width:100%;
+        background:#fff;
+        flex-direction:column;
+        padding:20px;
+        box-shadow:0 10px 25px rgba(0,0,0,.15);
+        z-index:1000;
+    }
+
+    .nav-menu.active{
+        display:flex;
+    }
+
+    .nav-menu a{
+        padding:12px 0;
+    }
+}

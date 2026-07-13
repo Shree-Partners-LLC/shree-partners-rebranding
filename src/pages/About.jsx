@@ -1,6 +1,7 @@
 import "./About.css";
 import aboutHero from "../assets/home-hero-img.jpeg";
-import { Link } from "react-router-dom";
+import deliveryheadImg from "../assets/deliveryHead.png";
+import CeoImg from "../assets/ceo.png";
 function About() {
   return (
     <>
@@ -141,14 +142,27 @@ function About() {
           <div className="leadership-grid">
             <div className="leader-card">
               <div className="leader-image">
-                <div className="leader-placeholder">Headshot</div>
+               <img src={CeoImg} alt="Rajiv Dahiya" />
               </div>
 
-              <h3>Name Surname</h3>
+              <h3>Rajiv Dahiya</h3>
 
-              <span>Chief Executive Officer</span>
+              <span>Chairman & Chief Executive Officer</span>
 
               <p>Sets the vision and steers the firm's AI-first strategy.</p>
+            </div>
+             <div className="leader-card">
+              <div className="leader-image">
+                 <img src={deliveryheadImg} alt="Tripur Patel" />
+              </div>
+
+              <h3>Tripur Patel</h3>
+
+              <span>Delivery Head</span>
+
+              <p>
+                Ensures every engagement ships on time, on quality and at scale.
+              </p>
             </div>
 
             <div className="leader-card">
@@ -178,19 +192,7 @@ function About() {
               </p>
             </div>
 
-            <div className="leader-card">
-              <div className="leader-image">
-                <div className="leader-placeholder">Headshot</div>
-              </div>
-
-              <h3>Name Surname</h3>
-
-              <span>Delivery Head</span>
-
-              <p>
-                Ensures every engagement ships on time, on quality and at scale.
-              </p>
-            </div>
+           
           </div>
         </div>
       </section>
@@ -249,12 +251,12 @@ function About() {
           <h2>Want to work with us — or for us?</h2>
 
           <div className="about-cta-buttons">
-            <Link to="/Contact" className="primary-btn">
-              Request a Demo
-            </Link>
-            <Link to="/Careers" className="secondary-btn">
-              View Open Roles
-            </Link>
+            <a href="/Contact" className="about-primary-btn">
+                Request a Demo
+              </a>
+              <a href="/Careers" className="about-secondary-btn">
+                View Open Roles
+              </a>
           </div>
         </div>
       </section>
