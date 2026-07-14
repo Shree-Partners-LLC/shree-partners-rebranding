@@ -1,5 +1,5 @@
 import "./About.css";
-import aboutHero from "../assets/home-hero-img.jpeg";
+import aboutHero from "../assets/aboutpage.jpg";
 import deliveryheadImg from "../assets/deliveryHead.png";
 import CeoImg from "../assets/ceo.png";
 function About() {
@@ -26,6 +26,7 @@ function About() {
 
           <div className="about-right">
             <img src={aboutHero} alt="About Shree Partners" />
+            
           </div>
         </div>
       </section>
