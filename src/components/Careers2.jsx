@@ -1,3 +1,4 @@
+import "./Careers2.css";
 function Careers2() {
   return (
     <section className="perks">

@@ -1,9 +1,5 @@
-const Careers3 = ({
-  roles,
-  setSelectedRole,
-  setSubmitted,
-  setError,
-}) => {
+import "./Careers3.css";
+const Careers3 = ({roles,setSelectedRole,setSubmitted,setError}) => {
   const handleApply = (role) => {
     setSelectedRole(role);
     setSubmitted(false);
@@ -28,12 +24,7 @@ const Careers3 = ({
                   ))}
                 </div>
               </div>
-              <button
-                className="apply-btn"
-                onClick={() => handleApply(title)}
-              >
-                Apply
-              </button>
+              <button className="apply-btn" onClick={() => handleApply(title)}>Apply</button>
             </div>
           ))}
         </div>

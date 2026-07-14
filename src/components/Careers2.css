@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+:root{
+    --navy:#0A3B5E;
+    --navy2:#0F4C76;
+    --blue:#1175B5;
+    --teal:#3FA9C9;
+    --text:#46586B;
+    --muted:#7F8E9C;
+    --line:#E2E9EF;
+    --wash:#F3F7FA;
+    --washBlue:#EAF4F9;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.container{
+    text-align: left;
+    max-width:1312px;
+    margin:0 auto;
+    padding:0 48px;
+}
+.perks{
+    padding:80px 0;
+    background:#fff;
+}
+.perks-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:24px;
+}
+.perk-card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:28px;
+    transition:all .3s ease;
+}
+.perk-card h3{
+    color:var(--navy);
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+.perk-card p{
+    color:var(--text);
+    font-size:14px;
+    line-height:1.6;
+}

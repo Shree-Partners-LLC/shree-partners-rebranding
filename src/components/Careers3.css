@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root{
+    --navy:#0A3B5E;
+    --navy2:#0F4C76;
+    --blue:#1175B5;
+    --teal:#3FA9C9;
+    --text:#46586B;
+    --muted:#7F8E9C;
+    --line:#E2E9EF;
+    --wash:#F3F7FA;
+    --washBlue:#EAF4F9;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.container{
+    max-width:1312px;
+    margin:0 auto;
+    padding:0 48px;
+}
+.roles-section .container{
+    padding-top: 20px;   
+    padding-bottom: 50px;
+}
+.roles-section{
+    background:var(--wash);
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+}
+.section-tag{
+    display:inline-block;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--blue);
+    margin-bottom:18px;
+}
+.roles-section h2{
+    margin-top:18px;
+    margin-bottom:40px;
+    color:var(--navy);
+    font-size:42px;
+    font-weight:800;
+    line-height:1.1;
+}
+.roles-list{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+.role-card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:26px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:24px;
+    transition:.3s;
+}
+.role-card:hover{
+    box-shadow:0 12px 30px rgba(11,39,66,.08);
+}
+.role-info{
+    flex:1;
+}
+.role-info h3{
+    color:var(--navy);
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:8px;
+}
+.role-meta{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    letter-spacing:.04em;
+    text-transform:uppercase;
+    color:var(--muted);
+}
+.apply-btn{
+    flex-shrink:0;
+    background:var(--blue);
+    color:#fff;
+    border:none;
+    border-radius:9px;
+    padding:13px 26px;
+    font-size:15px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+.apply-btn:hover{
+    background:var(--navy2);
+    transform:translateY(-2px);
+}
+.apply-btn:active{
+    transform:translateY(0);
+}

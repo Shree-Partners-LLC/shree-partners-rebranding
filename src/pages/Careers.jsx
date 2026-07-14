@@ -3,7 +3,6 @@ import Careers1 from "../components/Careers1";
 import Careers2 from "../components/Careers2";
 import Careers3 from "../components/Careers3";
 import Careers4 from "../components/Careers4";
-import "./Careers.css";
 const roles = [
   {
     title: "Senior Machine Learning Engineer",

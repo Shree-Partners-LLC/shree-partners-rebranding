@@ -1,3 +1,4 @@
+import "./Careers1.css";
 function Careers1() {
   return (
     <section className="hero">
