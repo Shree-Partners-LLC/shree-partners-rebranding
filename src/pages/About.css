@@ -31,10 +31,11 @@
 }
 
 .about-right{
-    height:380px;
-    border-radius:16px;
+    position:relative;
+    height:420px;
     overflow:hidden;
-    border:1px solid #E2E9EF;
+    border-radius:20px;
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
 }
 
 .about-right img{
@@ -42,7 +43,16 @@
     height:100%;
     object-fit:cover;
     display:block;
+    transition: transform .8s ease;
+    box-shadow:
+        0 0 80px rgba(17,117,181,.15),
+        0 25px 50px rgba(0,0,0,.08);
 }
+.about-right:hover img{
+    transform:scale(1.1);
+
+}
+
 .about-stats{
 
     border-bottom:1px solid #E2E9EF;
