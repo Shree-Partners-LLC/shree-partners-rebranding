@@ -31,24 +31,40 @@
 }
 
 .hero-right{
-    width:100%;
-    max-width:560px;
-    height:400px;
-    justify-self:end;
-    border-radius:14px;
+     position:relative;
+    height:420px;
     overflow:hidden;
-    border:1px solid rgba(255,255,255,.14);
-    box-shadow:0 30px 70px rgba(0,0,0,.3);
+    border-radius:0;          
+    box-shadow:none;
+    background:transparent;
 }
 .hero-right:hover
-{transform:scale(1.05);}
+{
+      transform:scale(1.05);
+}
 
 .hero-right img{
     width:100%;
     height:100%;
     object-fit:cover;
     display:block;
+
+    transition:transform .7s ease;
+
+    opacity:.92;
+
+    mask-image:linear-gradient(to left,
+                rgba(0,0,0,1) 70%,
+                rgba(0,0,0,.6) 88%,
+                transparent 90%);
+
+    -webkit-mask-image:linear-gradient(to left,
+                rgba(0,0,0,1) 70%,
+                rgba(0,0,0,.6) 90%,
+                transparent 100%);
+  
 }
+
 .hero-left{
     display:flex;
     flex-direction:column;
