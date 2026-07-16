@@ -1,0 +1,62 @@
+.contact-info{
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+}
+.info-card{
+    border-radius:18px;
+    padding:36px;
+}
+.info-card.dark{
+    background:var(--navy);
+    color:#fff;
+}
+.info-tag{
+    display:block;
+    margin-bottom:20px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--teal);
+}
+.info-item{
+    margin-bottom:22px;
+}
+.info-item:last-child{
+    margin-bottom:0;
+}
+.info-item span{
+    display:block;
+    margin-bottom:6px;
+    color:#8FA9BF;
+    font-size:13px;
+}
+.info-item a,
+.info-item p{
+    color:#fff;
+    font-size:17px;
+    font-weight:600;
+    text-decoration:none;
+}
+.office-card{
+    background:#fff;
+    border:1px solid var(--line);
+}
+.office{
+    margin-top:22px;
+}
+.office:first-of-type{
+    margin-top:20px;
+}
+.office h4{
+    color:var(--navy);
+    font-size:15px;
+    font-weight:700;
+    margin-bottom:5px;
+}
+.office p{
+    color:var(--text);
+    font-size:14px;
+    line-height:1.55;
+}
