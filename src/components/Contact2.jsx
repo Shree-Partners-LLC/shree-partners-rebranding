@@ -6,6 +6,7 @@ const Contact2= () => {
   const [error, setError] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
+    setError("");
     const form = e.target;
     const { name, email, company, phone, interest, message } = form;
     const nameValue = name.value.trim();
@@ -15,41 +16,27 @@ const Contact2= () => {
     const messageValue = message.value.trim();
     const nameRegex = /^[A-Za-z\s]+$/;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const companyRegex = /^[A-Za-z0-9\s&.,-]+$/;
-    const phoneRegex = /^[0-9]{10}$/;
-    if (!nameValue || !emailValue || !messageValue) {
-      return setError("Please fill all required fields.");
-    }
-    if (!nameRegex.test(nameValue)) {
-      return setError("Name should contain only letters and spaces.");
-    }
-    if (!emailRegex.test(emailValue)) {
-      return setError("Please enter a valid email address.");
-    }
-    if (companyValue && !companyRegex.test(companyValue)) {
-      return setError("Please enter a valid company name.");
-    }
-    if (phoneValue && !phoneRegex.test(phoneValue)) {
-      return setError("Phone number must contain exactly 10 digits.");
-    }
-    if (messageValue.length < 10) {
-      return setError("Message should contain at least 10 characters.");
-    }
-    setMessages((prev) => [
-      ...prev,
-      {
-        name: nameValue,
-        email: emailValue,
-        company: companyValue,
-        phone: phoneValue,
-        interest: interest.value,
-        message: messageValue,
-        submittedAt: new Date().toLocaleString(),
-      },
-    ]);
-    setSubmitted(true);
-    setError("");
+    const companyRegex = /^[A-Za-z][A-Za-z.\s]*$/;
+    const phoneRegex = /^\d{10}$/;
+    if (!nameValue || !emailValue || !messageValue)  return setError("Please fill all required fields.");
+    if (!nameRegex.test(nameValue)) return setError("Name should contain only letters and spaces.");
+    if (!emailRegex.test(emailValue)) return setError("Please enter a valid email address.");
+    if (companyValue && !companyRegex.test(companyValue)) return setError("Company name should contain only letters, spaces, and dots.");
+    if (phoneValue && !phoneRegex.test(phoneValue)) return setError("Phone number must contain exactly 10 digits.");
+    if (messageValue.length < 10) return setError("Message should contain at least 10 characters.");
+    const newMessage = {
+      name: nameValue,
+      email: emailValue,
+      company: companyValue,
+      phone: phoneValue,
+      interest: interest.value,
+      message: messageValue,
+      submittedAt: new Date().toLocaleString(),
+    };
+    setMessages((prev) => [...prev, newMessage]);
+    console.log("Submitted Data:", newMessage);
     form.reset();
+    setSubmitted(true);
   };
   const handleNewMessage = () => {
     setSubmitted(false);
@@ -62,19 +49,19 @@ const Contact2= () => {
           <div className="form-grid">
             <div className="form-group">
               <label>Full Name</label>
-              <input type="text" name="name" placeholder="Jane Doe" required pattern="^[A-Za-z\s]+$" title="Name should contain only letters and spaces."/>
+              <input type="text" name="name" placeholder="Jane Doe" required onInput={(e) => {e.target.value = e.target.value.replace(/[^A-Za-z\s]/g, "");}}/>
             </div>
             <div className="form-group">
               <label>Work Email</label>
-              <input type="email" name="email" placeholder="jane@company.com" required/>
+              <input type="email" name="email" placeholder="jane@company.com" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" title="Please enter a valid email address." onInput={(e) => { e.target.value = e.target.value.replace(/\s/g, "");}}/>
             </div>
             <div className="form-group">
               <label>Company</label>
-              <input type="text" name="company" placeholder="Company Name" pattern="^[A-Za-z0-9\s&.,-]+$" title="Enter a valid company name."/>
+              <input type="text" name="company" placeholder="Company Name" onInput={(e) => {e.target.value = e.target.value.replace(/[^A-Za-z.\s]/g, ""); }} pattern="^[A-Za-z][A-Za-z.\s]*$" title="Company name can contain only letters, spaces, and dots."/>
             </div>
             <div className="form-group">
               <label>Phone</label>
-              <input type="tel" name="phone" placeholder="9876543210" pattern="[0-9]{10}" maxLength={10} title="Phone number must contain exactly 10 digits."/>
+              <input type="tel" name="phone" placeholder="9876543210" maxLength={10} onInput={(e) => {e.target.value = e.target.value.replace(/[^0-9]/g, "");}}/>
             </div>
           </div>
           <div className="form-group">
