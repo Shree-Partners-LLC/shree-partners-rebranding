@@ -48,3 +48,58 @@
     font-size:14px;
     line-height:1.6;
 }
+@media (max-width:992px){
+    .container{
+        padding:0 32px;
+    }
+    .perks{
+        padding:70px 0;
+    }
+    .perks-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:20px;
+    }
+    .perk-card{
+        padding:24px;
+    }
+}
+@media (max-width:768px){
+    .container{
+        padding:0 20px;
+    }
+    .perks{
+        padding:60px 0;
+    }
+    .perks-grid{
+        grid-template-columns:1fr;
+        gap:18px;
+    }
+    .perk-card{
+        padding:22px;
+    }
+    .perk-card h3{
+        font-size:17px;
+    }
+    .perk-card p{
+        font-size:15px;
+    }
+}
+@media (max-width:480px){
+    .container{
+        padding:0 16px;
+    }
+    .perks{
+        padding:50px 0;
+    }
+    .perk-card{
+        padding:20px;
+        border-radius:12px;
+    }
+    .perk-card h3{
+        font-size:16px;
+    }
+    .perk-card p{
+        font-size:14px;
+        line-height:1.7;
+    }
+}

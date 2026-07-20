@@ -42,3 +42,38 @@ body{
     gap:48px;
     align-items:start;
 }
+@media (max-width:992px){
+    .container{
+        padding:0 32px;
+    }
+    .contact-hero .container{
+        padding-top:70px;
+        padding-bottom:80px;
+    }
+    .contact-grid{
+        grid-template-columns:1fr 1fr;
+        gap:24px;
+        align-items:start;
+    }
+}
+@media (max-width:768px){
+    .container{
+        padding:0 20px;
+    }
+    .contact-hero .container{
+        padding-top:60px;
+        padding-bottom:60px;
+    }
+    .contact-grid{
+        grid-template-columns:1fr;
+        gap:24px;
+    }
+}
+@media (max-width:480px){
+    .container{
+        padding:0 16px;
+    }
+    .contact-grid{
+        gap:20px;
+    }
+}

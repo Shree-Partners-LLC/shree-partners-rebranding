@@ -16,7 +16,7 @@ const Careers4 = ({roles,selectedRole,setSelectedRole,submitted,handleSubmit,han
                 </div>
                 <div className="form-group">
                   <label>Email</label>
-                  <input type="email" name="email" requiredplaceholder="jane@email.com" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"/>
+                  <input type="email" name="email" required placeholder="jane@email.com" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"/>
                 </div>
                 <div className="form-group">
                   <label>Phone</label>
