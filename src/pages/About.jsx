@@ -135,10 +135,7 @@ function About() {
 
           <h2>The team behind the work</h2>
 
-          <p className="leadership-text">
-            Drop in headshots and update names — these are placeholders ready to
-            edit.
-          </p>
+         
 
           <div className="leadership-grid">
             <div className="leader-card">
@@ -253,7 +250,7 @@ function About() {
 
           <div className="about-cta-buttons">
             <a href="/Contact" className="about-primary-btn">
-                Request a Demo
+                Contact Us
               </a>
               <a href="/Careers" className="about-secondary-btn">
                 View Open Roles
