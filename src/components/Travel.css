@@ -1,0 +1,54 @@
+.travel-hero{
+    border-bottom:1px solid #E2E9EF;
+    background:#fff;
+}
+
+.travel-container{
+    max-width:1312px;
+    margin:auto;
+    padding:88px 48px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:64px;
+    align-items:center;
+}
+
+.travel-left h1{
+    margin-top:18px;
+    font-size:52px;
+    line-height:1.06;
+    font-weight:800;
+    color:#0A3B5E;
+    letter-spacing:-0.02em;
+}
+
+.travel-left p{
+    margin-top:24px;
+    max-width:520px;
+    font-size:19px;
+    line-height:1.62;
+    color:#46586B;
+}
+
+.travel-right{
+    position:relative;
+    height:420px;
+    overflow:hidden;
+    border-radius:20px;
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+}
+
+.travel-right img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    transition: transform .8s ease;
+    box-shadow:
+        0 0 80px rgba(17,117,181,.15),
+        0 25px 50px rgba(0,0,0,.08);
+}
+.travel-right:hover img{
+    transform:scale(1.1);
+
+}
