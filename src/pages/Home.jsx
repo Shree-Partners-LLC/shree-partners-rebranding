@@ -12,10 +12,32 @@ function Home() {
       section?.scrollIntoView({ behavior: "smooth" });
     }
   }, []);
+  useEffect(() => {
+  const elements = document.querySelectorAll(".scroll-animation");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+        }
+      });
+    },
+    {
+      threshold: 0.2,
+    }
+  );
+
+  elements.forEach((el) => observer.observe(el));
+
+  return () => observer.disconnect();
+}, []);
   return (
     <>
-      <section className="hero">
-        <div className="hero-container">
+      <section className="hero scroll-animation">
+        <div className="hero-container ">
           <div className="hero-left">
             <div className="hero-badge">
               <span className="badge-dot"></span>
@@ -53,7 +75,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="stats">
+      <section className="stats scroll-animation">
         <div className="stats-container">
           <div className="stat-box">
             <h2>2005</h2>
@@ -80,16 +102,16 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="services" id="capabilities">
+      <section className="services scroll-animation" id="capabilities">
         <div className="services-container">
           <span className="section-title">Capabilities</span>
 
           <h2>One partner across the full AI stack</h2>
 
           <div className="services-grid">
-            <div className="service-card featured">
+            <div className="ai-service-card featured">
               <div className="featured-icon">
-                <div className="circle"></div>
+               <i className="fa-solid fa-robot service-icon"></i>
               </div>
 
               <div>
@@ -105,7 +127,7 @@ function Home() {
             </div>
 
             <div className="service-card">
-              <div className="icon square"></div>
+             <i className="fa-solid fa-brain service-icon"></i>
 
               <h3>AI & Machine Learning</h3>
 
@@ -116,7 +138,7 @@ function Home() {
             </div>
 
             <div className="service-card">
-              <div className="icon diamond"></div>
+              <i className="fa-solid fa-cloud service-icon"></i>
 
               <h3>Cloud & Infrastructure</h3>
 
@@ -128,7 +150,7 @@ function Home() {
 
             <div className="service-card service-industry-card">
               <div>
-                <div className="icon diamond"></div>
+                <i className="fa-solid fa-microchip service-icon"></i>
                 <h3>Industry AI Solutions</h3>
 
                 <p>
@@ -140,7 +162,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="agentic">
+      <section className="agentic scroll-animation">
         <div className="agentic-container">
           <div className="agentic-heading">
             <span>How agentic AI works</span>
@@ -184,7 +206,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="feature-band">
+      <section className="feature-band scroll-animation">
         <div className="feature-container">
           <div className="feature-left">
             <span className="feature-label">Why Shree Partners</span>
@@ -240,7 +262,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="industries" id="industries">
+      <section className="industries scroll-animation" id="industries">
         <div className="industries-container">
           <span className="section-title">Industries</span>
 
@@ -289,7 +311,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="cta">
+      <section className="cta scroll-animation">
         <div className="cta-container">
           <h2>
             Let's make AI your

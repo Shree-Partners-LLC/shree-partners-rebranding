@@ -25,3 +25,14 @@ img{
   display:block;
   max-width:100%;
 }
+
+.scroll-animation{
+    opacity:0;
+    transform:translateY(35px);
+    transition:opacity .7s ease, transform .7s ease;
+}
+
+.scroll-animation.show{
+    opacity:1;
+    transform:translateY(0);
+}
