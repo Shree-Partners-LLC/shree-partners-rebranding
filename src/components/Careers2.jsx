@@ -1,7 +1,26 @@
 import "./Careers2.css";
+import { useEffect, useRef } from "react";
 function Careers2() {
+  const sectionRef = useRef(null);
+  useEffect(() => {
+    const element = sectionRef.current;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          element.classList.add("show");
+        } else {
+          element.classList.remove("show");
+        }
+      },
+      {
+        threshold: 0.15,
+      }
+    );
+    if (element) observer.observe(element);
+    return () => observer.disconnect();
+  }, []);
   return (
-    <section className="perks">
+    <section ref={sectionRef} className="perks scroll-animation">
       <div className="container perks-grid">
         <div className="perk-card">
           <h3>Real AI, in production</h3>

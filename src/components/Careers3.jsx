@@ -1,4 +1,5 @@
 import "./Careers3.css";
+import { useEffect, useRef } from "react";
 const Careers3 = ({roles,setSelectedRole,setSubmitted,setError}) => {
   const handleApply = (role) => {
     setSelectedRole(role);
@@ -8,8 +9,26 @@ const Careers3 = ({roles,setSelectedRole,setSubmitted,setError}) => {
       behavior: "smooth",
     });
   };
+  const sectionRef = useRef(null);
+useEffect(() => {
+  const element = sectionRef.current;
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        element.classList.add("show");
+      } else {
+        element.classList.remove("show");
+      }
+    },
+    {
+      threshold: 0.15,
+    }
+  );
+  if (element) observer.observe(element);
+  return () => observer.disconnect();
+}, []);
   return (
-    <section className="roles-section">
+    <section ref={sectionRef} className="roles-section scroll-animation">
       <div className="container">
         <span className="section-tag blue">Open Roles</span>
         <h2>Find your next role</h2>

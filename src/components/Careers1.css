@@ -61,6 +61,18 @@ body{
     font-size:19px;
     line-height:1.62;
 }
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(70px);
+    transition:
+        opacity 0.9s ease,
+        transform 0.9s ease;
+    will-change: opacity, transform;
+}
+.scroll-animation.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 @media (max-width: 992px){
     .container{
         padding:0 32px;
