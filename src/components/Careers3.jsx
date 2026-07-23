@@ -5,24 +5,17 @@ const Careers3 = ({roles,setSelectedRole,setSubmitted,setError}) => {
     setSelectedRole(role);
     setSubmitted(false);
     setError("");
-    document.getElementById("apply")?.scrollIntoView({
-      behavior: "smooth",
-    });
+    document.getElementById("apply")?.scrollIntoView({behavior: "smooth",});
   };
   const sectionRef = useRef(null);
 useEffect(() => {
   const element = sectionRef.current;
   const observer = new IntersectionObserver(
     ([entry]) => {
-      if (entry.isIntersecting) {
-        element.classList.add("show");
-      } else {
-        element.classList.remove("show");
-      }
+      if (entry.isIntersecting) element.classList.add("show");
+      else element.classList.remove("show");
     },
-    {
-      threshold: 0.15,
-    }
+    { threshold: 0.15,}
   );
   if (element) observer.observe(element);
   return () => observer.disconnect();

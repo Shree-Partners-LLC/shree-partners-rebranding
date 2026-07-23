@@ -6,15 +6,10 @@ function Careers2() {
     const element = sectionRef.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          element.classList.add("show");
-        } else {
-          element.classList.remove("show");
-        }
+        if (entry.isIntersecting) element.classList.add("show");
+        else element.classList.remove("show");
       },
-      {
-        threshold: 0.15,
-      }
+      {threshold: 0.15,}
     );
     if (element) observer.observe(element);
     return () => observer.disconnect();
