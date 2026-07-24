@@ -1,6 +1,6 @@
 .footer {
     margin-top: 80px;
-    background: #07304E;
+    background: #111;
     color: #9DB5C7;
 }
 .footer-container {
@@ -57,6 +57,16 @@
 .footer-policy {
     display: flex;
     gap: 6px;
+}
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(70px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    will-change: opacity, transform;
+}
+.scroll-animation.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 @media (max-width: 767px) {
     .footer {
