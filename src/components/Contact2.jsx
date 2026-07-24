@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Contact2.css";
 const Contact2= () => {
   const [messages, setMessages] = useState([]);
@@ -42,8 +42,26 @@ const Contact2= () => {
     setSubmitted(false);
     setError("");
   };
+  const sectionRef = useRef(null);
+useEffect(() => {
+  const element = sectionRef.current;
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        element.classList.add("show");
+      } else {
+        element.classList.remove("show");
+      }
+    },
+    {
+      threshold: 0.15,
+    }
+  );
+  if (element) observer.observe(element);
+  return () => observer.disconnect();
+}, []);
   return (
-    <div className="contact-card">
+    <div className="contact-card scroll-animation" ref={sectionRef}>
       {!submitted ? (
         <form onSubmit={handleSubmit}>
           <div className="form-grid">

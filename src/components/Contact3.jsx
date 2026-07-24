@@ -1,8 +1,26 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./Contact3.css";
 const Contact3 = () => {
+  const sectionRef = useRef(null);
+useEffect(() => {
+  const element = sectionRef.current;
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        element.classList.add("show");
+      } else {
+        element.classList.remove("show");
+      }
+    },
+    {
+      threshold: 0.15,
+    }
+  );
+  if (element) observer.observe(element);
+  return () => observer.disconnect();
+}, []);
   return (
-    <div className="contact-info">
+    <div ref={sectionRef} className="contact-info scroll-animation">
       <div className="info-card dark">
         <span className="info-tag">Reach Us Directly</span>
         <div className="info-item">
