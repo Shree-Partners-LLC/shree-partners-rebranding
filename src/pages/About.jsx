@@ -1,11 +1,34 @@
 import "./About.css";
+import { useEffect } from "react";
 import aboutHero from "../assets/aboutpage.jpg";
 import deliveryheadImg from "../assets/deliveryHead.png";
 import CeoImg from "../assets/ceo.png";
 function About() {
+  useEffect(() => {
+  const elements = document.querySelectorAll(".scroll-animation");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+        }
+      });
+    },
+    {
+      threshold: 0.2,
+    }
+  );
+
+  elements.forEach((el) => observer.observe(el));
+
+  return () => observer.disconnect();
+}, []);
   return (
     <>
-      <section className="about-hero">
+      <section className="about-hero scroll-animation">
         <div className="about-container">
           <div className="about-left">
             <span className="section-title">About Shree Partners</span>
@@ -30,7 +53,7 @@ function About() {
           </div>
         </div>
       </section>
-      <section className="about-stats">
+      <section className="about-stats scroll-animation">
         <div className="about-stats-container">
           <div className="about-stat-box">
             <h2>2005</h2>
@@ -57,7 +80,7 @@ function About() {
           </div>
         </div>
       </section>
-      <section className="mission">
+      <section className="mission scroll-animation">
         <div className="mission-container">
           <div className="mission-left">
             <span className="section-title">Our Mission</span>
@@ -87,7 +110,7 @@ function About() {
           </div>
         </div>
       </section>
-      <section className="values">
+      <section className="values scroll-animation">
         <div className="values-container">
           <span className="section-title">What We Value</span>
 
@@ -129,7 +152,7 @@ function About() {
           </div>
         </div>
       </section>
-      <section className="leadership">
+      <section className="leadership scroll-animation">
         <div className="leadership-container">
           <span className="section-title">Leadership</span>
 
@@ -194,7 +217,7 @@ function About() {
           </div>
         </div>
       </section>
-      <section className="about-office-section">
+      <section className="about-office-section scroll-animation">
         <div className="about-office-wrapper">
           <span className="about-office-label">OUR OFFICES</span>
 
@@ -244,7 +267,7 @@ function About() {
           </div>
         </div>
       </section>
-      <section className="about-cta">
+      <section className="about-cta scroll-animation">
         <div className="about-cta-container">
           <h2>Want to work with us — or for us?</h2>
 
