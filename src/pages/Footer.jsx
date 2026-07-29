@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 import logo from "../assets/shree-logo-white.png";
@@ -18,8 +18,21 @@ const industries = [
   { name: "Financial Services", path: "/financial-services" },
 ];
 const Footer = () => {
+  const sectionRef = useRef(null);
+useEffect(() => {
+  const element = sectionRef.current;
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) element.classList.add("show");
+      else element.classList.remove("show");
+    },
+    {threshold: 0.15,}
+  );
+  if (element) observer.observe(element);
+  return () => observer.disconnect();
+}, []);
   return (
-    <footer className="footer">
+    <footer ref={sectionRef} className="footer scroll-animation">
       <div className="footer-container">
         <div className="footer-grid">
           <div className="footer-brand">

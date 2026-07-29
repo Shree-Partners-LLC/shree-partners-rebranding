@@ -120,6 +120,16 @@
 .secondary-btn:hover{
     background:var(--wash);
 }
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(70px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    will-change: opacity, transform;
+}
+.scroll-animation.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 @media (max-width:992px){
     .contact-card{
         padding:32px;

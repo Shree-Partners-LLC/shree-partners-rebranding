@@ -97,6 +97,7 @@ a{
         padding:20px;
         box-shadow:0 10px 25px rgba(0,0,0,.15);
         z-index:1000;
+            gap:8px; 
     }
 
     .nav-menu.active{
@@ -104,6 +105,15 @@ a{
     }
 
     .nav-menu a{
-        padding:12px 0;
+         padding:10px 0;
+    width:100%;
+    text-align:center;
     }
+    .nav-menu .demo-btn{
+    width:auto;
+    margin-top:18px;
+    padding:12px 22px;
+    display:inline-block;
+    align-self:center;
+}
 }

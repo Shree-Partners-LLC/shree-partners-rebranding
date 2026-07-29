@@ -6,15 +6,10 @@ function Careers1() {
     const element = sectionRef.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          element.classList.add("show");
-        } else {
-          element.classList.remove("show");
-        }
+        if (entry.isIntersecting) element.classList.add("show");
+        else element.classList.remove("show");
       },
-      {
-        threshold: 0.15,
-      }
+      {threshold: 0.15,}
     );
     if (element) observer.observe(element);
     return () => observer.disconnect();
@@ -24,11 +19,7 @@ function Careers1() {
       <div className="container">
         <span className="section-tag">Careers</span>
         <h1>Build the AI-first future with people who ship it.</h1>
-        <p>
-          Join a team that puts real AI into production for enterprises across
-          travel, healthcare, and finance. Work with senior engineers on
-          problems that matter from the US or India.
-        </p>
+        <p>Join a team that puts real AI into production for enterprises across travel, healthcare, and finance. Work with senior engineers on problems that matter from the US or India.</p>
       </div>
     </section>
   );
