@@ -1,16 +1,43 @@
-
 import "./Home.css";
+import { useEffect } from "react";
+
 import heroImage from "../assets/home-hero-img.jpeg";
 import travelImg from "../assets/travel-and-hospitality.jpg";
 import healthcareImg from "../assets/healthcare.jpg";
 import financeImg from "../assets/insurance.avif";
 function Home() {
+  useEffect(() => {
+    if (window.location.hash === "#industries") {
+      const section = document.getElementById("industries");
+      section?.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+  useEffect(() => {
+  const elements = document.querySelectorAll(".scroll-animation");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+        }
+      });
+    },
+    {
+      threshold: 0.2,
+    }
+  );
+
+  elements.forEach((el) => observer.observe(el));
+
+  return () => observer.disconnect();
+}, []);
   return (
     <>
-      
-
-      <section className="hero">
-        <div className="hero-container">
+      <section className="hero scroll-animation">
+        <div className="hero-container ">
           <div className="hero-left">
             <div className="hero-badge">
               <span className="badge-dot"></span>
@@ -33,9 +60,12 @@ function Home() {
             </p>
 
             <div className="hero-buttons">
-              <button className="primary-btn">Request a demo</button>
-
-              <button className="secondary-btn">See our work</button>
+              <a href="/Contact" className="cta-primary">
+                Request a Demo
+              </a>
+              <a href="/About" className="cta-secondary">
+                See Our Work
+              </a>
             </div>
           </div>
 
@@ -45,7 +75,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="stats">
+      <section className="stats scroll-animation">
         <div className="stats-container">
           <div className="stat-box">
             <h2>2005</h2>
@@ -72,16 +102,16 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="services" id="capabilities">
+      <section className="services scroll-animation" id="capabilities">
         <div className="services-container">
           <span className="section-title">Capabilities</span>
 
           <h2>One partner across the full AI stack</h2>
 
           <div className="services-grid">
-            <div className="service-card featured">
+            <div className="ai-service-card featured">
               <div className="featured-icon">
-                <div className="circle"></div>
+               <i className="fa-solid fa-robot service-icon"></i>
               </div>
 
               <div>
@@ -97,7 +127,7 @@ function Home() {
             </div>
 
             <div className="service-card">
-              <div className="icon square"></div>
+             <i className="fa-solid fa-brain service-icon"></i>
 
               <h3>AI & Machine Learning</h3>
 
@@ -108,7 +138,7 @@ function Home() {
             </div>
 
             <div className="service-card">
-              <div className="icon diamond"></div>
+              <i className="fa-solid fa-cloud service-icon"></i>
 
               <h3>Cloud & Infrastructure</h3>
 
@@ -120,6 +150,7 @@ function Home() {
 
             <div className="service-card service-industry-card">
               <div>
+                <i className="fa-solid fa-microchip service-icon"></i>
                 <h3>Industry AI Solutions</h3>
 
                 <p>
@@ -127,255 +158,182 @@ function Home() {
                   financial services that ship value in weeks, not quarters.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="agentic scroll-animation">
+        <div className="agentic-container">
+          <div className="agentic-heading">
+            <span>How agentic AI works</span>
 
-              <div className="mini-icons">
-                <div></div>
+            <h2>From task to autonomous outcome</h2>
+          </div>
 
-                <div></div>
+          <div className="agentic-grid">
+            <div className="agent-card">
+              <span className="step">STEP 01</span>
 
-                <div></div>
+              <h3>Perceive & Plan</h3>
+
+              <p>
+                Agents read context from your systems and break goals into safe,
+                ordered steps.
+              </p>
+            </div>
+
+            <div className="agent-card">
+              <span className="step">STEP 02</span>
+
+              <h3>Act with Tools</h3>
+
+              <p>
+                They call your APIs and applications to execute work within
+                strict permissions.
+              </p>
+            </div>
+
+            <div className="agent-card">
+              <span className="step">STEP 03</span>
+
+              <h3>Verify & Escalate</h3>
+
+              <p>
+                Outcomes are checked and audited while escalating to humans
+                whenever judgment is needed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="feature-band scroll-animation">
+        <div className="feature-container">
+          <div className="feature-left">
+            <span className="feature-label">Why Shree Partners</span>
+
+            <h2>
+              Two decades of delivery,
+              <br />
+              now AI-first.
+            </h2>
+
+            <p>
+              We don't run pilots that never ship. We embed AI into production
+              operations with the governance, security and accountability that
+              CIOs, CSOs and CEOs require.
+            </p>
+          </div>
+
+          <div className="feature-right">
+            <div className="feature-item">
+              <span className="dot"></span>
+
+              <div>
+                <h3>Outcome-led, not pilot-led</h3>
+
+                <p>Every engagement targets a measurable business result.</p>
+              </div>
+            </div>
+
+            <div className="feature-item">
+              <span className="dot"></span>
+
+              <div>
+                <h3>Governed & Secure by Design</h3>
+
+                <p>
+                  Built for audit, compliance and enterprise risk from day one.
+                </p>
+              </div>
+            </div>
+
+            <div className="feature-item">
+              <span className="dot"></span>
+
+              <div>
+                <h3>Global Delivery, Your Timezone</h3>
+
+                <p>
+                  Onshore strategy with scaled engineering across the US &
+                  India.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="agentic">
+      <section className="industries scroll-animation" id="industries">
+        <div className="industries-container">
+          <span className="section-title">Industries</span>
 
-  <div className="agentic-container">
+          <h2>Deep expertise where the stakes are highest</h2>
 
-    <div className="agentic-heading">
+          <div className="industry-grid">
+            <a href="/travel" className="industry-link">
+              <div className="industry-card">
+                <img src={travelImg} alt="Travel" />
+                <div className="industry-content">
+                  <h3>Travel & Hospitality</h3>
+                  <p>
+                    Dynamic pricing, AI concierge and operations automation for
+                    a 24/7 industry.
+                  </p>
+                </div>
+              </div>
+            </a>
 
-      <span>How agentic AI works</span>
-
-      <h2>From task to autonomous outcome</h2>
-
-    </div>
-
-    <div className="agentic-grid">
-
-      <div className="agent-card">
-
-        <span className="step">STEP 01</span>
-
-        <h3>Perceive & Plan</h3>
-
+             <a href="/healthcare" className="industry-link">
+    <div className="industry-card">
+      <img src={healthcareImg} alt="Healthcare" />
+      <div className="industry-content">
+        <h3>Healthcare</h3>
         <p>
-          Agents read context from your systems and break goals into safe,
-          ordered steps.
+          Clinical document intelligence and compliant automation that
+          protects patient data.
         </p>
-
       </div>
+    </div>
+  </a>
 
-      <div className="agent-card">
-
-        <span className="step">STEP 02</span>
-
-        <h3>Act with Tools</h3>
-
+             <a href="/financial-services" className="industry-link">
+    <div className="industry-card">
+      <img src={financeImg} alt="Finance" />
+      <div className="industry-content">
+        <h3>Banking & Financial Services</h3>
         <p>
-          They call your APIs and applications to execute work within
-          strict permissions.
+          Risk, fraud and back-office agents built for audit, security
+          and scale.
         </p>
-
       </div>
-
-      <div className="agent-card">
-
-        <span className="step">STEP 03</span>
-
-        <h3>Verify & Escalate</h3>
-
-        <p>
-          Outcomes are checked and audited while escalating to humans
-          whenever judgment is needed.
-        </p>
-
-      </div>
-
     </div>
+  </a>
 
-  </div>
-
-</section>
-<section className="feature-band">
-
-  <div className="feature-container">
-
-    <div className="feature-left">
-
-      <span className="feature-label">
-        Why Shree Partners
-      </span>
-
-      <h2>
-        Two decades of delivery,
-        <br />
-        now AI-first.
-      </h2>
-
-      <p>
-        We don't run pilots that never ship. We embed AI into production
-        operations with the governance, security and accountability that
-        CIOs, CSOs and CEOs require.
-      </p>
-
-    </div>
-
-    <div className="feature-right">
-
-      <div className="feature-item">
-
-        <span className="dot"></span>
-
-        <div>
-
-          <h3>Outcome-led, not pilot-led</h3>
+          </div>
+        </div>
+      </section>
+      <section className="cta scroll-animation">
+        <div className="cta-container">
+          <h2>
+            Let's make AI your
+            <br />
+            operating advantage.
+          </h2>
 
           <p>
-            Every engagement targets a measurable business result.
+            Book a discovery session and we'll map your first high-value
+            automation with a roadmap your board will back.
           </p>
 
+          <div className="cta-buttons">
+            <a href="/Contact" className="cta-primary">
+              Request a Demo
+            </a>
+            <a href="/Contact" className="cta-secondary">
+              Talk to sales
+            </a>
+          </div>
         </div>
-
-      </div>
-
-      <div className="feature-item">
-
-        <span className="dot"></span>
-
-        <div>
-
-          <h3>Governed & Secure by Design</h3>
-
-          <p>
-            Built for audit, compliance and enterprise risk from day one.
-          </p>
-
-        </div>
-
-      </div>
-
-      <div className="feature-item">
-
-        <span className="dot"></span>
-
-        <div>
-
-          <h3>Global Delivery, Your Timezone</h3>
-
-          <p>
-            Onshore strategy with scaled engineering across the US & India.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-<section className="industries" id="industries">
-
-  <div className="industries-container">
-
-    <span className="section-title">
-      Industries
-    </span>
-
-    <h2>
-      Deep expertise where the stakes are highest
-    </h2>
-
-    <div className="industry-grid">
-
-      <div className="industry-card">
-
-        <img src={travelImg} alt="Travel" />
-
-        <div className="industry-content">
-
-          <h3>Travel & Hospitality</h3>
-
-          <p>
-            Dynamic pricing, AI concierge and operations automation
-            for a 24/7 industry.
-          </p>
-
-        </div>
-
-      </div>
-
-      <div className="industry-card">
-
-        <img src={healthcareImg} alt="Healthcare" />
-
-        <div className="industry-content">
-
-          <h3>Healthcare</h3>
-
-          <p>
-            Clinical document intelligence and compliant automation
-            that protects patient data.
-          </p>
-
-        </div>
-
-      </div>
-
-      <div className="industry-card">
-
-        <img src={financeImg} alt="Finance" />
-
-        <div className="industry-content">
-
-          <h3>Banking & Financial Services</h3>
-
-          <p>
-            Risk, fraud and back-office agents built for audit,
-            security and scale.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-<section className="cta">
-
-  <div className="cta-container">
-
-    <h2>
-      Let's make AI your
-      <br />
-      operating advantage.
-    </h2>
-
-    <p>
-      Book a discovery session and we'll map your first high-value
-      automation with a roadmap your board will back.
-    </p>
-
-    <div className="cta-buttons">
-
-      <button className="cta-primary">
-        Request a demo
-      </button>
-
-      <button className="cta-secondary">
-        Talk to sales
-      </button>
-
-    </div>
-
-  </div>
-
-</section>
+      </section>
     </>
   );
 }
