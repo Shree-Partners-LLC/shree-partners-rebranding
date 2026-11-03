@@ -60,10 +60,10 @@ function Home() {
             </p>
 
             <div className="hero-buttons">
-              <a href="/Contact" className="cta-primary">
+              <a href={import.meta.env.BASE_URL + "Contact"} className="cta-primary">
                 Request a Demo
               </a>
-              <a href="/About" className="cta-secondary">
+              <a href={import.meta.env.BASE_URL + "About"} className="cta-secondary">
                 See Our Work
               </a>
             </div>
@@ -269,7 +269,7 @@ function Home() {
           <h2>Deep expertise where the stakes are highest</h2>
 
           <div className="industry-grid">
-            <a href="/travel" className="industry-link">
+            <a href={import.meta.env.BASE_URL + "travel"} className="industry-link">
               <div className="industry-card">
                 <img src={travelImg} alt="Travel" />
                 <div className="industry-content">
@@ -282,7 +282,7 @@ function Home() {
               </div>
             </a>
 
-             <a href="/healthcare" className="industry-link">
+             <a href={import.meta.env.BASE_URL + "healthcare"} className="industry-link">
     <div className="industry-card">
       <img src={healthcareImg} alt="Healthcare" />
       <div className="industry-content">
@@ -295,7 +295,7 @@ function Home() {
     </div>
   </a>
 
-             <a href="/financial-services" className="industry-link">
+             <a href={import.meta.env.BASE_URL + "financial-services"} className="industry-link">
     <div className="industry-card">
       <img src={financeImg} alt="Finance" />
       <div className="industry-content">
@@ -325,10 +325,10 @@ function Home() {
           </p>
 
           <div className="cta-buttons">
-            <a href="/Contact" className="cta-primary">
+            <a href={import.meta.env.BASE_URL + "Contact"} className="cta-primary">
               Request a Demo
             </a>
-            <a href="/Contact" className="cta-secondary">
+            <a href={import.meta.env.BASE_URL + "Contact"} className="cta-secondary">
               Talk to sales
             </a>
           </div>

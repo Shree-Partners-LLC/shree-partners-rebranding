@@ -61,9 +61,9 @@ useEffect(() => {
         <div className="footer-bottom">
           <p>© 2026 Shree Partners. All rights reserved.</p>
           <div className="footer-policy">
-            <a href="/privacy">Privacy</a>
+            <a href={import.meta.env.BASE_URL + "privacy"}>Privacy</a>
             <span> · </span>
-            <a href="/terms">Terms</a>
+            <a href={import.meta.env.BASE_URL + "terms"}>Terms</a>
           </div>
         </div>
       </div>

@@ -272,10 +272,10 @@ function About() {
           <h2>Want to work with us — or for us?</h2>
 
           <div className="about-cta-buttons">
-            <a href="/Contact" className="about-primary-btn">
+            <a href={import.meta.env.BASE_URL + "Contact"} className="about-primary-btn">
                 Contact Us
               </a>
-              <a href="/Careers" className="about-secondary-btn">
+              <a href={import.meta.env.BASE_URL + "Careers"} className="about-secondary-btn">
                 View Open Roles
               </a>
           </div>

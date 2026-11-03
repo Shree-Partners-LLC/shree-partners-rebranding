@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <header className="header">
       <div className="nav-container">
-        <a href="/" className="logo">
+        <a href={import.meta.env.BASE_URL + ""} className="logo">
           <img src={logo} alt="Shree Partners" />
         </a>
 
@@ -22,12 +22,12 @@ function Navbar() {
         </button>
 
         <nav className={`nav-menu ${menuOpen ? "active" : ""}`}>
-          <a href="/">Home</a>
-          <a href="/#industries">Industries</a>
-          <a href="/about">About</a>
-          <a href="/careers">Careers</a>
-          <a href="/contact">Contact</a>
-          <a href="/contact" className="demo-btn">
+          <a href={import.meta.env.BASE_URL + ""}>Home</a>
+          <a href={import.meta.env.BASE_URL + "#industries"}>Industries</a>
+          <a href={import.meta.env.BASE_URL + "about"}>About</a>
+          <a href={import.meta.env.BASE_URL + "careers"}>Careers</a>
+          <a href={import.meta.env.BASE_URL + "contact"}>Contact</a>
+          <a href={import.meta.env.BASE_URL + "contact"} className="demo-btn">
             Request a Demo
           </a>
         </nav>
